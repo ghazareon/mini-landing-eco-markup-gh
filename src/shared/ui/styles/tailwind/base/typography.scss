@@ -76,6 +76,9 @@
   &-1 {
    // .descr-1-1-v1
    &-v1 {
+    @apply text-[1.6rem]
+											font-400
+											leading-[2.4rem];
    }
   }
  }
