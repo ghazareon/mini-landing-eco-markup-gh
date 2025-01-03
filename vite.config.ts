@@ -1,3 +1,10 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
+ * Date: January 2025
+ */
+
 /* prettier-ignore */ import { join }                 from "path";
 /* prettier-ignore */ import { defineConfig }         from "vite";
 /* prettier-ignore */ import react                    from "@vitejs/plugin-react-swc";
