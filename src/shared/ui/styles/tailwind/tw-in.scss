@@ -31,14 +31,14 @@
 .gap,
 .gap-x,
 .gap-y {
-	@apply transition-[column-gap,row-gap]
+ @apply transition-[column-gap,row-gap]
 								duration-[0.16s,0.16s]
 								ease-[linear,linear]
 								will-change-[column-gap,row-gap];
 }
 
 :root {
-	@apply cursor-default
+ @apply cursor-default
 								font-primary
 								text-62-5p
 								font-400
@@ -47,10 +47,10 @@
 
 html,
 body {
-	@apply bg-white;
+ @apply bg-white;
 }
 
 body {
-	@apply overflow-x-hidden
+ @apply overflow-x-hidden
 								text-[0];
 }

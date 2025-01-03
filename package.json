@@ -3,20 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-		"homepage": "https://github.com/ghazareon/mini-landing-eco-markup-gh.git",
-		"author": "Hayk Ghazaryan <hayk.ghazaryanc@gmail.com> (https://github.com/ghazareon/mini-landing-eco-markup-gh)",
-		"keywords": [
-			"markup"
-		],
-		"repository": {
-			"type": "git",
-			"url": "git+ssh@github.com:ghazareon/mini-landing-eco-markup-gh.git"
-		},
-		"bugs": {
-			"url": "https://github.com/ghazareon/mini-landing-eco-markup-gh/issues/",
-			"email": "hayk.ghazaryanc@gmail.com"
-		},
-
+  "homepage": "https://github.com/ghazareon/mini-landing-eco-markup-gh.git",
+  "author": "Hayk Ghazaryan <hayk.ghazaryanc@gmail.com> (https://github.com/ghazareon/mini-landing-eco-markup-gh)",
+  "keywords": [
+    "markup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh@github.com:ghazareon/mini-landing-eco-markup-gh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghazareon/mini-landing-eco-markup-gh/issues/",
+    "email": "hayk.ghazaryanc@gmail.com"
+  },
 		"scripts": {
 			"preview": "vite preview",
 			"============================ Dev ======================": "",
@@ -48,8 +47,8 @@
 			"cc":             "npm cache verify",
 			"start":          "next start",
 			"lint":           "eslint .",
-			"============================ Server tasks ================": "",
 
+			"============================ Server tasks ================": "",
 			"tasks":          "npm-run-all gap sides media root:css tmp svg pic manifest bconfig color",
 			"grid":           "npm-run-all gap sides media root:css tmp",
 			"gap":            "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createTwGap.ts",
@@ -193,7 +192,7 @@
     "postcss-variables": "^1.1.1",
     "postcss-zindex": "^7.0.0",
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "rimraf": "^6.0.1",
     "sass": "^1.83.0",
     "sass-svg-uri": "^2.0.0",

@@ -591,51 +591,96 @@ body{
 
 @media (max-width: 84rem){
 
-  .px{
+.s1{
+    background:url(../../img/tmp/sections/1-sm.png) no-repeat center top;
+    min-height:81px
+}
+
+.s2{
+    background:url(../../img/tmp/sections/2-sm.png) no-repeat center top;
+    min-height:950px
+}
+
+.s3{
+    background:url(../../img/tmp/sections/3-sm.png) no-repeat center top;
+    min-height:62px
+}
+
+.s4{
+    background:url(../../img/tmp/sections/4-sm.png) no-repeat center top;
+    min-height:1660px
+}
+
+.s5{
+    background:url(../../img/tmp/sections/5-sm.png) no-repeat center top;
+    min-height:1178px
+}
+
+.s6{
+    background:url(../../img/tmp/sections/6-sm.png) no-repeat center top;
+    min-height:468px
+}
+
+.s7{
+    background:url(../../img/tmp/sections/7-sm.png) no-repeat center top;
+    min-height:1787px
+}
+
+.s8{
+    background:url(../../img/tmp/sections/8-sm.png) no-repeat center top;
+    min-height:499px
+}
+
+.s9{
+    background:url(../../img/tmp/sections/9-sm.png) no-repeat center top;
+    min-height:1303px
+}
+
+.px{
     padding-left:3.2rem;
     padding-right:3.2rem;
   }
 
-  .pl{
+.pl{
     padding-left:3.2rem;
   }
 
-  .pr{
+.pr{
     padding-right:3.2rem;
   }
 
-  .mx{
+.mx{
     margin-left:3.2rem;
     margin-right:3.2rem;
   }
 
-  .ml{
+.ml{
     margin-left:3.2rem;
   }
 
-  .mr{
+.mr{
     margin-right:3.2rem;
   }
 
-  .gap{
+.gap{
     gap:3.2rem;
   }
 
-  .gap-x{
+.gap-x{
     -moz-column-gap:3.2rem;
          column-gap:3.2rem;
   }
 
-  .gap-y{
+.gap-y{
     row-gap:3.2rem;
   }
 
-  .fix-generate{
+.fix-generate{
     padding-left:3.2rem;
     padding-right:3.2rem;
   }
 
-  .fix{
+.fix{
     padding-left:3.2rem;
     padding-right:3.2rem;
   }
