@@ -1,0 +1,56 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
+ * Date: January 2025
+ */
+
+@import url("base/media-query.scss");
+
+@import url("../common/dev/sections.scss");
+
+@import url("tw-utils/grid.scss");
+@import url("tw-utils/extends.scss");
+
+@import url("base/sides.scss");
+@import url("base/gap.scss");
+@import url("base/typography.scss");
+@import url("base/root.scss");
+@import url("base/main.scss");
+@import url("base/selection.scss");
+@import url("base/scroll.scss");
+@import url("base/text-gradient.scss");
+@import url("base/sprite-icons.scss");
+
+@import url("components/atoms/main.scss");
+
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+.gap,
+.gap-x,
+.gap-y {
+	@apply transition-[column-gap,row-gap]
+								duration-[0.16s,0.16s]
+								ease-[linear,linear]
+								will-change-[column-gap,row-gap];
+}
+
+:root {
+	@apply cursor-default
+								font-primary
+								text-62-5p
+								font-400
+								tracking-normal;
+}
+
+html,
+body {
+	@apply bg-white;
+}
+
+body {
+	@apply overflow-x-hidden
+								text-[0];
+}

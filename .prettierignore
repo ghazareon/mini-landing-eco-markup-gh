@@ -1,0 +1,22 @@
+#
+# Author: Hayk Ghazaryan
+# Email: hayk.ghazaryanc@gmail.com
+# GitHub: https://github.com/ghazareon/mini-landing-realty-nextjs-gh
+# Date: December 2024
+#
+
+############
+############
+############
+svgo.config.js
+tsconfig.node.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.next.json
+src/shared/ui/styles/tailwind/base/media-query.scss
+src/shared/ui/styles/tailwind/base/media-query.css
+svgo.config.mjs
+public/manifest.json
+public/browserconfig.xml
+jsconfig.json
+package.json

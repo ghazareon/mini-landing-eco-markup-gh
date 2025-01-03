@@ -1,0 +1,58 @@
+<!-- prettier-ignore -->
+<%-
+/*
+	Author: Hayk Ghazaryan
+	Email: hayk.ghazaryanc@gmail.com
+	GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
+	Date: January 2025
+*/
+%>
+
+<!-- prettier-ignore -->
+<%
+	const { assets,
+									pic,
+									img,
+									styles,
+									twStyles,
+									svg,
+									view,
+									viewAtoms,
+									viewMolecules,
+									viewOrganisms,
+									viewTemplates } = paths.in;
+
+	const { assets: assetsOut,
+									pic: picOut,
+									img: imgOut,
+									css: cssOut,
+									svg: svgOut } = paths.out;
+
+	const { socPageLinks,
+									misc,
+									footer } = data.sections;
+
+	const svgSprite = `${svg}/${files.spriteIcons}`;
+	const svgBrandSprite = `${svg}/${files.spriteIconsBrand}`;
+%>
+
+<!doctype html>
+<html lang="en" translate="no" class="notranslate">
+ <!-- prettier-ignore -->
+ <%- include(`${viewTemplates}/head.html`); %>
+ <body>
+  <noscript><%= misc.nojs %></noscript>
+  <div class="wrap" data-scroll-container>
+   <section class="s1"></section>
+   <section class="s2"></section>
+   <section class="s3"></section>
+   <section class="s4"></section>
+   <section class="s5"></section>
+   <section class="s6"></section>
+   <section class="s7"></section>
+   <section class="s8"></section>
+   <section class="s9"></section>
+  </div>
+  <!-- <script type="module" defer src="scripts/main.js"></script> -->
+ </body>
+</html>

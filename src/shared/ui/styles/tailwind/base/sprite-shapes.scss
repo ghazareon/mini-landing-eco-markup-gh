@@ -1,0 +1,21 @@
+.shapes {
+  &--shape-1 {
+    @apply aspect-[256/193] w-[25.6rem] h-auto;
+  }
+
+  &--shape-2 {
+    @apply aspect-[220/318] w-[22rem] h-auto;
+  }
+
+  &--shape-3 {
+    @apply aspect-[460/589] w-[46rem] h-auto;
+  }
+
+  &--shape-4 {
+    @apply aspect-[185/244] w-[18.5rem] h-auto;
+  }
+
+  &--shape-5 {
+    @apply aspect-[460.01/304.01] w-[46.001rem] h-auto;
+  }
+}
