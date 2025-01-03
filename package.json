@@ -10,8 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "locomotive-scroll": "^4.1.4",
+    "odometer": "^0.4.8",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "redux": "^5.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^3.1.0",
+    "reset-css": "^5.0.2"
   },
   "devDependencies": {
     "@csstools/postcss-bundler": "^2.0.6",
