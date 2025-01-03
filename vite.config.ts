@@ -1,7 +1,156 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+/* prettier-ignore */ import { join }                 from "path";
+/* prettier-ignore */ import { defineConfig }         from "vite";
+/* prettier-ignore */ import react                    from "@vitejs/plugin-react-swc";
+
+/* prettier-ignore */ import { ViteEjsPlugin }        from "vite-plugin-ejs";
+/* prettier-ignore */ import { ViteMinifyPlugin }     from "vite-plugin-minify";
+/* prettier-ignore */ import { imagetools }           from "vite-imagetools";
+/* prettier-ignore */ import removeConsole            from "vite-plugin-remove-console";
+/* prettier-ignore */ import FullReload               from "vite-plugin-full-reload";
+
+/* prettier-ignore */ import data                     from "./src/shared/data/contentDb.json";
+/* prettier-ignore */ import appData                  from "./src/shared/data/appDb.json";
+
+/* prettier-ignore */ import { dir, files,
+																															ext, vitePaths }       from "./src/shared/config/const";
+
+/* prettier-ignore */ import { tags }                 from "./src/shared/data/headMeta";
+
+const NODE_ENV = process.env.NODE_ENV || "development";
+const isDev = NODE_ENV === "development";
+const root = process.cwd();
 
 // https://vite.dev/config/
+/* prettier-ignore */
 export default defineConfig({
-  plugins: [react()],
-})
+	root:                join(root, dir.in.src),
+	publicDir:           join(root, dir.in.public),
+	build: {
+		outDir:             join(root, dir.out.build),
+		emptyOutDir:        true,
+		sourcemap:          isDev,
+		minify:             isDev,
+		cssMinify:          isDev,
+		assetsInlineLimit:  0,
+
+		rollupOptions: {
+			output: {
+					/*
+					entryFileNames: (data)=> {
+							return vitePaths.build.entryFileNames;
+					},
+					*/
+					/*
+					chunkFileNames: (data) => {
+						return vitePaths.build.chunkFileNames;
+					},
+					*/
+					assetFileNames: (item) => {
+						if (Array.isArray(item.names)) {
+							const file = item.names[0] ?? "";
+
+							if (/\.(gif|jpe?g|png|webp|avif|ico|svg)$/.test(file)) {
+
+								/* for .pic */
+								if (file.includes(`.${ext.pic}`)) {
+									return vitePaths.build.pic
+								};
+
+								/* for img */
+								if (
+									!file.includes(`.${ext.pic}`) &&
+									!file.includes(`.${ext.fontSvg}`)
+								) {
+									return vitePaths.build.img
+								};
+							}
+
+							/* for font */
+							if (/\.(woff2|woff|eot|ttf|otf|f.svg)$/.test(file)) {
+
+								return `${vitePaths.build.fonts}`
+							}
+
+							/* for css */
+							if (/\.(css)$/.test(file)) {
+								return vitePaths.build.css;
+							}
+						}
+						return vitePaths.build.remaining;
+					}
+				}
+			}
+	},
+
+	server: {
+		// open: "/"
+	},
+
+ plugins: [
+		react(),
+		removeConsole(),
+		imagetools(),
+
+		FullReload([
+			...vitePaths.fullReload.html,
+			...vitePaths.fullReload.json,
+			...vitePaths.fullReload.css,
+			...vitePaths.fullReload.svg,
+		]),
+
+		ViteMinifyPlugin({
+			collapseWhitespace:            true,
+			html5:                         true,
+			keepClosingSlash:              true,
+			minifyCSS:                     true,
+			minifyJS:                      true,
+			removeAttributeQuotes:         false,
+			removeComments:                true,
+			removeRedundantAttributes:     false,
+			removeScriptTypeAttributes:    false,
+			removeStyleLinkTypeAttributes: false,
+			useShortDoctype:               true,
+			removeTagWhitespace:           false,
+			sortAttributes:                true,
+			sortClassName:                 true,
+			trimCustomFragments:           false
+		}),
+
+		ViteEjsPlugin({
+			appName:         appData.appName,
+			appThemeColor:   appData.appThemeColor,
+			appTitleColor:   appData.appTitleColor,
+			appMaskIcon:     appData.appMaskIcon,
+			data,
+			files,
+			dir,
+			tags,
+			paths: {
+				in: {
+					assets:         vitePaths.ejs.in.assets,
+					pic:            vitePaths.ejs.in.pic,
+					img:            vitePaths.ejs.in.img,
+					styles:         vitePaths.ejs.in.styles,
+					twStyles:       vitePaths.ejs.in.twStyles,
+					svg:            vitePaths.ejs.in.svg,
+					view:           vitePaths.ejs.in.view,
+					viewAtoms:      vitePaths.ejs.in.viewAtoms,
+					viewMolecules:  vitePaths.ejs.in.viewMolecules,
+					viewOrganisms:  vitePaths.ejs.in.viewOrganisms,
+					viewTemplates:  vitePaths.ejs.in.viewTemplates
+				},
+
+				out: {
+					assets:         vitePaths.ejs.out.assets,
+					pic:            vitePaths.ejs.out.pic,
+					img:            vitePaths.ejs.out.img,
+					css:            vitePaths.ejs.out.css,
+					svg:            vitePaths.ejs.out.svg
+				},
+
+			}
+		}),
+
+	],
+
+});
