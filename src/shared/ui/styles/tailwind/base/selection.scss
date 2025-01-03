@@ -6,13 +6,13 @@
  */
 
 body {
-	::-moz-selection {
-		@apply bg-aqua-350/20
-								 text-aqua-400;
-	}
+ ::-moz-selection {
+  /* 		@apply bg-aqua-350/20
+								 text-aqua-400; */
+ }
 
-	::selection {
-		@apply bg-aqua-350/20
-									text-aqua-400;
-	}
+ ::selection {
+  /* 		@apply bg-aqua-350/20
+									text-aqua-400; */
+ }
 }

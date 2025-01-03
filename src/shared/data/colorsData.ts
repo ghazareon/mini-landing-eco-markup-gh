@@ -7,50 +7,93 @@
 
 /* prettier-ignore  */
 export const colorsData = {
+ dark: {
+  start: 50,
+  delta: 50,
+  list: [
+			"#232123",
+			"#031913",
+			"#17191c",
+			"#1e1e1e",
+			"#1b1a20",
+			"#010707",
+		]
+ },
 
  grey: {
   start: 50,
   delta: 50,
   list: [
-			"#424147",
-			"#393939",
-			"#3f3e45",
-			"#06080d",
-			"#00040e",
+			"#4b4f47",
+			"#475467",
+			"#667085",
+			"#888890",
+			"#8b8b8b",
+			"#888890",
+			"#b0b0b0",
+			"#b5b5c0",
+			"#d9d9d9",
+			"#b0b0b0",
+			"#eaecf0",
+			"#efefef",
+			"#f6f6f6",
+			"#f9fafb",
 		]
  },
 
- aqua: {
-  start: 50,
-  delta: 50,
-  list: [
-			"#def9fa",
-			"#bef3f5",
-			"#9dedf0",
-			"#7de7eb",
-			"#5ce1e6",
-			"#5ce1e6",
-			"#00f6ff",
-			"#33bbcf",
-			"#26d0ce",
-			"#0a2834",
-			"#02141b",
-		]
- },
  violet: {
   start: 50,
   delta: 50,
   list: [
-			"#fc67fa",
+			"#2c3076",
+			"#4259a7",
+			"#8f8cf9",
 		]
  },
- blue: {
+
+ green: {
   start: 50,
   delta: 50,
   list: [
-			"#1a2980"
+			"#85bb40",
+			"#93e14a",
+			"#84dd5b",
+			"#cbde77",
+			"#d7ffb1",
+			"#c7d8b7",
+			"#d7e5be",
 		]
  },
+
+	red: {
+  start: 50,
+  delta: 50,
+  list: [
+			"#7f3a44",
+		]
+ },
+
+	slate: {
+  start: 50,
+  delta: 50,
+  list: [
+			"#003f2e",
+			"#2c5648",
+			"#265949",
+			"#39675e",
+			"#416d64",
+		]
+ },
+
+	yellowOrange: {
+  start: 50,
+  delta: 50,
+  list: [
+			"#fddf80",
+			"#eec800",
+			"#f8a534",
+		]
+	}
 };
 
 /* prettier-ignore  */

@@ -6,40 +6,37 @@
  */
 
 body {
-	&::-webkit-scrollbar {
-		@apply h-[8px]
-										w-[8px];
-	}
+ &::-webkit-scrollbar {
+  @apply h-[8px] w-[8px];
+ }
 
-	&::-webkit-scrollbar-button {
-		@apply h-0
-										w-0;
-	}
+ &::-webkit-scrollbar-button {
+  @apply h-0 w-0;
+ }
 
-	&::-webkit-scrollbar-track {
-		@apply bg-black;
+ &::-webkit-scrollbar-track {
+  @apply bg-black;
 
-		&:vertical:hover {
-		}
-	}
+  &:vertical:hover {
+  }
+ }
 
-	&::-webkit-scrollbar-thumb {
-		@apply cursor-pointer
-								bg-aqua-450/30;
+ &::-webkit-scrollbar-thumb {
+  /* 		@apply cursor-pointer
+								bg-aqua-450/30; */
 
-		&:vertical:hover {
-			@apply bg-[rgba(0,255,255,0.5)];
-		}
-	}
+  &:vertical:hover {
+   /* @apply bg-[rgba(0,255,255,0.5)]; */
+  }
+ }
 
-	&::-webkit-scrollbar-track-piece {
-	}
+ &::-webkit-scrollbar-track-piece {
+ }
 
-	&::-webkit-scrollbar-corner {
-		@apply h-0
-										w-0;
-	}
+ &::-webkit-scrollbar-corner {
+  @apply h-0 w-0;
+ }
 
-	&::-webkit-resizer {
-	}
+ &::-webkit-resizer {
+ }
 }
