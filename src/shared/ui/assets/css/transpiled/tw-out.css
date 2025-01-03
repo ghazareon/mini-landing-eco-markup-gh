@@ -89,6 +89,13 @@
   line-height:clamp(4.3rem,4.3rem + 3.2vw,8.6rem);
 }
 
+.main-descr-v1{
+  font-size:1.6rem;
+  font-weight:400;
+  font-weight:var(--font-weight-400);
+  line-height:2.4rem;
+}
+
 .title-1-1-v1{
   font-weight:600;
   font-weight:var(--font-weight-600);
@@ -114,11 +121,7 @@
  }
 
 .descr-1-1-v1{
-  font-size:1.6rem;
-  font-weight:400;
-  font-weight:var(--font-weight-400);
-  line-height:2.4rem;
-}
+   }
 
 .descr-5-12-v1{
    }
