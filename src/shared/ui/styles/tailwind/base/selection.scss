@@ -1,0 +1,18 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
+ * Date: January 2025
+ */
+
+body {
+	::-moz-selection {
+		@apply bg-aqua-350/20
+								 text-aqua-400;
+	}
+
+	::selection {
+		@apply bg-aqua-350/20
+									text-aqua-400;
+	}
+}

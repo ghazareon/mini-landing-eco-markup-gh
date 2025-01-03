@@ -1,0 +1,23 @@
+export const colors = {
+  /* #424147 */ "grey-50": "rgba( 66 65 71 / <alpha-value>)",
+  /* #393939 */ "grey-100": "rgba( 57 57 57 / <alpha-value>)",
+  /* #3f3e45 */ "grey-150": "rgba( 63 62 69 / <alpha-value>)",
+  /* #06080d */ "grey-200": "rgba( 6 8 13 / <alpha-value>)",
+  /* #00040e */ "grey-250": "rgba( 0 4 14 / <alpha-value>)",
+  /* #def9fa */ "aqua-50": "rgba( 222 249 250 / <alpha-value>)",
+  /* #bef3f5 */ "aqua-100": "rgba( 190 243 245 / <alpha-value>)",
+  /* #9dedf0 */ "aqua-150": "rgba( 157 237 240 / <alpha-value>)",
+  /* #7de7eb */ "aqua-200": "rgba( 125 231 235 / <alpha-value>)",
+  /* #5ce1e6 */ "aqua-250": "rgba( 92 225 230 / <alpha-value>)",
+  /* #5ce1e6 */ "aqua-300": "rgba( 92 225 230 / <alpha-value>)",
+  /* #00f6ff */ "aqua-350": "rgba( 0 246 255 / <alpha-value>)",
+  /* #33bbcf */ "aqua-400": "rgba( 51 187 207 / <alpha-value>)",
+  /* #26d0ce */ "aqua-450": "rgba( 38 208 206 / <alpha-value>)",
+  /* #0a2834 */ "aqua-500": "rgba( 10 40 52 / <alpha-value>)",
+  /* #02141b */ "aqua-550": "rgba( 2 20 27 / <alpha-value>)",
+  /* #fc67fa */ "violet-50": "rgba( 252 103 250 / <alpha-value>)",
+  /* #1a2980 */ "blue-50": "rgba( 26 41 128 / <alpha-value>)",
+
+  /* #000000 */ black: "rgba( 0 0 0         / <alpha-value>)",
+  /* #ffffff */ white: "rgba( 255 255 255   / <alpha-value>)",
+};

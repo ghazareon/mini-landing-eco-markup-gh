@@ -1,0 +1,39 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
+ * Date: January 2025
+ */
+
+// html
+html {
+	@apply no-underline;
+}
+
+// h1
+// h2
+// h3
+// h4
+// h5
+// h6
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply no-underline;
+}
+
+// select
+// option
+// a
+// button
+// input
+select,
+option,
+a,
+button,
+input {
+	@apply font-primary no-underline;
+}
