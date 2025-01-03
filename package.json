@@ -3,6 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+		"homepage": "https://github.com/ghazareon/mini-landing-eco-markup-gh.git",
+		"author": "Hayk Ghazaryan <hayk.ghazaryanc@gmail.com> (https://github.com/ghazareon/mini-landing-eco-markup-gh)",
+		"keywords": [
+			"markup"
+		],
+		"repository": {
+			"type": "git",
+			"url": "git+ssh@github.com:ghazareon/mini-landing-eco-markup-gh.git"
+		},
+		"bugs": {
+			"url": "https://github.com/ghazareon/mini-landing-eco-markup-gh/issues/",
+			"email": "hayk.ghazaryanc@gmail.com"
+		},
+
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
