@@ -84,55 +84,111 @@
 
 .main-title-v1{
   font-weight:700;
-  font-weight:var(--font-weight-700);
-  font-size:clamp(3.6rem,3.6rem + 2.68vw,7.2rem);
-  line-height:clamp(4.3rem,4.3rem + 3.2vw,8.6rem);
-}
-
-.main-descr-v1{
-  font-size:1.6rem;
-  font-weight:400;
-  font-weight:var(--font-weight-400);
-  line-height:2.4rem;
+  font-size:clamp(4.8rem,4.8rem + 1.79vw,7.2rem);
+  line-height:clamp(5.733rem,5.733rem + 2.133vw,8.6rem);
 }
 
 .title-1-1-v1{
   font-weight:600;
   font-weight:var(--font-weight-600);
-  font-size:clamp(2.4rem,2.4rem + 1.79vw,4.8rem);
-  line-height:clamp(2.9rem,2.9rem + 2.16vw,5.8rem);
+  font-size:clamp(3.2rem,3.2rem + 1.19vw,4.8rem);
+  line-height:clamp(3.933rem,3.933rem + 1.389vw,5.8rem);
 }
 
 .title-1-4-v1{
+  font-size:2rem;
+  font-weight:500;
+  font-weight:var(--font-weight-500);
+  line-height:2.4rem;
+  letter-spacing:0.04rem;
+}
+
+.title-5-12-v1{
+  font-weight:500;
+  font-weight:var(--font-weight-500);
+  font-size:clamp(2.133rem,2.133rem + 0.794vw,3.2rem);
+  line-height:clamp(3.2rem,3.2rem + 1.19vw,4.8rem);
+}
+
+.title-1-3-v1{
   font-size:2.4rem;
   font-weight:600;
   font-weight:var(--font-weight-600);
   line-height:2.9rem;
-  letter-spacing:0.02rem;
+  letter-spacing:0.048rem;
 }
 
-.title-5-12-v1{
-   }
+.title-1-6-v2{
+  font-size:1.6rem;
+  line-height:2.2rem;
+}
 
-.title-5-12-v2{
-   }
-
-.link-v1{
- }
+.main-descr-v1{
+  font-size:1.6rem;
+  line-height:2.4rem;
+}
 
 .descr-1-1-v1{
-   }
+  font-size:1.6rem;
+  line-height:2.4rem;
+}
 
 .descr-5-12-v1{
-   }
+  font-size:1.6rem;
+  line-height:2.2rem;
+}
+
+.descr-1-3-v1{
+  font-size:1.6rem;
+  line-height:2.4rem;
+}
+
+.descr-1-4-v2{
+  font-size:1.4rem;
+  line-height:2.2rem;
+}
+
+.descr-1-4-v3{
+  font-size:2rem;
+  line-height:3rem;
+}
+
+.descr-1-4-v4{
+  font-size:2.4rem;
+  line-height:2.9rem;
+}
+
+.link-v1{
+  font-size:1.6rem;
+  font-weight:500;
+  font-weight:var(--font-weight-500);
+  line-height:2.4rem;
+}
+
+.link-v2{
+  font-size:1.6rem;
+  line-height:100%;
+}
 
 .btn-label-v1{
- }
+  font-size:1.6rem;
+  font-weight:600;
+  font-weight:var(--font-weight-600);
+  line-height:1.8rem;
+}
+
+.btn-label-v2{
+  font-size:1.6rem;
+  font-weight:500;
+  font-weight:var(--font-weight-500);
+  line-height:2.4rem;
+}
 
 :root{
   --font-weight-400:400;
+  --font-weight-500:500;
   --font-weight-600:600;
-  --font-weight-700:700;
+  --opacity-20:0.2;
   --font-size-62-5p:62.5%;
   --font-family-primary:Outfit, sans-serif;
   --max-width-xl:134.4rem;
@@ -229,6 +285,12 @@ body::-webkit-resizer{
   width:1.51rem;
 }
 
+.icons--burger{
+  aspect-ratio:20/14;
+  height:auto;
+  width:2rem;
+}
+
 .icons--deco-1{
   aspect-ratio:23.76/23.7;
   height:auto;
@@ -315,10 +377,10 @@ body::-webkit-resizer{
 }
 
 *, ::before, ::after{
-   }
+ }
 
 ::backdrop{
-   }
+ }
 
 /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
 
@@ -605,6 +667,61 @@ body{
   font-size:0;
 }
 
+.main-footer{
+  min-height:40rem;
+  width:100%;
+  background-color:rgba(3, 25, 19, 0.2);
+  background-color:rgba(3, 25, 19, var(--opacity-20));
+}
+
+.main-footer__fix{
+ }
+
+.grid-9{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-column-gap:4rem;
+  -moz-column-gap:4rem;
+       column-gap:4rem;
+}
+
+.grid-9{
+  transition-property:column-gap,row-gap;
+  transition-property:column-gap,row-gap,-moz-column-gap;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+  transition-duration:0.16s,0.16s;
+  transition-timing-function:linear,linear;
+  will-change:column-gap,row-gap;
+
+ grid-template-areas:"it-1 it-1 it-1 it-2 it-2 it-2 it-3 it-3 it-4 it-4 it-5 it-5";
+}
+
+.grid-9__it{
+  min-height:100px;
+  background:rgba(0, 255, 255, 0.5);
+ }
+
+.grid-9__it--1{
+   grid-area:it-1;
+  }
+
+.grid-9__it--2{
+   grid-area:it-2;
+  }
+
+.grid-9__it--3{
+   grid-area:it-3;
+  }
+
+.grid-9__it--4{
+   grid-area:it-4;
+  }
+
+.grid-9__it--5{
+   grid-area:it-5;
+  }
+
 @media (max-width: 84rem){
 
 .s1{
@@ -700,6 +817,11 @@ body{
     padding-left:3.2rem;
     padding-right:3.2rem;
   }
+
+.grid-9{
+    -moz-column-gap:3.2rem;
+         column-gap:3.2rem;
+  }
 }
 
 @media (max-width: 77.75rem){
@@ -751,6 +873,11 @@ body{
   .fix{
     padding-left:2.8rem;
     padding-right:2.8rem;
+  }
+
+  .grid-9{
+    -moz-column-gap:2.8rem;
+         column-gap:2.8rem;
   }
 }
 
@@ -804,6 +931,11 @@ body{
     padding-left:3.2rem;
     padding-right:3.2rem;
   }
+
+  .grid-9{
+    -moz-column-gap:2.4rem;
+         column-gap:2.4rem;
+  }
 }
 
 @media (max-width: 64rem){
@@ -855,6 +987,11 @@ body{
   .fix{
     padding-left:2.4rem;
     padding-right:2.4rem;
+  }
+
+  .grid-9{
+    -moz-column-gap:2.4rem;
+         column-gap:2.4rem;
   }
 }
 
@@ -908,6 +1045,11 @@ body{
     padding-left:2.2rem;
     padding-right:2.2rem;
   }
+
+  .grid-9{
+    -moz-column-gap:2.4rem;
+         column-gap:2.4rem;
+  }
 }
 
 @media (max-width: 51.5rem){
@@ -959,6 +1101,11 @@ body{
   .fix{
     padding-left:2.2rem;
     padding-right:2.2rem;
+  }
+
+  .grid-9{
+    -moz-column-gap:2rem;
+         column-gap:2rem;
   }
 }
 
@@ -1012,6 +1159,11 @@ body{
     padding-left:2rem;
     padding-right:2rem;
   }
+
+  .grid-9{
+    -moz-column-gap:2rem;
+         column-gap:2rem;
+  }
 }
 
 @media (max-width: 41.75rem){
@@ -1063,6 +1215,11 @@ body{
   .fix{
     padding-left:2rem;
     padding-right:2rem;
+  }
+
+  .grid-9{
+    -moz-column-gap:1.2rem;
+         column-gap:1.2rem;
   }
 }
 
@@ -1116,6 +1273,11 @@ body{
     padding-left:1.8rem;
     padding-right:1.8rem;
   }
+
+  .grid-9{
+    -moz-column-gap:1.2rem;
+         column-gap:1.2rem;
+  }
 }
 
 @media (max-width: 29.25rem){
@@ -1167,6 +1329,11 @@ body{
   .fix{
     padding-left:1.6rem;
     padding-right:1.6rem;
+  }
+
+  .grid-9{
+    -moz-column-gap:1.2rem;
+         column-gap:1.2rem;
   }
 }
 
@@ -1220,17 +1387,9 @@ body{
     padding-left:1.4rem;
     padding-right:1.4rem;
   }
-}
 
-@media (max-width: 20rem){
-
-  .main-title-v1{
-    font-size:3.6rem;
-    line-height:4.3rem;
-  }
-
-  .title-1-1-v1{
-    font-size:2.4rem;
-    line-height:2.9rem;
+  .grid-9{
+    -moz-column-gap:0.8rem;
+         column-gap:0.8rem;
   }
 }

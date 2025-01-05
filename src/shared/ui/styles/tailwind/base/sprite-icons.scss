@@ -15,6 +15,10 @@
     @apply aspect-[15.1/11.43] w-[1.51rem] h-auto;
   }
 
+  &--burger {
+    @apply aspect-[20/14] w-[2rem] h-auto;
+  }
+
   &--deco-1 {
     @apply aspect-[23.76/23.7] w-[2.3760000000000003rem] h-auto;
   }

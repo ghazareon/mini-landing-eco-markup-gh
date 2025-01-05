@@ -100,17 +100,17 @@ export const layoutGridBase = {
 };
 
 export const layoutGrid = ((data: IObjNest<n>) =>
-	Object.keys(data).reduce(
-		(acc, curr, i) => ({
-			...acc,
-			[curr]: {
-				...data[curr],
-				...((itData) => ({
-					id: i,
-					widthPure: itData.width - 2 * itData.sides,
-					breakPoint: itData.width + 2 * itData.breakPointSpace,
-				}))(data[curr]),
-			},
-		}),
-		{},
-	))(layoutGridBase);
+ Object.keys(data).reduce(
+  (acc, curr, i) => ({
+   ...acc,
+   [curr]: {
+    ...data[curr],
+    ...((itData) => ({
+     id: i,
+     widthPure: itData.width - 2 * itData.sides,
+     breakPoint: itData.width + 2 * itData.breakPointSpace
+    }))(data[curr])
+   }
+  }),
+  {}
+ ))(layoutGridBase);
