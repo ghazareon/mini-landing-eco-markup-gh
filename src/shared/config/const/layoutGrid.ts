@@ -12,23 +12,16 @@ export const layoutGridBase = {
 
 	/* ----- xl ----- */
  xl: {
-  width:     1344,
-  gutters:   40,
+  width:     1204,
+  gutters:   24,
   sides:     32,
   breakPointSpace:  0
  },
 
  xlx: {
-  width:     1244,
-  gutters:   32,
+  width:     1104,
+  gutters:   16,
   sides:     32,
-  breakPointSpace:  0
- },
-
- xlxx: {
-  width:     1144,
-  gutters:   28,
-  sides:     28,
   breakPointSpace:  0
  },
 
@@ -93,8 +86,8 @@ export const layoutGridBase = {
 	/* ----- sm ----- */
  sm: {
   width:     320,
-  gutters:   8,
-  sides:     14,
+  gutters:   12,
+  sides:     16,
   breakPointSpace:  0
  },
 };
