@@ -27,8 +27,9 @@
 									css: cssOut,
 									svg: svgOut } = paths.out;
 
-	const { socPageLinks,
-									misc,
+		const { socPageLinks } = data.components;
+
+	const { misc,
 									footer } = data.sections;
 
 	const svgSprite = `${svg}/${files.spriteIcons}`;
@@ -41,7 +42,9 @@
  <%- include(`${viewTemplates}/head.html`); %>
  <body>
   <noscript><%= misc.nojs %></noscript>
-  <div class="wrap" data-scroll-container></div>
+  <div class="wrap" data-scroll-container>
+   <%- include(`shared/ui/view/soc.html`, { socPageLinks, svgSprite }); %>
+  </div>
   <!-- <script type="module" defer src="scripts/main.js"></script> -->
  </body>
 </html>
