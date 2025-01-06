@@ -55,6 +55,8 @@
 
 /* prettier-ignore */ import postcssAdvancedVariables from "postcss-advanced-variables";
 
+/* prettier-ignore */ import postcssCustomProperties from "postcss-custom-properties";
+
 const NODE_ENV = process.env.NODE_ENV || "development";
 const isDev = NODE_ENV === "development";
 
@@ -63,11 +65,13 @@ export default {
  parser: postcssScss,
 
  plugins: [
-  postcssAdvancedVariables,
+  // cssvariables,
+  postcssCustomProperties,
   postcssImport,
   postcssCascadeLayers,
   postcssSvgBg,
   jsonToRoot,
+
   postcssEach,
   postcssNested,
   postcssFlexbugs,
@@ -99,6 +103,7 @@ export default {
 
   postcssDropunusedvars({ fix: true }),
   autoprefixer(),
+
   (() => (!isDev ? postcssMinify() : null))()
  ]
 };
