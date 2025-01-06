@@ -1,0 +1,87 @@
+.grid-9 {
+ @apply gap-x
+								grid
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas: "it-1 it-1 it-1 it-2 it-2 it-2 it-3 it-3 it-4 it-4 it-5 it-5";
+
+ @media (max-width: $lg) {
+  grid-template-areas:
+   ". it-2 it-2 it-2 it-3 it-3 it-4 it-4 it-4 it-5 it-5 ."
+   ". . . it-1 it-1 it-1 it-1 it-1 it-1 . . .";
+
+  .grid-9__it--1 {
+   @apply text-center;
+
+   .short-txt {
+    @apply mx-auto
+											mb-[2.01rem];
+   }
+  }
+ }
+
+ @media (max-width: $lgxx) {
+  grid-template-areas:
+   ". . it-2 it-2 it-2 it-2 it-2 it-3 it-3 it-3 it-3 it-3"
+   ". . it-4 it-4 it-4 it-4 it-4 it-5 it-5 it-5 it-5 it-5"
+   ". . . it-1 it-1 it-1 it-1 it-1 it-1 . . .";
+ }
+
+ @media (max-width: $mdx) {
+  grid-template-areas:
+   ". it-2 it-2 it-2 it-2 it-2 it-2 it-3 it-3 it-3 it-3 it-3"
+   ". it-4 it-4 it-4 it-4 it-4 it-4 it-5 it-5 it-5 it-5 it-5"
+   ". . . it-1 it-1 it-1 it-1 it-1 it-1 . . .";
+ }
+
+ @media (max-width: $mdxxx) {
+  grid-template-areas:
+   ". . it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 ."
+   ". . it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 ."
+   ". . it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 ."
+   ". . it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 ."
+   ". . it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 .";
+ }
+
+ @media (max-width: $sm) {
+  grid-template-areas:
+   ". it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   ". it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3"
+   ". it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4"
+   ". it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5"
+   "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1";
+ }
+
+ &__it {
+  @apply pb-[1.9rem];
+
+  .logo {
+   @apply mb-[1.7rem];
+  }
+
+  .short-txt {
+   @apply mb-[7.01rem]
+									max-w-[22rem];
+  }
+
+  &--1 {
+   grid-area: it-1;
+  }
+
+  &--2 {
+   grid-area: it-2;
+  }
+
+  &--3 {
+   grid-area: it-3;
+  }
+
+  &--4 {
+   grid-area: it-4;
+  }
+
+  &--5 {
+   grid-area: it-5;
+  }
+ }
+}
