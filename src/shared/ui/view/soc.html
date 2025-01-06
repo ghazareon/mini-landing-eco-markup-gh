@@ -1,0 +1,13 @@
+<div class="soc">
+ <% socPageLinks.forEach((item, index) => { %>
+ <a href="<%= item.href %>" class="soc-link">
+  <svg
+   class="icons icons--<%= item.icon.prefix %>"
+   width="<%= item.icon.width %>"
+   height="<%= item.icon.height %>"
+  >
+   <use xlink:href="<%=svgSprite %>#<%= item.icon.prefix %>"></use>
+  </svg>
+ </a>
+ <% }) %>
+</div>

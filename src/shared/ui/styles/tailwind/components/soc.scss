@@ -1,0 +1,28 @@
+.soc {
+ @apply inline-flex
+								gap-x-[1.2rem];
+}
+
+.soc-link {
+ @apply flex
+								h-[3.2rem]
+								w-[3.2rem]
+								items-center
+								justify-center
+								rounded-[50%]
+								border
+								border-solid
+						border-white
+						text-white;
+
+ &:hover {
+  @apply border-green-150
+									bg-green-150
+									text-black;
+ }
+
+ @apply transition-[border,background,color]
+								duration-[0.16s,0.16s,0.16s]
+								ease-[linear,linear,linear]
+								will-change-[border,background,color];
+}

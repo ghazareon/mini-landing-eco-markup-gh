@@ -4,37 +4,28 @@
    {
     "href": "#",
     "icon": {
-     "prefix": "fb",
-     "name": "soc-page-fb",
-     "width": "22",
-     "height": "21.87"
-    }
-   },
-   {
-    "href": "#",
-    "icon": {
      "prefix": "tw",
-     "name": "soc-page-tw",
-     "width": "22",
-     "height": "17.89"
+     "name": "soc-tw",
+     "width": "12.8",
+     "height": "10.4"
     }
    },
    {
     "href": "#",
     "icon": {
-     "prefix": "inst",
-     "name": "soc-page-inst",
-     "width": "21.98",
-     "height": "22"
+     "prefix": "fb",
+     "name": "soc-fb",
+     "width": "6.89",
+     "height": "12.8"
     }
    },
    {
     "href": "#",
     "icon": {
      "prefix": "in",
-     "name": "soc-page-in",
-     "width": "22.01",
-     "height": "22.02"
+     "name": "soc-in",
+     "width": "12.82",
+     "height": "12.81"
     }
    }
   ],
