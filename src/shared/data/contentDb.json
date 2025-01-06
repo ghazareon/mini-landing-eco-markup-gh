@@ -66,6 +66,8 @@
 
  "sections": {
   "mainFooter": {
+   "shortTxt": "Whatever you want to ask, our chat has the answers",
+   "copy": "&copy; 2024 Design Monks. All Right Reserved",
    "list": [
     {
      "title": "Support",
