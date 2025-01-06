@@ -1,0 +1,10 @@
+.main-footer {
+ @apply min-h-[40rem]
+								w-full
+						bg-dark-100;
+
+ &__fix {
+  @apply ~pt-[4rem]/[8rem]
+										sm:pt-[4rem];
+ }
+}
