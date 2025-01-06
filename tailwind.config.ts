@@ -13,32 +13,32 @@
 /* prettier-ignore */ import * as dt                   from "./src/shared/config/designTokens";
 
 const {
-	in: { src: srcIn, shared: sharedIn, ui: uiIn, components: componentsIn },
+ in: { src: srcIn, shared: sharedIn, ui: uiIn, components: componentsIn }
 } = dir;
 
 const scriptExt = removeSpaces(
-	`${ext.js},
+ `${ext.js},
 		${ext.ts},
 		${ext.jsx},
-		${ext.tsx}`,
+		${ext.tsx}`
 );
 
 export default {
-	content: {
-		files: [
-			`./${srcIn}/index.html`,
-			`./${srcIn}/${sharedIn}/${uiIn}/${componentsIn}/**/*.{${scriptExt},${ext.pug},${ext.html}}`,
-			`./${srcIn}/pages/**/*.{${scriptExt}}`,
-			`./${srcIn}/app/**/*.{${scriptExt}}`,
-			`./src/shared/ui/view/**/*.${ext.html}`,
-		],
-		extract,
-	},
+ content: {
+  files: [
+   `./${srcIn}/index.html`,
+   `./${srcIn}/${sharedIn}/${uiIn}/${componentsIn}/**/*.{${scriptExt},${ext.pug},${ext.html}}`,
+   `./${srcIn}/pages/**/*.{${scriptExt}}`,
+   `./${srcIn}/app/**/*.{${scriptExt}}`,
+   `./src/shared/ui/view/**/*.${ext.html}`
+  ],
+  extract
+ },
 
-	plugins: [
-		fluid,
-		/* require("tw-bootstrap-grid-optimizer") */
-		/*
+ plugins: [
+  fluid
+  /* require("tw-bootstrap-grid-optimizer") */
+  /*
 		require("tailwind-bootstrap-grid")({
    generateContainer: false,
    gridGutterWidth: "3.2rem",
@@ -49,10 +49,10 @@ export default {
    }
   })
 		*/
-	],
+ ],
 
-	/* prettier-ignore */
-	theme: {
+ /* prettier-ignore */
+ theme: {
   extend: {
    fluid: {
     defaultScreens: ["0", String(toRem(maxItem(layoutGrid)))],
@@ -87,5 +87,5 @@ export default {
 			screens:                  JSON.parse(JSON.stringify(dt.screens)),
    spacing:                  dt.spacing,
   }
- },
+ }
 } satisfies Config;
