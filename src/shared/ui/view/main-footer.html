@@ -1,0 +1,27 @@
+<footer class="main-footer">
+ <div class="fix main-footer__fix">
+  <div class="grid-9">
+   <div class="grid-9__it grid-9__it--1">
+    <a href="#" class="logo">
+     <img
+      src="<%=svg %>/logo-2.svg"
+      alt=""
+      class="logo__img"
+      width="136.24"
+      height="40.08"
+     />
+    </a>
+    <p class="short-txt"><%=mainFooter.shortTxt %></p>
+    <%- include(`shared/ui/view/soc.html`, { socPageLinks, svgSprite }); %>
+   </div>
+   <% mainFooter.list.forEach((it, index) => { %>
+   <div class="grid-9__it grid-9__it--<%=index+2%>">
+    <h4 class="s9__t"><%=it.title %></h4>
+    <%- include(`shared/ui/view/list-1.html`, { data: it.list}); %>
+   </div>
+   <% }) %>
+  </div>
+  <div class="dividing-line"></div>
+  <div class="short-txt short-txt--bottom-footer"><%-mainFooter.copy %></div>
+ </div>
+</footer>
