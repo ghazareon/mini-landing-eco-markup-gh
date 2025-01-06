@@ -20,7 +20,7 @@
 			"preview": "vite preview",
 			"============================ Dev ======================": "",
 			"dev":            "concurrently \"npm run kp:dev\" \"npm run postcss:w\" \"npm run dev:watch\"",
-			"dev:watch":      "nodemon --ext ts,tsx,js,jsx,cjs,mjs,json -w src/shared/config/designTokens -w vite.config.ts -w package.json -w tsconfig.json -w tsconfig.node.json -w tsconfig.app.json -w postcss.config.mts -w src/shared/config/const/layoutGrid.ts --exec npm run dev:run",
+			"dev:watch":      "nodemon --ext ts,tsx,js,jsx,cjs,mjs,json -w src/shared/config/designTokens -w vite.config.ts -w package.json -w tsconfig.json -w tsconfig.node.json -w tsconfig.app.json -w postcss.config.ts -w tailwind.config.ts -w src/shared/config/const/layoutGrid.ts --exec npm run dev:run",
 			"dev:run":        "cross-env NODE_ENV=development vite --port 3000 --config vite.config.ts",
 			"dev:run:net":    "cross-env NODE_ENV=development vite --port 3000 --config vite.config.ts --host 192.168.5.5",
 
@@ -76,6 +76,7 @@
 		},
 
   "dependencies": {
+    "@types/postcss-advanced-variables": "^3.0.0",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",

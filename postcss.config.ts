@@ -53,50 +53,57 @@
 
 /* prettier-ignore */ import { postcssMediaQuery }    from "./src/shared/utils";
 
+/* prettier-ignore */ import postcssAdvancedVariables from "postcss-advanced-variables";
+
+/* prettier-ignore */ import postcssCustomProperties from "postcss-custom-properties";
+
 const NODE_ENV = process.env.NODE_ENV || "development";
 const isDev = NODE_ENV === "development";
 
 export default {
-	syntax: postcssScss,
-	parser: postcssScss,
-	// parser: postcssCommentParser,
-	plugins: [
-		cssvariables,
-		postcssImport,
-		postcssCascadeLayers,
-		postcssSvgBg,
-		jsonToRoot,
-		postcssEach,
-		postcssNested,
-		postcssFlexbugs,
-		twNested,
-		postcssConsole,
-		postcssVar({
-			globals: {
-				mq: postcssMediaQuery(screens),
-			},
-		}),
+ syntax: postcssScss,
+ parser: postcssScss,
 
-		postcssMixins({
-			// mixinsDir: "./src/shared/ui/styles/tailwind/mixins/index.scss"
-		}),
-		// postcssAdvancedVar,
-		postcssSimpleVars,
-		tailwindcss({ config: files.twConfig }),
-		postcssCombineMediaQuery,
-		postcssSortMediaQueries,
-		postcssDiscardComments,
-		postcssPresetEnv,
-		postcssDropunusedvars({ fix: true }),
-		autoprefixer(),
-		(() => (!isDev ? postcssMinify() : null))(),
+ plugins: [
+  // cssvariables,
+  postcssCustomProperties,
+  postcssImport,
+  postcssCascadeLayers,
+  postcssSvgBg,
+  jsonToRoot,
 
-		/* postcssMinify() */
-		/*
-		postcssMin(),
-  postcssMinifyParams(),
-  postcssMinifySelectors(),
-  postcssMinify()
-		*/
-	],
+  postcssEach,
+  postcssNested,
+  postcssFlexbugs,
+  twNested,
+  postcssConsole,
+
+  postcssVar({
+   globals: {
+    mq: postcssMediaQuery(screens)
+   }
+  }),
+
+  postcssSimpleVars,
+  tailwindcss({ config: files.twConfig }),
+  postcssCombineMediaQuery,
+  postcssSortMediaQueries,
+  postcssDiscardComments,
+
+  postcssPresetEnv({
+   autoprefixer: {
+    flexbox: "no-2009"
+   },
+   stage: 3,
+   features: {
+    "custom-properties": true,
+    "nesting-rules": true
+   }
+  }),
+
+  postcssDropunusedvars({ fix: true }),
+  autoprefixer(),
+
+  (() => (!isDev ? postcssMinify() : null))()
+ ]
 };
