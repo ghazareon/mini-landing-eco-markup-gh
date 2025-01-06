@@ -1,0 +1,11 @@
+.logo {
+ @apply inline-block
+								w-full
+								max-w-[13.624rem];
+
+ &__img {
+  @apply block
+									h-auto
+									w-full;
+ }
+}
