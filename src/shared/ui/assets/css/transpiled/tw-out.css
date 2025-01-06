@@ -447,6 +447,54 @@ body::-webkit-resizer{
   text-align:center;
 }
 
+.list-1__li {
+  padding-bottom:clamp(1rem,1rem + 0.71vw,1.85rem);
+}
+
+.list-1__a {
+  display:inline-block;
+  --tw-text-opacity:1;
+  color:rgba( 136 136 144 / 1);
+  position:relative;
+  left:0px;
+  top:0px;
+  font-size:1.6rem;
+  line-height:2.1rem;
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.list-1__a {
+    color:rgba( 136 136 144 / var(--tw-text-opacity, 1));
+  }
+}
+
+.list-1__a:hover:after {
+  transform-origin:bottom left;
+  --tw-scale-x:1;
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1) scaleY(var(--tw-scale-y));
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.list-1__a:after{
+   content:"";
+   position:absolute;
+   bottom:-0.5rem;
+   display:block;
+   height:1px;
+   width:100%;
+   transform-origin:bottom right;
+   --tw-scale-x:0;
+   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(0) scaleY(var(--tw-scale-y));
+   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+   background-color:currentColor;
+   transition-property:transform;
+   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration:150ms;
+   transition-duration:0.16s;
+   transition-timing-function:linear;
+   will-change:transform;
+  }
+
 .rel {
   position:relative;
   left:0px;
@@ -454,10 +502,24 @@ body::-webkit-resizer{
 }
 
 *, ::before, ::after {
- }
+  --tw-translate-x:0;
+  --tw-translate-y:0;
+  --tw-rotate:0;
+  --tw-skew-x:0;
+  --tw-skew-y:0;
+  --tw-scale-x:1;
+  --tw-scale-y:1;
+}
 
 ::backdrop {
- }
+  --tw-translate-x:0;
+  --tw-translate-y:0;
+  --tw-rotate:0;
+  --tw-skew-x:0;
+  --tw-skew-y:0;
+  --tw-scale-x:1;
+  --tw-scale-y:1;
+}
 
 /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
 
@@ -1311,5 +1373,12 @@ body {
   .fix {
     padding-left:1.6rem;
     padding-right:1.6rem;
+  }
+}
+
+@media (max-width: 20rem) {
+
+  .list-1__li {
+    padding-bottom:1rem;
   }
 }

@@ -30,7 +30,7 @@
 		const { socPageLinks } = data.components;
 
 	const { misc,
-									footer } = data.sections;
+									mainFooter } = data.sections;
 
 	const svgSprite = `${svg}/${files.spriteIcons}`;
 	const svgBrandSprite = `${svg}/${files.spriteIconsBrand}`;
@@ -46,6 +46,8 @@
    <%- include(`shared/ui/view/soc.html`, { socPageLinks, svgSprite }); %>
    <div class="short-txt">hello</div>
    <div class="dividing-line"></div>
+
+   <%- include(`shared/ui/view/list-1.html`, { data: mainFooter.list[0].list}); %>
   </div>
   <!-- <script type="module" defer src="scripts/main.js"></script> -->
  </body>

@@ -65,6 +65,95 @@
  },
 
  "sections": {
+  "mainFooter": {
+   "list": [
+    {
+     "title": "Support",
+     "list": [
+      {
+       "href": "#",
+       "content": "Weekly Demos"
+      },
+      {
+       "href": "#",
+       "content": "Contact Us"
+      },
+      {
+       "href": "#",
+       "content": "Report a Bug"
+      },
+      {
+       "href": "#",
+       "content": "Request a New Feature"
+      }
+     ]
+    },
+    {
+     "title": "About",
+     "list": [
+      {
+       "href": "#",
+       "content": "Donate"
+      },
+      {
+       "href": "#",
+       "content": "Careers"
+      },
+      {
+       "href": "#",
+       "content": "Blog"
+      },
+      {
+       "href": "#",
+       "content": "Privacy Policy"
+      }
+     ]
+    },
+    {
+     "title": "Help",
+     "list": [
+      {
+       "href": "#",
+       "content": "Help Center"
+      },
+      {
+       "href": "#",
+       "content": "Information"
+      },
+      {
+       "href": "#",
+       "content": "Community"
+      },
+      {
+       "href": "#",
+       "content": "Creator Programme"
+      }
+     ]
+    },
+    {
+     "title": "Product",
+     "list": [
+      {
+       "href": "#",
+       "content": "Chat by EcoScrop"
+      },
+      {
+       "href": "#",
+       "content": "Reviews"
+      },
+      {
+       "href": "#",
+       "content": "EcoScrop API"
+      },
+      {
+       "href": "#",
+       "content": "Pricing"
+      }
+     ]
+    }
+   ]
+  },
+
   "cols-v3": {
    "title": "Recently Added",
    "link": {
