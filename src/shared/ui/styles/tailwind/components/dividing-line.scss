@@ -1,10 +1,6 @@
-.short-txt {
- @apply descr-1-4-v2
-						text-grey-300;
-
- &--bottom-footer {
-  @apply pb-[2.8rem]
-									pt-[2.7rem]
-									text-center;
- }
+.dividing-line {
+ @apply h-[1px]
+								w-full
+								border-[0px]
+						bg-white/5;
 }

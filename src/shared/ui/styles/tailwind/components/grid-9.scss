@@ -34,14 +34,14 @@
    ". . . it-1 it-1 it-1 it-1 it-1 it-1 . . .";
  }
 
- @media (max-width: $mdxxx) {
+ /*  @media (max-width: $mdxxx) {
   grid-template-areas:
    ". . it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 ."
    ". . it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 ."
    ". . it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 ."
    ". . it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 ."
-   ". . it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 .";
- }
+   ". it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 .";
+ } */
 
  @media (max-width: $sm) {
   grid-template-areas:

@@ -10,12 +10,20 @@
 									inline-block
 							text-grey-300;
 
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
+
   &:hover {
+   @apply text-white;
+
    &:after {
     @apply origin-bottom-left
 											scale-x-100;
    }
   }
+
   &:after {
    content: "";
 
@@ -28,10 +36,10 @@
 										scale-x-0;
 
    @apply bg-[currentColor]
-										transition-[transform]
-										duration-[0.16s]
-										ease-[linear]
-										will-change-[transform];
+										transition-[transform,color]
+										duration-[0.16s,0.16s]
+										ease-[linear,linear]
+										will-change-[transform,color];
   }
  }
 }

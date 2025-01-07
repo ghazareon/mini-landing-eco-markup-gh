@@ -7,26 +7,28 @@
 
 body {
  &::-webkit-scrollbar {
-  @apply h-[8px] w-[8px];
+  @apply h-[8px]
+									w-[8px];
  }
 
  &::-webkit-scrollbar-button {
-  @apply h-0 w-0;
+  @apply h-0
+									w-0;
  }
 
  &::-webkit-scrollbar-track {
-  @apply bg-black;
+  @apply bg-white;
 
   &:vertical:hover {
   }
  }
 
  &::-webkit-scrollbar-thumb {
-  /* 		@apply cursor-pointer
-								bg-aqua-450/30; */
+  @apply cursor-pointer
+								bg-green-200;
 
   &:vertical:hover {
-   /* @apply bg-[rgba(0,255,255,0.5)]; */
+   background-color: #b8cd5d;
   }
  }
 
@@ -34,7 +36,8 @@ body {
  }
 
  &::-webkit-scrollbar-corner {
-  @apply h-0 w-0;
+  @apply h-0
+									w-0;
  }
 
  &::-webkit-resizer {
