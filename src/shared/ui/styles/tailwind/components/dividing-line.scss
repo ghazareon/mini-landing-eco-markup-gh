@@ -3,4 +3,8 @@
 								w-full
 								border-[0px]
 						bg-white/5;
+
+ &--article {
+  @apply bg-green-300/40;
+ }
 }
