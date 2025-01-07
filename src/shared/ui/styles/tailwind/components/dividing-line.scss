@@ -1,5 +1,6 @@
 .dividing-line {
- @apply border
-								border-solid
-						border-white/10;
+ @apply h-[1px]
+								w-full
+								border-[0px]
+						bg-white/5;
 }
