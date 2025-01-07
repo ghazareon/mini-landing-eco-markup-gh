@@ -7,12 +7,24 @@
 
 body {
  ::-moz-selection {
-  /* 		@apply bg-aqua-350/20
-								 text-aqua-400; */
+  @apply bg-green-50/30
+								 text-slate-50;
  }
 
  ::selection {
-  /* 		@apply bg-aqua-350/20
-									text-aqua-400; */
+  @apply bg-green-50/30
+								 text-slate-50;
+ }
+}
+
+footer {
+ ::-moz-selection {
+  @apply bg-black
+								 text-green-50/70;
+ }
+
+ ::selection {
+  @apply bg-black
+								 text-green-50/70;
  }
 }
