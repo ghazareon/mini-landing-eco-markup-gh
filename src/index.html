@@ -32,7 +32,8 @@
 	const { misc,
 									mainFooter,
 									s3,
-									s5 } = data.sections;
+									s5,
+									s7 } = data.sections;
 
 	const svgSprite = `${svg}/${files.spriteIcons}`;
 	const svgBrandSprite = `${svg}/${files.spriteIconsBrand}`;
@@ -50,106 +51,7 @@
    <!-- prettier-ignore -->
    <%- include(`shared/ui/view/s3.html`, { s3, svg, svgSprite }); %>
    <%- include(`shared/ui/view/s5.html`, { s5, svg, svgSprite }); %>
-
-   <!--  -->
-   <section class="s-7">
-    <div class="fix s-7__fix">
-     <h2 class="s-t">Reducing Plastic Waste Through Eco-Friendly Packaging</h2>
-     <div class="grid-7">
-      <div class="grid-7__it">
-       <div class="deco-circle deco-circle--1"></div>
-       <div class="deco-circle deco-circle--2"></div>
-
-       <div class="overlay-custom overlay-custom--fill"></div>
-
-       <span class="icon-box-1">
-        <img
-         src="shared/ui/assets/svg/illustration/illustrator-green-wrap.svg"
-         alt=""
-         width="30.39"
-         height="32.62"
-        />
-       </span>
-       <img
-        srcset="
-         shared/ui/assets/img/services/eco-packaging-1-1x.webp 1x,
-         shared/ui/assets/img/services/eco-packaging-1-2x.webp 2x
-        "
-        src="shared/ui/assets/img/services/eco-packaging-1-1x.jpg"
-        alt=""
-        width="267"
-        height="358"
-        class="img2-3"
-       />
-      </div>
-      <div class="grid-7__it">
-       <div class="overlay-custom overlay-custom--fill">
-        <div class="el"></div>
-        <div class="article-title-1">Recycled/ renewable/ organic fibers.</div>
-        <div class="equalizer">
-         <i></i>
-         <i></i>
-         <i></i>
-         <i></i>
-         <i></i>
-        </div>
-       </div>
-
-       <img
-        srcset="
-         shared/ui/assets/img/services/eco-packaging-2-1x.webp 1x,
-         shared/ui/assets/img/services/eco-packaging-2-2x.webp 2x
-        "
-        src="shared/ui/assets/img/services/eco-packaging-2-1x.jpg"
-        alt=""
-        width="267"
-        height="358"
-        class="img2-3"
-       />
-      </div>
-      <div class="grid-7__it">
-       <div class="overlay-custom">
-        <div class="overlay-custom__content">
-         <svg class="icons icons--deco-7" width="41.89" height="42">
-          <use xlink:href="<%=svgSprite %>#deco-7"></use>
-         </svg>
-         <p class="overlay-custom__content-txt">
-          Our mission is to make sustainable food packaging solutions accessible to
-          everyone
-         </p>
-        </div>
-
-        <img
-         src="shared/ui/assets/svg/ornament.svg"
-         alt=""
-         width="408"
-         height="432"
-         class="ornament"
-        />
-       </div>
-      </div>
-      <div class="grid-7__it">
-       <div class="overlay-custom overlay-custom--fill">
-        <svg class="icons icons--deco-6" width="71.98" height="71.29">
-         <use xlink:href="<%=svgSprite %>#deco-6"></use>
-        </svg>
-       </div>
-       <img
-        srcset="
-         shared/ui/assets/img/services/eco-packaging-3-1x.webp 1x,
-         shared/ui/assets/img/services/eco-packaging-3-2x.webp 2x
-        "
-        src="shared/ui/assets/img/services/eco-packaging-3-1x.jpg"
-        alt=""
-        width="267"
-        height="358"
-        class="img2-3"
-       />
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- / -->
+   <%- include(`shared/ui/view/s7.html`, { s7, svg, svgSprite }); %>
 
    <!-- prettier-ignore -->
    <%- include(`shared/ui/view/main-footer.html`, { mainFooter, socPageLinks, svg, svgSprite }); %>
