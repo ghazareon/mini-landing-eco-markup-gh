@@ -1,0 +1,34 @@
+<section class="s-5">
+ <div class="fix s-5__fix">
+  <h2 class="s-t"><%=s5.title %></h2>
+ </div>
+ <% s5.list.forEach((it, i) => { %>
+ <article class="article-v1">
+  <div class="article-v1__fix fix">
+   <div class="article-v1__c article-v1__c--1">
+    <h3 class="article-v1__t"><%=it.title%></h3>
+   </div>
+   <div class="article-v1__c article-v1__c--2">
+    <p class="article-v1__d"><%=it.descr %></p>
+    <a href="<%=it.link.href %>" class="icon-box-2">
+     <svg class="icons icons--arrow-top-right" width="15.1" height="11.43">
+      <use xlink:href="<%=svgSprite %>#arrow-top-right"></use>
+     </svg>
+    </a>
+   </div>
+  </div>
+ </article>
+ <div class="fix">
+  <div class="dividing-line dividing-line--article"></div>
+ </div>
+ <% }) %>
+ <div class="block pt-[4.8rem] text-center">
+  <a href="#" class="btn btn--xxl btn--outline"
+   ><%=s5.details.label%>
+   <span class="icon-box-2 icon-box-2--fill">
+    <svg class="icons icons--arrow-top-right" width="15.1" height="11.43">
+     <use xlink:href="<%=svgSprite %>#arrow-top-right"></use>
+    </svg> </span
+  ></a>
+ </div>
+</section>
