@@ -1,0 +1,10 @@
+<section class="s-3">
+ <% s3.list.forEach((it) => { %>
+ <div class="s-3__it">
+  <svg class="icons icons--sun" width="<%=it.icon.width %>" height="<%=it.icon.height %>">
+   <use xlink:href="<%=svgSprite %>#<%=it.icon.name %>"></use>
+  </svg>
+  <span class="s-3__it-label"><%=it.label %></span>
+ </div>
+ <% }) %>
+</section>

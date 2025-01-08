@@ -65,6 +65,108 @@
  },
 
  "sections": {
+  "s3": {
+   "list": [
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    },
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    },
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    },
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    },
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    },
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    },
+    {
+     "label": "Eco-friendly the planet",
+     "icon": {
+      "width": "31.19",
+      "height": "32.01",
+      "name": "sun"
+     }
+    }
+   ]
+  },
+
+  "s5": {
+   "title": "Our Initiatives for 2024",
+   "details": {
+    "label": "View Details"
+   },
+   "list": [
+    {
+     "title": "Tree Planting",
+     "descr": "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
+     "link": {
+      "href": "#"
+     }
+    },
+    {
+     "title": "Beach Cleanup",
+     "descr": "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
+     "link": {
+      "href": "#"
+     }
+    },
+    {
+     "title": "Education Events",
+     "descr": "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
+     "link": {
+      "href": "#"
+     }
+    },
+    {
+     "title": "Park Cleaning",
+     "descr": "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
+     "link": {
+      "href": "#"
+     }
+    }
+   ]
+  },
+
+  "s7": {
+   "title": "Reducing Plastic Waste Through Eco-Friendly Packaging"
+  },
+
   "mainFooter": {
    "shortTxt": "Whatever you want to ask, our chat has the answers",
    "copy": "&copy; 2024 Design Monks. All Right Reserved",
