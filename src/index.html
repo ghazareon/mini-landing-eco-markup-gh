@@ -47,6 +47,111 @@
   <noscript><%= misc.nojs %></noscript>
   <div class="wrap" data-scroll-container>
    <!-- -->
+   <header class="main-header">
+    <div class="main-header__fix fix">
+     <a href="#" class="logo">
+      <img
+       src="<%=svg %>/logo-1.svg"
+       alt=""
+       class="logo__img"
+       width="136.24"
+       height="40.08"
+      />
+     </a>
+
+     <div class="group--nav-btn group">
+      <i class="empty-flex-between"></i>
+
+      <nav class="nav">
+       <ul class="nav__ul">
+        <li class="nav__li">
+         <a href="#" class="nav__a">Services</a>
+        </li>
+        <li class="nav__li">
+         <a href="#" class="nav__a">Transform</a>
+        </li>
+        <li class="nav__li">
+         <a href="#" class="nav__a">Initiatives</a>
+        </li>
+        <li class="nav__li">
+         <a href="#" class="nav__a">Clean World</a>
+        </li>
+        <li class="nav__li">
+         <a href="#" class="nav__a">Waste</a>
+        </li>
+        <li class="nav__li">
+         <a href="#" class="nav__a">Testimonials</a>
+        </li>
+       </ul>
+      </nav>
+
+      <div class="group--btn-lang group">
+       <div class="lang-tool">
+        <svg class="icons icons--global" width="14.84" height="14.84">
+         <use xlink:href="<%=svgSprite %>#global"></use>
+        </svg>
+        <span class="lang-tool__l">English</span>
+        <svg class="icons icons--arrow-down" width="12.06" height="6.23">
+         <use xlink:href="<%=svgSprite %>#arrow-down"></use>
+        </svg>
+       </div>
+
+       <a href="#" class="btn btn--lg btn--fill">Sign Up</a>
+      </div>
+     </div>
+    </div>
+   </header>
+
+   <!--  -->
+   <section class="s-2">
+    <div class="s-2__fix fix">
+     <h1 class="main-title">
+      Efficient <span class="select-txt">Scrap</span> Recycling Services Near You
+     </h1>
+     <p class="main-descr">
+      Discover efficient scrap recycling services right in your neighborhood! We're
+      dedicated to providing convenient and reliable scrap recycling solutions to
+      businesses and individuals alike. Whether you have metal, paper, plastic, or
+      electronics to recycle, our experienced team is here to help.
+     </p>
+
+     <div class="wrap--btn-s-2">
+      <a href="#" class="btn btn--xxl btn--outline"
+       ><%=s5.details.label%>
+       <span class="icon-box-2 icon-box-2--fill">
+        <svg class="icons icons--arrow-top-right" width="15.1" height="11.43">
+         <use xlink:href="<%=svgSprite %>#arrow-top-right"></use>
+        </svg>
+       </span>
+      </a>
+     </div>
+
+     <h2 class="s-t">6 Educational Programs</h2>
+
+     <!--  -->
+     <div class="slide">
+      <div class="slide__arr-cell slide__arr-cell--prev">
+       <a href="#" class="arr arr--prev">
+        <svg class="icons icons--arrow-long-next" width="75" height="14.72">
+         <use xlink:href="<%=svgSprite %>#arrow-long-next"></use>
+        </svg>
+       </a>
+      </div>
+      <div class="slide__place">
+       <div class="slide-box"></div>
+      </div>
+      <div class="slide__arr-cell slide__arr-cell--next">
+       <a href="#" class="arr arr--next">
+        <svg class="icons icons--arrow-long-next" width="75" height="14.72">
+         <use xlink:href="<%=svgSprite %>#arrow-long-next"></use>
+        </svg>
+       </a>
+      </div>
+     </div>
+     <!-- / -->
+    </div>
+   </section>
+   <!-- / -->
 
    <!-- prettier-ignore -->
    <%- include(`shared/ui/view/s3.html`, { s3, svg, svgSprite }); %>
@@ -56,6 +161,8 @@
    <!-- prettier-ignore -->
    <%- include(`shared/ui/view/main-footer.html`, { mainFooter, socPageLinks, svg, svgSprite }); %>
   </div>
-  <!-- <script type="module" defer src="scripts/main.js"></script> -->
+  <script type="module" defer src="scripts/main.js"></script>
  </body>
 </html>
+
+416014

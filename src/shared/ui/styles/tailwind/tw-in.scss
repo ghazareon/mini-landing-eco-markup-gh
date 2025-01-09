@@ -129,6 +129,11 @@ body {
 									rounded-[1.6rem]
 							bg-green-250;
 
+  @apply transition-[transform]
+									duration-[0.2s]
+									ease-[linear]
+									will-change-[transform];
+
   &:nth-child {
    &(1) {
     grid-area: it-1;
@@ -147,13 +152,8 @@ body {
    }
   }
 
-  @apply transition-[transform]
-									duration-[0.2s]
-									ease-[linear]
-									will-change-[transform];
-
   &:hover {
-   transform: translateY(-12px) scale(1.05);
+   @apply translate-y-[-1.2rem] scale-105;
   }
  }
 
@@ -586,7 +586,8 @@ body {
 }
 
 .btn {
- @apply inline-block;
+ @apply inline-block
+								whitespace-nowrap;
 
  @apply transition-[border,background,color]
 								duration-[0.16s,0.16s,0.16s]
@@ -633,7 +634,10 @@ body {
 							border-black
 							bg-white
 							text-black;
+ }
 
+ &--outline,
+ &--fill {
   &:hover {
    @apply border-green-250
 										bg-green-250
@@ -667,5 +671,253 @@ body {
 
  &__it-label {
   @apply font-secondary;
+ }
+}
+
+.main-header {
+ &__fix {
+  @apply flex
+									items-center
+									pb-[2.33rem]
+									pt-[2.02rem];
+
+  .logo {
+   @apply shrink-0 grow-0;
+  }
+ }
+}
+
+.group {
+ &--nav-btn {
+  @apply flex
+									w-full
+									items-center
+									justify-between;
+
+  @media (max-width: $lg) {
+   display: none !important;
+   @apply fixed
+										right-0
+										top-0
+										z-[10]
+										flex
+										h-screen
+										w-full
+										max-w-[30.01rem]
+										flex-col
+										items-start
+										justify-start
+								bg-white
+										px-[2.01rem]
+										shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
+
+   .empty-flex-between {
+    @apply order-1;
+   }
+
+   .nav {
+    @apply order-2;
+   }
+
+   .group {
+    &--btn-lang {
+     @apply order-3
+												w-full
+												pt-[2.01rem];
+    }
+   }
+
+   .nav {
+    @apply w-full
+											pt-[2.01rem];
+
+    &__ul {
+     @apply block;
+    }
+
+    &__li {
+     @apply px-0;
+    }
+
+    &__a {
+     @apply block
+												overflow-hidden
+												border-b
+												border-solid
+										border-b-[rgba(66_68_90_/_0.1)]
+												px-[2.01rem]
+												py-[1.2rem];
+
+     &:hover {
+      @apply bg-[rgba(66_68_90_/_0.07)];
+     }
+    }
+   }
+  }
+ }
+
+ &--btn-lang {
+  @apply flex
+									items-center
+									justify-between;
+
+  @apply ~gap-x-[2rem]/[4rem]
+									sm:gap-x-[2rem];
+ }
+}
+
+.nav {
+ &__ul {
+  @apply flex;
+ }
+
+ &__li {
+  @apply ~px-[0.4rem]/[1.4rem]
+									sm:px-[0.4rem];
+ }
+
+ &__a {
+  @apply link-v1
+									inline-block
+									whitespace-nowrap;
+ }
+}
+
+.lang-tool {
+ @apply flex
+								gap-x-[0.7rem];
+
+ &__l {
+  @apply link-v1
+							text-black;
+ }
+}
+
+.s-2 {
+ &__fix {
+  @apply block
+							text-white
+									~py-[2.6rem]/[7.6rem]
+									sm:py-[2.6rem];
+
+  .main-title {
+   @apply pb-[1.3rem];
+  }
+ }
+}
+
+.main-title {
+ @apply main-title-v1
+								mx-auto
+								block
+								max-w-[890px]
+								text-center
+								text-black;
+}
+
+.select-txt {
+ @apply rel
+								z-[1]
+								inline-block
+								rounded-[6.8rem]
+								px-[1.01rem]
+								pl-[2.6rem]
+								pr-[2.6rem];
+
+ &:after {
+  content: "";
+  @apply absolute
+									-bottom-4
+									left-0
+									right-2
+									top-[0.2rem]
+									z-[-1]
+									block
+									rounded-[inherit]
+							bg-green-250;
+ }
+}
+
+.main-descr {
+ @apply main-descr-v1
+								mx-auto
+								max-w-[80rem]
+								text-center
+						text-black;
+}
+
+.s-2 {
+ .s-t {
+  @apply pb-[4.9rem]
+									text-center
+							text-black;
+ }
+}
+
+.wrap {
+ &--btn-s-2 {
+  @apply block
+									text-center
+									~pt-[2.4rem]/[4.8rem]
+									~pb-[2.5rem]/[5.0rem]
+
+									sm:pb-[2.5rem]
+									sm:pt-[2.4rem];
+ }
+}
+
+.slide {
+ display: block;
+ display: flex;
+
+ &__arr-cell {
+  max-width: 186px;
+  width: 100%;
+  background-color: rgba(255, 50, 40, 0.2);
+  display: flex;
+  align-items: center;
+  &--prev {
+   justify-content: flex-start;
+   .icons {
+    transform: rotate(-180deg);
+   }
+  }
+
+  &--next {
+   justify-content: flex-end;
+  }
+ }
+
+ &__place {
+  width: 100%;
+  background-color: rgba(255, 0, 40, 0.2);
+  padding-left: 3.9rem;
+  padding-right: 3.9rem;
+ }
+}
+
+.slide-box {
+ display: flex;
+ align-items: center;
+ min-height: 318px;
+ width: 100%;
+ background-color: rgba(50, 0, 0, 0.2);
+}
+
+.arr {
+ @apply flex
+								h-[9.072rem]
+								w-[14.7rem]
+								cursor-pointer
+								items-center
+								justify-center
+								rounded-[2rem]
+						bg-slate-50
+						text-white;
+
+ &--prev {
+ }
+
+ &--next {
  }
 }
