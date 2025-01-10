@@ -66,6 +66,7 @@ export default {
 
  plugins: [
   // cssvariables,
+
   postcssCustomProperties,
   postcssImport,
   postcssCascadeLayers,
@@ -73,7 +74,7 @@ export default {
   jsonToRoot,
 
   postcssEach,
-  postcssNested,
+
   postcssFlexbugs,
   twNested,
   postcssConsole,
@@ -84,7 +85,9 @@ export default {
    }
   }),
 
+  postcssMixins,
   postcssSimpleVars,
+  postcssNested,
   tailwindcss({ config: files.twConfig }),
   postcssCombineMediaQuery,
   postcssSortMediaQueries,

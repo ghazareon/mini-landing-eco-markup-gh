@@ -41,9 +41,9 @@
 .gap-x,
 .gap-y {
  @apply transition-[column-gap,row-gap]
-									duration-[0.16s,0.16s]
-									ease-[linear,linear]
-									will-change-[column-gap,row-gap];
+								duration-[0.16s,0.16s]
+								ease-[linear,linear]
+								will-change-[column-gap,row-gap];
 }
 
 :root {
@@ -73,11 +73,11 @@ body {
 
  .s-t {
   @apply mx-auto
-										max-w-[71rem]
-										text-center
-								text-black
-										~pb-[3.4rem]/[6.8rem]
-										sm:pb-[3.4rem];
+									max-w-[71rem]
+									text-center
+							text-black
+									~pb-[3.4rem]/[6.8rem]
+									sm:pb-[3.4rem];
  }
 }
 
@@ -87,8 +87,8 @@ body {
 
 .grid-7 {
  @apply gap
-									grid
-									grid-cols-[repeat(12,1fr)];
+								grid
+								grid-cols-[repeat(12,1fr)];
 
  grid-template-areas: "it-1 it-1 it-1 it-2 it-2 it-2 it-3 it-3 it-3 it-4 it-4 it-4";
 
@@ -122,17 +122,17 @@ body {
 
  &__it {
   @apply rel
-										block
-										aspect-[267/358.02]
-										w-full
-										overflow-hidden
-										rounded-[1.6rem]
-								bg-green-250;
+									block
+									aspect-[267/358.02]
+									w-full
+									overflow-hidden
+									rounded-[1.6rem]
+							bg-green-250;
 
   @apply transition-[transform]
-										duration-[0.2s]
-										ease-[linear]
-										will-change-[transform];
+									duration-[0.2s]
+									ease-[linear]
+									will-change-[transform];
 
   &:nth-child {
    &(1) {
@@ -159,39 +159,39 @@ body {
 
  .overlay-custom {
   @apply flex-col
-										items-center
-										justify-between;
+									items-center
+									justify-between;
  }
 }
 
 .img2-3 {
  @apply block
-									w-full;
+								w-full;
 }
 
 .deco-circle {
  @apply absolute
-									block
-									aspect-[1/1]
-									w-[65.54307116104869%]
-									rounded-[50%];
+								block
+								aspect-[1/1]
+								w-[65.54307116104869%]
+								rounded-[50%];
 
  &--1 {
   @apply left-0
-										top-0
-										z-[2]
-										translate-x-[-45%]
-										translate-y-[-40%]
-								bg-green-300;
+									top-0
+									z-[2]
+									translate-x-[-45%]
+									translate-y-[-40%]
+							bg-green-300;
  }
 
  &--2 {
   @apply bottom-0
-										right-0
-										z-[3]
-										translate-x-[28%]
-										translate-y-[34%]
-								bg-green-100;
+									right-0
+									z-[3]
+									translate-x-[28%]
+									translate-y-[34%]
+							bg-green-100;
  }
 }
 
@@ -372,62 +372,6 @@ body {
  }
 }
 
-/* body {
-		&:before {
-			@apply fixed
-										right-0
-										top-0
-										z-10
-										block
-								bg-black
-										px-[20.01px]
-										py-[10.01px]
-										text-[20.01px]
-								text-white
-										content-[""];
-
-			@media (max-width: $xl) {
-				content: "xl";
-			}
-
-			@media (max-width: $xlx) {
-				content: "xlx";
-			}
-
-			@media (max-width: $lg) {
-				content: "lg";
-			}
-
-			@media (max-width: $lgx) {
-				content: "lgx";
-			}
-
-			@media (max-width: $lgxx) {
-				content: "lgxx";
-			}
-
-			@media (max-width: $md) {
-				content: "md";
-			}
-
-			@media (max-width: $mdx) {
-				content: "mdx";
-			}
-
-			@media (max-width: $mdxxx) {
-				content: "mdxxx";
-			}
-
-			@media (max-width: $mdxxxx) {
-				content: "mdxxxx";
-			}
-
-			@media (max-width: $sm) {
-				content: "sm";
-			}
-		}
-	}
-		*/
 .s-5 {
  @apply bg-grey-650
 
@@ -690,25 +634,26 @@ body {
 .group {
  &--nav-btn {
   @apply flex
-										w-full
-										items-center
-										justify-between;
+									w-full
+									items-center
+									justify-between;
 
   @media (max-width: $lg) {
+   display: none !important;
    @apply fixed
-											right-0
-											top-0
-											z-[10]
-											flex
-											h-screen
-											w-full
-											max-w-[30.01rem]
-											flex-col
-											items-start
-											justify-start
-									bg-white
-											px-[2.01rem]
-											shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
+										right-0
+										top-0
+										z-[10]
+										flex
+										h-screen
+										w-full
+										max-w-[30.01rem]
+										flex-col
+										items-start
+										justify-start
+								bg-white
+										px-[2.01rem]
+										shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
 
    .empty-flex-between {
     @apply order-1;
@@ -721,14 +666,14 @@ body {
    .group {
     &--btn-lang {
      @apply order-3
-													w-full
-													pt-[2.01rem];
+												w-full
+												pt-[2.01rem];
     }
    }
 
    .nav {
     @apply w-full
-												pt-[2.01rem];
+											pt-[2.01rem];
 
     &__ul {
      @apply block;
@@ -740,12 +685,12 @@ body {
 
     &__a {
      @apply block
-													overflow-hidden
-													border-b
-													border-solid
-											border-b-[rgba(66_68_90_/_0.1)]
-													px-[2.01rem]
-													py-[1.2rem];
+												overflow-hidden
+												border-b
+												border-solid
+										border-b-[rgba(66_68_90_/_0.1)]
+												px-[2.01rem]
+												py-[1.2rem];
 
      &:hover {
       @apply bg-[rgba(66_68_90_/_0.07)];
@@ -757,8 +702,8 @@ body {
 
  &--btn-lang {
   @apply flex
-										items-center
-										justify-between;
+									items-center
+									justify-between;
 
   @apply ~gap-x-[2rem]/[4rem]
 										sm:gap-x-[2rem];
@@ -777,8 +722,8 @@ body {
 
  &__a {
   @apply link-v1
-										inline-block
-										whitespace-nowrap;
+									inline-block
+									whitespace-nowrap;
  }
 }
 
@@ -792,9 +737,9 @@ body {
 .s-2 {
  &__fix {
   @apply block
-								text-white
-										~py-[2.6rem]/[7.6rem]
-										sm:py-[2.6rem];
+							text-white
+									~py-[2.6rem]/[7.6rem]
+									sm:py-[2.6rem];
 
   .main-title {
    @apply pb-[1.3rem];
@@ -804,61 +749,61 @@ body {
 
 .main-title {
  @apply main-title-v1
-									mx-auto
-									block
-									max-w-[890px]
-									text-center
-									text-black;
+								mx-auto
+								block
+								max-w-[890px]
+								text-center
+								text-black;
 }
 
 .select-txt {
  @apply rel
-									z-[1]
-									inline-block
-									rounded-[6.8rem]
-									px-[1.01rem]
-									pl-[2.6rem]
-									pr-[2.6rem];
+								z-[1]
+								inline-block
+								rounded-[6.8rem]
+								px-[1.01rem]
+								pl-[2.6rem]
+								pr-[2.6rem];
 
  &:after {
   content: "";
   @apply absolute
-										-bottom-4
-										left-0
-										right-2
-										top-[0.2rem]
-										z-[-1]
-										block
-										rounded-[inherit]
-								bg-green-250;
+									-bottom-4
+									left-0
+									right-2
+									top-[0.2rem]
+									z-[-1]
+									block
+									rounded-[inherit]
+							bg-green-250;
  }
 }
 
 .main-descr {
  @apply main-descr-v1
-									mx-auto
-									max-w-[80rem]
-									text-center
-							text-black;
+								mx-auto
+								max-w-[80rem]
+								text-center
+						text-black;
 }
 
 .s-2 {
  .s-t {
   @apply pb-[4.9rem]
-										text-center
-								text-black;
+									text-center
+							text-black;
  }
 }
 
 .wrap {
  &--btn-s-2 {
   @apply block
-										text-center
-										~pt-[2.4rem]/[4.8rem]
-										~pb-[2.5rem]/[5.0rem]
+									text-center
+									~pt-[2.4rem]/[4.8rem]
+									~pb-[2.5rem]/[5.0rem]
 
-										sm:pb-[2.5rem]
-										sm:pt-[2.4rem];
+									sm:pb-[2.5rem]
+									sm:pt-[2.4rem];
  }
 }
 
@@ -867,9 +812,9 @@ body {
 
  &__arr-cell {
   @apply flex
-										w-full
-										max-w-[18.6rem]
-										items-center;
+									w-full
+									max-w-[18.6rem]
+									items-center;
 
   &--prev {
    @apply justify-start;
@@ -882,37 +827,39 @@ body {
 
  &__place {
   @apply w-full
-										px-[3.9rem];
+									px-[3.9rem];
  }
 }
 
 .slide-box {
  @apply flex
-									min-h-[31.8rem]
-									w-full
-									items-center
-									gap-x-[1.8rem];
+								min-h-[31.8rem]
+								w-full
+								items-center
+								gap-x-[1.8rem];
 }
 
 .arr {
  @apply flex
-									h-[9.072rem]
-									w-[14.7rem]
-									cursor-pointer
-									items-center
-									justify-center
-									rounded-[2rem]
-							bg-slate-50
-							text-white;
+								h-[9.072rem]
+								w-[14.7rem]
+								cursor-pointer
+								items-center
+								justify-center
+								rounded-[2rem]
+						bg-slate-50
+						text-white;
 
  @apply transition-[background,transform,border-radius]
-									duration-[0.16s,0.16s,0.16s,0.16s]
-									ease-[ease-out,ease-out,ease-out,ease-out]
-									will-change-[background,transform,border-radius];
+								duration-[0.16s,0.16s,0.16s,0.16s]
+								ease-[ease-out,ease-out,ease-out,ease-out]
+								will-change-[background,transform,border-radius];
 
  &:hover {
   transform: scale(1.4);
-  @apply rounded-[6rem] bg-green-250 text-slate-50;
+  @apply rounded-[6rem]
+							bg-green-250
+							text-slate-50;
  }
 
  &:active {
@@ -922,11 +869,6 @@ body {
  path,
  svg {
   transition: linear all 0.16s;
-
-  /*   @apply transition-[transform,fill]
-										duration-[0.16s,0.16s]
-										ease-[ease-out,ease-out]
-										will-change-[background,fill]; */
  }
 
  &--prev {
@@ -954,12 +896,6 @@ body {
 .img-1-3 {
  mask-image: svg-load("../../assets/svg/shapes/shape-1.svg");
  mask-repeat: no-repeat;
-}
-
-* {
- &:focus-visible {
-  outline: solid rgba(255, 0, 0, 1) 3px;
- }
 }
 
 .dd {
@@ -1006,13 +942,28 @@ body {
 
   @apply absolute
 									right-0
-									top-full
+									top-[100%]
 									w-[150%];
 
   @apply transition-[opacity]
 									duration-[0.18s]
 									ease-[linear]
 									will-change-[opacity];
+
+  @media (max-width: $lg) {
+   @apply left-[0]
+										right-[inherit];
+
+   .dd__content {
+    @apply rounded-tl-none
+											rounded-tr-[2.1rem];
+
+    &:after {
+     @apply left-0
+												right-[inherit];
+    }
+   }
+  }
  }
 
  &__content {
@@ -1026,7 +977,8 @@ body {
 
   &:after {
    @apply absolute
-										right-0 top-[-4.4rem]
+										right-0
+										top-[-4.4rem]
 										block
 										h-[4.4rem]
 										w-[67%]
@@ -1038,6 +990,9 @@ body {
   }
  }
 
+ &:focus-visible,
+ &:focus,
+ &:active,
  &:hover {
   .dd {
    &__container {
@@ -1086,5 +1041,84 @@ body {
   &:hover {
    @apply bg-white/10;
   }
+ }
+}
+
+.s-8 {
+ &__fix {
+  @apply ~pt-[3rem]/[12rem]
+									sm:pt-[3rem];
+
+  .s-t {
+   @apply mx-auto
+										max-w-[53.7rem]
+										text-center
+										~pb-[3rem]/[8.01rem]
+										sm:pb-[3rem];
+  }
+ }
+}
+
+.wide-cell {
+ @apply flex
+								w-full
+								gap-x-[2.4rem]
+								overflow-hidden
+								~pb-[3rem]/[12rem]
+								sm:pb-[3rem];
+}
+
+.block-v1 {
+ @apply min-h-[35rem]
+								w-full
+								min-w-[60rem]
+								rounded-[1.7rem]
+						bg-grey-450
+								text-center
+
+								~p-[3.6rem]/[4.6rem]
+								sm:p-[3.6rem];
+
+ .list-3 {
+  @apply pb-[3.2rem];
+ }
+}
+
+.list-3 {
+ @apply inline-flex
+								gap-x-[1rem]
+						text-yellowOrange-100;
+}
+
+.block-v1 {
+ &__title {
+  @apply descr-1-2-v1
+									pb-[3.2rem]
+							text-grey-50;
+ }
+
+ &:hover {
+ }
+}
+
+.img-info {
+ @apply inline-flex
+								gap-x-[1.3rem];
+
+ &__im {
+  @apply block
+									h-[4.4rem]
+									w-[4.4rem]
+									flex-shrink-0
+									flex-grow-0
+									rounded-[50%];
+
+  @apply bg-grey-200;
+ }
+
+ &__in {
+  @apply w-full
+									max-w-[18.1rem]
+									text-left;
  }
 }

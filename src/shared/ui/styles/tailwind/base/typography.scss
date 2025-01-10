@@ -99,3 +99,12 @@
 								font-500
 								leading-[2.4rem];
 }
+
+.descr-1-2-v1 {
+ @apply font-400
+								~text-[1.6rem]/[2rem]
+								~leading-[2.6rem]/[3rem]
+
+								sm:text-[1.6rem]
+								sm:leading-[2.6rem];
+}
