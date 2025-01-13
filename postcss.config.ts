@@ -85,10 +85,10 @@ export default {
    }
   }),
 
+  tailwindcss({ config: files.twConfig }),
   postcssMixins,
   postcssSimpleVars,
   postcssNested,
-  tailwindcss({ config: files.twConfig }),
   postcssCombineMediaQuery,
   postcssSortMediaQueries,
   postcssDiscardComments,
