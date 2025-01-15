@@ -98,6 +98,8 @@ export const colorsData = {
 
 /* prettier-ignore  */
 export const additive = `
-/* #000000 */ "black":      "rgba( 0 0 0         / <alpha-value>)",
-/* #ffffff */ "white":      "rgba( 255 255 255   / <alpha-value>)"
+/* #000000 */ "black":        "rgba( 0 0 0         / <alpha-value>)",
+/* #ffffff */ "white":        "rgba( 255 255 255   / <alpha-value>)",
+/* #daeac5 */ "green-add-1":  "rgba( 218 234 197   / <alpha-value>)",
+/* #003f2e */ "slate-add-1":  "rgba( 0 63 46       / <alpha-value>)",
 `;

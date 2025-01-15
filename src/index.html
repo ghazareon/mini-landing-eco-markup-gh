@@ -33,7 +33,8 @@
 									mainFooter,
 									s3,
 									s5,
-									s7 } = data.sections;
+									s7,
+									s8 } = data.sections;
 
 	const svgSprite = `${svg}/${files.spriteIcons}`;
 	const svgBrandSprite = `${svg}/${files.spriteIconsBrand}`;
@@ -47,99 +48,6 @@
   <noscript><%= misc.nojs %></noscript>
 
   <div class="wrap" data-scroll-container>
-   <section class="s-4">
-    <div class="fix s-4__fix">
-     <div class="s-info">
-      <h2 class="s-t">Transforming Scrap into Value</h2>
-      <p class="s-d">
-       Discover efficient scrap recycling neighborhood! We're dedicated to providing
-       convenient reliable.
-      </p>
-     </div>
-
-     <!--  -->
-     <div class="g-1-lvl">
-      <div class="g-1-lvl__it g-1-lvl__it--1">
-       <img
-        srcset="
-         shared/ui/assets/img/shape/shape-1-1x.webp 1x,
-         shared/ui/assets/img/shape/shape-1-2x.webp 2x,
-         shared/ui/assets/img/shape/shape-1-3x.webp 3x,
-         shared/ui/assets/img/shape/shape-1-4x.webp 4x
-        "
-        src="shared/ui/assets/img/shape/shape-1-1x.jpg"
-        alt=""
-        width="460"
-        height="590"
-        class="shape-primary"
-       />
-      </div>
-      <div class="g-1-lvl__it g-1-lvl__it--2">
-       <!--  -->
-       <div class="g-2-lvl">
-        <img
-         srcset="
-          shared/ui/assets/img/shape/shape-2-1x.webp 1x,
-          shared/ui/assets/img/shape/shape-2-2x.webp 2x,
-          shared/ui/assets/img/shape/shape-2-3x.webp 3x,
-          shared/ui/assets/img/shape/shape-2-4x.webp 4x
-         "
-         src="shared/ui/assets/img/shape/shape-1-1x.jpg"
-         alt=""
-         width="207"
-         height="207"
-         class="shape-circle g-2-lvl__it g-2-lvl__it--1"
-        />
-
-        <div class="txt-box g-2-lvl__it g-2-lvl__it--2">
-         <h3 class="txt-box__title">How We Make It?</h3>
-         <p class="txt-box__descr">
-          UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains
-         </p>
-        </div>
-
-        <img
-         srcset="
-          shared/ui/assets/img/shape/shape-3-1x.webp 1x,
-          shared/ui/assets/img/shape/shape-3-2x.webp 2x,
-          shared/ui/assets/img/shape/shape-3-3x.webp 3x,
-          shared/ui/assets/img/shape/shape-3-4x.webp 4x
-         "
-         src="shared/ui/assets/img/shape/shape-3-1x.jpg"
-         alt=""
-         width="376"
-         height="150"
-         class="shape-rounded shape-rounded--1 g-2-lvl__it g-2-lvl__it--3"
-        />
-
-        <img
-         srcset="
-          shared/ui/assets/img/shape/shape-4-1x.webp 1x,
-          shared/ui/assets/img/shape/shape-4-2x.webp 2x,
-          shared/ui/assets/img/shape/shape-4-3x.webp 3x,
-          shared/ui/assets/img/shape/shape-4-4x.webp 4x
-         "
-         src="shared/ui/assets/img/shape/shape-4-1x.jpg"
-         alt=""
-         width="264"
-         height="150"
-         class="shape-rounded shape-rounded--2 g-2-lvl__it g-2-lvl__it--4"
-        />
-        <div class="txt-box g-2-lvl__it g-2-lvl__it--5">
-         <h3 class="txt-box__title">80% Energy Efficiency</h3>
-         <p class="txt-box__descr">
-          UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains
-          of up to 80% compared to traditional lighting system.
-         </p>
-        </div>
-       </div>
-       <!-- / -->
-      </div>
-     </div>
-     <!--  -->
-    </div>
-   </section>
-
    <!-- -->
    <header class="main-header">
     <div class="main-header__fix fix">
@@ -306,149 +214,108 @@
 
    <!-- prettier-ignore -->
    <%- include(`shared/ui/view/s3.html`, { s3, svg, svgSprite }); %>
-   <%- include(`shared/ui/view/s5.html`, { s5, svg, svgSprite }); %>
-   <%- include(`shared/ui/view/s7.html`, { s7, svg, svgSprite }); %>
 
-   <!--  -->
-   <section class="s-8">
-    <div class="s-8__fix fix">
-     <h2 class="s-t">Get to Know What Our Clients Think</h2>
-    </div>
-
-    <div class="wide-cell">
-     <div class="block-v1">
-      <div class="list-3">
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-      </div>
-
-      <p class="block-v1__title">
-       “Using the copywriting ai tool helped me improve my writing skills by showing me
-       where I could improve and offering give me suggestions for how to do so.
+   <section class="s-4">
+    <div class="fix s-4__fix">
+     <div class="s-info">
+      <h2 class="s-t">Transforming Scrap into Value</h2>
+      <p class="s-d">
+       Discover efficient scrap recycling neighborhood! We're dedicated to providing
+       convenient reliable.
       </p>
-
-      <div class="img-info">
-       <div class="img-info__im"></div>
-       <div class="img-info__in">
-        <span class="title-1-6-v2 block text-black">Mikaily Garayev</span>
-        <span class="descr-5-12-v1 block text-grey-250">Product Designer</span>
-       </div>
-      </div>
      </div>
 
-     <div class="block-v1">
-      <div class="list-3">
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
+     <!--  -->
+     <div class="g-1-lvl">
+      <div class="g-1-lvl__it g-1-lvl__it--1">
+       <img
+        srcset="
+         shared/ui/assets/img/shape/shape-1-1x.webp 1x,
+         shared/ui/assets/img/shape/shape-1-2x.webp 2x,
+         shared/ui/assets/img/shape/shape-1-3x.webp 3x,
+         shared/ui/assets/img/shape/shape-1-4x.webp 4x
+        "
+        src="shared/ui/assets/img/shape/shape-1-1x.jpg"
+        alt=""
+        width="460"
+        height="590"
+        class="shape-primary"
+       />
       </div>
-      <p class="block-v1__title">
-       “Using the copywriting ai tool helped me improve my writing skills by showing me
-       where I could improve and offering give me suggestions for how to do so.
-      </p>
+      <div class="g-1-lvl__it g-1-lvl__it--2">
+       <!--  -->
+       <div class="g-2-lvl">
+        <img
+         srcset="
+          shared/ui/assets/img/shape/shape-2-1x.webp 1x,
+          shared/ui/assets/img/shape/shape-2-2x.webp 2x,
+          shared/ui/assets/img/shape/shape-2-3x.webp 3x,
+          shared/ui/assets/img/shape/shape-2-4x.webp 4x
+         "
+         src="shared/ui/assets/img/shape/shape-1-1x.jpg"
+         alt=""
+         width="207"
+         height="207"
+         class="shape-circle g-2-lvl__it g-2-lvl__it--1"
+        />
 
-      <div class="img-info">
-       <div class="img-info__im"></div>
-       <div class="img-info__in">
-        <span class="title-1-6-v2 block text-black">Mikaily Garayev</span>
-        <span class="descr-5-12-v1 block text-grey-250">Product Designer</span>
+        <div class="txt-box g-2-lvl__it g-2-lvl__it--2">
+         <h3 class="txt-box__title">How We Make It?</h3>
+         <p class="txt-box__descr">
+          UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains
+         </p>
+        </div>
+
+        <img
+         srcset="
+          shared/ui/assets/img/shape/shape-3-1x.webp 1x,
+          shared/ui/assets/img/shape/shape-3-2x.webp 2x,
+          shared/ui/assets/img/shape/shape-3-3x.webp 3x,
+          shared/ui/assets/img/shape/shape-3-4x.webp 4x
+         "
+         src="shared/ui/assets/img/shape/shape-3-1x.jpg"
+         alt=""
+         width="376"
+         height="150"
+         class="shape-rounded shape-rounded--1 g-2-lvl__it g-2-lvl__it--3"
+        />
+
+        <img
+         srcset="
+          shared/ui/assets/img/shape/shape-4-1x.webp 1x,
+          shared/ui/assets/img/shape/shape-4-2x.webp 2x,
+          shared/ui/assets/img/shape/shape-4-3x.webp 3x,
+          shared/ui/assets/img/shape/shape-4-4x.webp 4x
+         "
+         src="shared/ui/assets/img/shape/shape-4-1x.jpg"
+         alt=""
+         width="264"
+         height="150"
+         class="shape-rounded shape-rounded--2 g-2-lvl__it g-2-lvl__it--4"
+        />
+        <div class="txt-box g-2-lvl__it g-2-lvl__it--5">
+         <h3 class="txt-box__title">80% Energy Efficiency</h3>
+         <p class="txt-box__descr">
+          UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains
+          of up to 80% compared to traditional lighting system.
+         </p>
+        </div>
        </div>
+       <!-- / -->
       </div>
      </div>
-
-     <div class="block-v1">
-      <div class="list-3">
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-      </div>
-      <p class="block-v1__title">
-       “Using the copywriting ai tool helped me improve my writing skills by showing me
-       where I could improve and offering give me suggestions for how to do so.
-      </p>
-
-      <div class="img-info">
-       <div class="img-info__im"></div>
-       <div class="img-info__in">
-        <span class="title-1-6-v2 block text-black">Mikaily Garayev</span>
-        <span class="descr-5-12-v1 block text-grey-250">Product Designer</span>
-       </div>
-      </div>
-     </div>
-
-     <div class="block-v1">
-      <div class="list-3">
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-       <svg class="icons icons--star" width="22.48" height="21.49">
-        <use xlink:href="<%=svgSprite %>#star"></use>
-       </svg>
-      </div>
-      <p class="block-v1__title">
-       “Using the copywriting ai tool helped me improve my writing skills by showing me
-       where I could improve and offering give me suggestions for how to do so.
-      </p>
-
-      <div class="img-info">
-       <div class="img-info__im"></div>
-       <div class="img-info__in">
-        <span class="title-1-6-v2 block text-black">Mikaily Garayev</span>
-        <span class="descr-5-12-v1 block text-grey-250">Product Designer</span>
-       </div>
-      </div>
-     </div>
+     <!--  -->
     </div>
    </section>
 
    <!-- prettier-ignore -->
-   <%- include(`shared/ui/view/main-footer.html`, { mainFooter, socPageLinks, svg, svgSprite }); %>
+   <%- include(`shared/ui/view/s5.html`,          { s5, svg, svgSprite }); %>
+			<%- include(`shared/ui/view/s7.html`,          { s7, svg, svgSprite }); %>
+			<%- include(`shared/ui/view/s8.html`,          { s8, svg, svgSprite }); %>
+   <%- include(`shared/ui/view/main-footer.html`, { mainFooter,
+																																																				socPageLinks,
+																																																				svg,
+																																																				svgSprite }); %>
   </div>
   <script type="module" defer src="scripts/main.js"></script>
  </body>

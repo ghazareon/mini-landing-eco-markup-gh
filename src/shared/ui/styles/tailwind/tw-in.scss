@@ -1078,6 +1078,38 @@ body {
 								~p-[3.6rem]/[4.6rem]
 								sm:p-[3.6rem];
 
+ @apply transition-[background]
+								duration-[0.16s]
+								ease-[linear]
+								will-change-[background];
+
+ &:hover {
+  @apply bg-slate-50;
+
+  .block-v1 {
+   &__descr {
+    @apply text-white;
+   }
+  }
+
+  .img-info {
+   &__title {
+    @apply text-white;
+   }
+  }
+ }
+
+ &__descr {
+  @apply descr-1-2-v1
+									pb-[3.2rem]
+							text-grey-50;
+
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
+ }
+
  .list-3 {
   @apply pb-[3.2rem];
  }
@@ -1089,20 +1121,29 @@ body {
 						text-yellowOrange-100;
 }
 
-.block-v1 {
- &__title {
-  @apply descr-1-2-v1
-									pb-[3.2rem]
-							text-grey-50;
- }
-
- &:hover {
- }
-}
-
 .img-info {
  @apply inline-flex
 								gap-x-[1.3rem];
+
+ &__title {
+  @apply title-1-6-v2
+									block
+							text-black;
+ }
+
+ &__descr {
+  @apply descr-5-12-v1
+									block
+							text-grey-250;
+ }
+
+ &__descr,
+ &__title {
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
+ }
 
  &__im {
   @apply block
@@ -1110,6 +1151,7 @@ body {
 									w-[4.4rem]
 									flex-shrink-0
 									flex-grow-0
+									overflow-hidden
 									rounded-[50%];
 
   @apply bg-grey-200;
