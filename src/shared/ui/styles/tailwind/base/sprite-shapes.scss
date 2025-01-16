@@ -7,8 +7,12 @@
     @apply aspect-[220/318] w-[22rem] h-auto;
   }
 
-  &--shape-3 {
+  &--shape-3-old {
     @apply aspect-[460/589] w-[46rem] h-auto;
+  }
+
+  &--shape-3 {
+    @apply aspect-[461/590] w-[46.1rem] h-auto;
   }
 
   &--shape-4 {
@@ -17,5 +21,9 @@
 
   &--shape-5 {
     @apply aspect-[460.01/304.01] w-[46.001rem] h-auto;
+  }
+
+  &--shape-6 {
+    @apply aspect-[288.01/491.79] w-[28.801rem] h-auto;
   }
 }
