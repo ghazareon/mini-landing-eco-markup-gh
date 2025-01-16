@@ -1,0 +1,52 @@
+<header class="main-header">
+ <div class="main-header__fix fix">
+  <a href="#" class="logo">
+   <img
+    src="<%=svg %>/logo-1.svg"
+    alt=""
+    class="logo__img"
+    width="136.24"
+    height="40.08"
+   />
+  </a>
+
+  <div class="group--nav-btn group">
+   <i class="empty-flex-between"></i>
+
+   <nav class="nav">
+    <ul class="nav__ul">
+     <% menu.forEach((item, index) => { %>
+     <li class="nav__li">
+      <a href="#" class="nav__a"><%=item.label %></a>
+     </li>
+     <% }) %>
+    </ul>
+   </nav>
+
+   <div class="group--btn-lang group">
+    <div class="dd">
+     <span class="dd__select">
+      <svg class="icons icons--global" width="14.84" height="14.84">
+       <use xlink:href="<%=svgSprite %>#global"></use>
+      </svg>
+      <span class="dd__select-txt">English</span>
+      <svg class="icons icons--arrow-down" width="12.06" height="6.23">
+       <use xlink:href="<%=svgSprite %>#arrow-down"></use>
+      </svg>
+     </span>
+     <div class="dd__container">
+      <div class="dd__content">
+       <ul class="list-2">
+        <li class="list-2__it"><a class="list-2__a" href="#">French</a></li>
+        <li class="list-2__it"><a class="list-2__a" href="#">German</a></li>
+        <li class="list-2__it"><a class="list-2__a" href="#">Spanish</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+
+    <a href="#" class="btn btn--lg btn--fill">Sign Up</a>
+   </div>
+  </div>
+ </div>
+</header>

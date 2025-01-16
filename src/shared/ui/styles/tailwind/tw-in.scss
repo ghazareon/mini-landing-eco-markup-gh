@@ -21,6 +21,7 @@
 @import url("base/scroll.scss");
 @import url("base/text-gradient.scss");
 @import url("base/sprite-icons.scss");
+@import url("base/sprite-shapes.scss");
 
 @import url("components/atoms/main.scss");
 
@@ -832,8 +833,10 @@ body {
 }
 
 .slide-box {
- @apply flex
-								w-full
+ @apply mx-auto
+								flex
+								w-auto
+								max-w-[76.8rem]
 								items-center
 								gap-x-[1.8rem];
 }
@@ -1102,7 +1105,7 @@ body {
  &__descr {
   @apply descr-1-2-v1
 									pb-[3.2rem]
-							text-grey-50;
+									text-grey-50;
 
   @apply transition-[color]
 									duration-[0.16s]
@@ -1204,17 +1207,6 @@ body {
  @apply descr-1-1-v1;
 }
 
-/* section {
- &:not(.s-4) {
-  display: none;
- }
-}
-
-header,
-footer {
- display: none;
-} */
-
 .shapes {
  @apply gap-x
 								flex
@@ -1222,10 +1214,9 @@ footer {
 
  @media (max-width: $lgx) {
   @apply flex-col;
-  border: solid #ff0000 1px;
   .shapes__c {
-   width: 100%;
-   max-width: 100%;
+   @apply w-full
+										max-w-full;
   }
  }
 
@@ -1412,7 +1403,7 @@ footer {
 
  @media (max-width: $lgx) {
   .g-1-lvl__it--1 {
-   display: none;
+   @apply hidden;
   }
 
   grid-template-areas: "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2";
@@ -1473,7 +1464,7 @@ footer {
    "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
 
   .g-2-lvl__it--1 {
-   display: none;
+   @apply hidden;
   }
  }
 
@@ -1536,4 +1527,176 @@ footer {
  }
 
  @apply rounded-[1.6rem];
+}
+
+.carousel {
+ @apply mb-[2rem]
+								grid
+								grid-cols-[14.7rem_1fr_14.7rem];
+
+ &__list {
+  @apply px-[2rem]
+									pb-[2rem];
+ }
+
+ @media (max-width: $lgxx) {
+  @apply grid-cols-[repeat(12,1fr)];
+
+  grid-template-areas:
+   "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   ". . it-1 it-1 it-1 . . it-3 it-3 it-3 . .";
+
+  &__list {
+   grid-area: it-2;
+
+   @apply w-full;
+  }
+
+  &__arr {
+   @apply h-auto;
+
+   &--1 {
+    grid-area: it-1;
+   }
+
+   &--2 {
+    grid-area: it-3;
+   }
+  }
+ }
+
+ @media (max-width: $mdxxx) {
+  &__arr {
+   @apply hidden
+										h-auto;
+  }
+ }
+
+ &__arr {
+  @apply content-center;
+
+  &--1 {
+   @apply justify-self-start;
+  }
+
+  &--2 {
+   @apply justify-self-end;
+  }
+ }
+}
+
+.s-6 {
+ @apply ~pb-[3rem]/[12rem]
+
+								sm:pb-[3rem];
+
+ &__fix {
+  @apply block
+									~pt-[3rem]/[12rem]
+									~pb-[3.1rem]/[6.1rem]
+
+									sm:pb-[3.1rem]
+									sm:pt-[3rem];
+ }
+
+ .s-t {
+  @apply ~pb-[1.3rem]/[2.3rem]
+
+									sm:pb-[1.3rem];
+ }
+
+ .s-d {
+  @apply max-w-[53.7rem];
+ }
+}
+
+.list-3 {
+ @apply w-full
+								overflow-hidden;
+
+ &__content {
+  @apply flex
+									w-full
+									gap-x-[2.4rem];
+ }
+}
+
+.shaped-box {
+ @apply rel
+								h-[30.4rem]
+								w-[46rem]
+								flex-shrink-0
+								flex-grow-0
+						text-grey-450;
+
+ @media (max-width: $lg) {
+  // @apply aspect-[28.8/49.179]
+  // 							h-[49.179rem]
+  // 							w-[28.8rem];
+
+  //  @apply h-[49.179rem] w-[28.8rem];
+
+  // &,
+  // use,
+  // path,
+  // svg {
+  //  @apply aspect-auto
+  // 								h-[49.179rem];
+  // }
+
+  .shaped-box__content {
+   display: none;
+  }
+
+  path {
+   d: path(
+    "m272.84,491.78h-120.07c-.64,0-1.28-.04-1.9-.11H36.72c-14.65,0-26.53-11.88-26.53-26.53v-182c0-11.23-10.19-21.86-10.19-33.08V15.16C0,6.78,6.78,0,15.16,0h231.35c14.66,0,26.53,11.88,26.53,26.53v133.87c0,13.09,14.97,25.68,14.97,38.77v277.46c0,8.37-6.78,15.16-15.16,15.16h-.01Z"
+   );
+  }
+ }
+
+ &:hover {
+  @apply text-green-250;
+ }
+
+ &__content {
+  @apply relative
+									left-0
+									top-0
+									z-10
+									flex
+									h-full
+									w-full
+									gap-x-[2.6rem]
+									px-[2.5rem]
+									py-[3rem];
+ }
+
+ svg {
+  @apply absolute
+  							left-0
+									top-0
+									h-full
+									w-full;
+
+  path {
+   @apply transition-[color,fill]
+										duration-[0.16s,0.16s]
+										ease-[linear,linear]
+										will-change-[color,fill];
+  }
+ }
+
+ &__cell {
+  @apply h-full
+									w-full;
+
+  &--1 {
+   @apply max-w-[19.9rem];
+  }
+
+  &--2 {
+   @apply max-w-[18.5rem];
+  }
+ }
 }

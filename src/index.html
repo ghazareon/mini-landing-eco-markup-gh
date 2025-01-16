@@ -31,12 +31,17 @@
 
 	const { misc,
 									mainFooter,
+									s2,
 									s3,
+									s4,
 									s5,
 									s7,
 									s8 } = data.sections;
 
+	const { menu } = data.components;
+
 	const svgSprite = `${svg}/${files.spriteIcons}`;
+	const svgShapesSprite = `${svg}/sprite-shapes.svg`;
 	const svgBrandSprite = `${svg}/${files.spriteIconsBrand}`;
 %>
 
@@ -48,274 +53,161 @@
   <noscript><%= misc.nojs %></noscript>
 
   <div class="wrap" data-scroll-container>
-   <!-- -->
-   <header class="main-header">
-    <div class="main-header__fix fix">
-     <a href="#" class="logo">
-      <img
-       src="<%=svg %>/logo-1.svg"
-       alt=""
-       class="logo__img"
-       width="136.24"
-       height="40.08"
-      />
-     </a>
+   <!-- prettier-ignore -->
+   <%-   include(`shared/ui/view/header.html`,      { menu, s2, s5, svg, svgSprite }); %>
+			<%-   include(`shared/ui/view/s2.html`,          { s2, s5, svg, svgSprite }); %>
+			<%-   include(`shared/ui/view/s3.html`,          { s3, svg, svgSprite }); %>
+			<%-   include(`shared/ui/view/s4.html`,          { s4, svg, svgSprite }); %>
+			<%-   include(`shared/ui/view/s5.html`,          { s5, svg, svgSprite }); %>
 
-     <div class="group--nav-btn group">
-      <i class="empty-flex-between"></i>
-
-      <nav class="nav">
-       <ul class="nav__ul">
-        <li class="nav__li">
-         <a href="#" class="nav__a">Services</a>
-        </li>
-        <li class="nav__li">
-         <a href="#" class="nav__a">Transform</a>
-        </li>
-        <li class="nav__li">
-         <a href="#" class="nav__a">Initiatives</a>
-        </li>
-        <li class="nav__li">
-         <a href="#" class="nav__a">Clean World</a>
-        </li>
-        <li class="nav__li">
-         <a href="#" class="nav__a">Waste</a>
-        </li>
-        <li class="nav__li">
-         <a href="#" class="nav__a">Testimonials</a>
-        </li>
-       </ul>
-      </nav>
-
-      <div class="group--btn-lang group">
-       <div class="dd">
-        <span class="dd__select">
-         <svg class="icons icons--global" width="14.84" height="14.84">
-          <use xlink:href="<%=svgSprite %>#global"></use>
-         </svg>
-         <span class="dd__select-txt">English</span>
-         <svg class="icons icons--arrow-down" width="12.06" height="6.23">
-          <use xlink:href="<%=svgSprite %>#arrow-down"></use>
-         </svg>
-        </span>
-        <div class="dd__container">
-         <div class="dd__content">
-          <ul class="list-2">
-           <li class="list-2__it"><a class="list-2__a" href="#">French</a></li>
-           <li class="list-2__it"><a class="list-2__a" href="#">German</a></li>
-           <li class="list-2__it"><a class="list-2__a" href="#">Spanish</a></li>
-          </ul>
-         </div>
-        </div>
-       </div>
-
-       <a href="#" class="btn btn--lg btn--fill">Sign Up</a>
-      </div>
-     </div>
-    </div>
-   </header>
-
-   <!--  -->
-   <section class="s-2">
-    <div class="s-2__fix fix">
-     <h1 class="main-title">
-      Efficient <span class="select-txt">Scrap</span> Recycling Services Near You
-     </h1>
-     <p class="main-descr">
+   <!-- s6  -->
+   <section class="s-6">
+    <div class="fix s-6__fix">
+     <h2 class="s-t">Make Our World Cleaner & Greener!</h2>
+     <p class="s-d">
       Discover efficient scrap recycling services right in your neighborhood! We're
-      dedicated to providing convenient and reliable scrap recycling solutions to
-      businesses and individuals alike. Whether you have metal, paper, plastic, or
-      electronics to recycle, our experienced team is here to help.
+      dedicated to providing convenient and reliable scrap recycling.
      </p>
-
-     <div class="wrap--btn-s-2">
-      <a href="#" class="btn btn--xxl btn--outline"
-       ><%=s5.details.label%>
-       <span class="icon-box-2 icon-box-2--fill">
-        <svg class="icons icons--arrow-top-right" width="15.1" height="11.43">
-         <use xlink:href="<%=svgSprite %>#arrow-top-right"></use>
-        </svg>
-       </span>
-      </a>
-     </div>
-
-     <h2 class="s-t">6 Educational Programs</h2>
-
-     <!--  -->
-     <div class="slide">
-      <div class="slide__arr-cell slide__arr-cell--prev">
-       <a href="#" class="arr arr--prev">
-        <svg class="icons icons--arrow-long-prev" width="75" height="14.72">
-         <use xlink:href="<%=svgSprite %>#arrow-long-prev"></use>
-        </svg>
-       </a>
-      </div>
-      <div class="slide__place">
-       <div class="slide-box">
-        <div class="slide-box__it">
-         <img
-          srcset="
-           shared/ui/assets/img/slide/slide-1-1x.webp 1x,
-           shared/ui/assets/img/slide/slide-1-2x.webp 2x,
-           shared/ui/assets/img/slide/slide-1-3x.webp 3x,
-           shared/ui/assets/img/slide/slide-1-4x.webp 4x
-          "
-          src="shared/ui/assets/img/slide/slide-1-1x.jpg"
-          alt=""
-          width="254"
-          height="194"
-          class="img-1-3"
-         />
-        </div>
-        <div class="slide-box__it">
-         <img
-          srcset="
-           shared/ui/assets/img/slide/slide-2-1x.webp 1x,
-           shared/ui/assets/img/slide/slide-2-2x.webp 2x,
-           shared/ui/assets/img/slide/slide-2-3x.webp 3x,
-           shared/ui/assets/img/slide/slide-2-4x.webp 4x
-          "
-          src="shared/ui/assets/img/slide/slide-2-1x.jpg"
-          alt=""
-          width="220"
-          height="319"
-          class="img-0-6"
-         />
-        </div>
-        <div class="slide-box__it">
-         <img
-          srcset="
-           shared/ui/assets/img/slide/slide-3-1x.webp 1x,
-           shared/ui/assets/img/slide/slide-3-2x.webp 2x,
-           shared/ui/assets/img/slide/slide-3-3x.webp 3x,
-           shared/ui/assets/img/slide/slide-3-4x.webp 4x
-          "
-          src="shared/ui/assets/img/slide/slide-3-1x.jpg"
-          alt=""
-          width="254"
-          height="194"
-          class="img-1-3"
-         />
-        </div>
-       </div>
-      </div>
-      <div class="slide__arr-cell slide__arr-cell--next">
-       <a href="#" class="arr arr--next">
-        <svg class="icons icons--arrow-long-next" width="75" height="14.72">
-         <use xlink:href="<%=svgSprite %>#arrow-long-next"></use>
-        </svg>
-       </a>
-      </div>
-     </div>
-     <!-- / -->
     </div>
-   </section>
-   <!-- / -->
 
-   <!-- prettier-ignore -->
-   <%- include(`shared/ui/view/s3.html`, { s3, svg, svgSprite }); %>
-
-   <section class="s-4">
-    <div class="fix s-4__fix">
-     <div class="s-info">
-      <h2 class="s-t">Transforming Scrap into Value</h2>
-      <p class="s-d">
-       Discover efficient scrap recycling neighborhood! We're dedicated to providing
-       convenient reliable.
-      </p>
-     </div>
-
-     <!--  -->
-     <div class="g-1-lvl">
-      <div class="g-1-lvl__it g-1-lvl__it--1">
-       <img
-        srcset="
-         shared/ui/assets/img/shape/shape-1-1x.webp 1x,
-         shared/ui/assets/img/shape/shape-1-2x.webp 2x,
-         shared/ui/assets/img/shape/shape-1-3x.webp 3x,
-         shared/ui/assets/img/shape/shape-1-4x.webp 4x
-        "
-        src="shared/ui/assets/img/shape/shape-1-1x.jpg"
-        alt=""
-        width="460"
-        height="590"
-        class="shape-primary"
-       />
-      </div>
-      <div class="g-1-lvl__it g-1-lvl__it--2">
-       <!--  -->
-       <div class="g-2-lvl">
-        <img
-         srcset="
-          shared/ui/assets/img/shape/shape-2-1x.webp 1x,
-          shared/ui/assets/img/shape/shape-2-2x.webp 2x,
-          shared/ui/assets/img/shape/shape-2-3x.webp 3x,
-          shared/ui/assets/img/shape/shape-2-4x.webp 4x
-         "
-         src="shared/ui/assets/img/shape/shape-1-1x.jpg"
-         alt=""
-         width="207"
-         height="207"
-         class="shape-circle g-2-lvl__it g-2-lvl__it--1"
-        />
-
-        <div class="txt-box g-2-lvl__it g-2-lvl__it--2">
-         <h3 class="txt-box__title">How We Make It?</h3>
-         <p class="txt-box__descr">
-          UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains
-         </p>
-        </div>
-
-        <img
-         srcset="
-          shared/ui/assets/img/shape/shape-3-1x.webp 1x,
-          shared/ui/assets/img/shape/shape-3-2x.webp 2x,
-          shared/ui/assets/img/shape/shape-3-3x.webp 3x,
-          shared/ui/assets/img/shape/shape-3-4x.webp 4x
-         "
-         src="shared/ui/assets/img/shape/shape-3-1x.jpg"
-         alt=""
-         width="376"
-         height="150"
-         class="shape-rounded shape-rounded--1 g-2-lvl__it g-2-lvl__it--3"
-        />
-
-        <img
-         srcset="
-          shared/ui/assets/img/shape/shape-4-1x.webp 1x,
-          shared/ui/assets/img/shape/shape-4-2x.webp 2x,
-          shared/ui/assets/img/shape/shape-4-3x.webp 3x,
-          shared/ui/assets/img/shape/shape-4-4x.webp 4x
-         "
-         src="shared/ui/assets/img/shape/shape-4-1x.jpg"
-         alt=""
-         width="264"
-         height="150"
-         class="shape-rounded shape-rounded--2 g-2-lvl__it g-2-lvl__it--4"
-        />
-        <div class="txt-box g-2-lvl__it g-2-lvl__it--5">
-         <h3 class="txt-box__title">80% Energy Efficiency</h3>
-         <p class="txt-box__descr">
-          UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains
-          of up to 80% compared to traditional lighting system.
-         </p>
-        </div>
+    <div class="list-3">
+     <div class="list-3__content">
+      <div class="shaped-box">
+       <div class="shaped-box__content">
+        <div class="shaped-box__cell shaped-box__cell--1"></div>
+        <div class="shaped-box__cell shaped-box__cell--2"></div>
        </div>
-       <!-- / -->
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 460.01 304.01"
+        class="shapes shapes--shape-5"
+        width="460.01"
+        height="304.01"
+        fill="currentColor"
+        preserveAspectRatio="none"
+       >
+        <path
+         preserveAspectRatio="none"
+         fill-rule="evenodd"
+         fill="currentColor"
+         d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+        />
+       </svg>
+      </div>
+      <div class="shaped-box">
+       <div class="shaped-box__content">
+        <div class="shaped-box__cell shaped-box__cell--1"></div>
+        <div class="shaped-box__cell shaped-box__cell--2"></div>
+       </div>
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 460.01 304.01"
+        class="shapes shapes--shape-5"
+        width="460.01"
+        height="304.01"
+        fill="currentColor"
+        preserveAspectRatio="none"
+       >
+        <path
+         fill-rule="evenodd"
+         fill="currentColor"
+         d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+        />
+       </svg>
+      </div>
+      <div class="shaped-box">
+       <div class="shaped-box__content">
+        <div class="shaped-box__cell shaped-box__cell--1"></div>
+        <div class="shaped-box__cell shaped-box__cell--2"></div>
+       </div>
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 460.01 304.01"
+        class="shapes shapes--shape-5"
+        width="460.01"
+        height="304.01"
+        fill="currentColor"
+        preserveAspectRatio="none"
+       >
+        <path
+         fill-rule="evenodd"
+         fill="currentColor"
+         d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+        />
+       </svg>
+      </div>
+
+      <div class="shaped-box">
+       <div class="shaped-box__content">
+        <div class="shaped-box__cell shaped-box__cell--1"></div>
+        <div class="shaped-box__cell shaped-box__cell--2"></div>
+       </div>
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 460.01 304.01"
+        class="shapes shapes--shape-5"
+        width="460.01"
+        height="304.01"
+        fill="currentColor"
+        preserveAspectRatio="none"
+       >
+        <path
+         fill-rule="evenodd"
+         fill="currentColor"
+         d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+        />
+       </svg>
+      </div>
+      <div class="shaped-box">
+       <div class="shaped-box__content">
+        <div class="shaped-box__cell shaped-box__cell--1"></div>
+        <div class="shaped-box__cell shaped-box__cell--2"></div>
+       </div>
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 460.01 304.01"
+        class="shapes shapes--shape-5"
+        width="460.01"
+        height="304.01"
+        fill="currentColor"
+        preserveAspectRatio="none"
+       >
+        <path
+         fill-rule="evenodd"
+         fill="currentColor"
+         d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+        />
+       </svg>
+      </div>
+      <div class="shaped-box">
+       <div class="shaped-box__content">
+        <div class="shaped-box__cell shaped-box__cell--1"></div>
+        <div class="shaped-box__cell shaped-box__cell--2"></div>
+       </div>
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 460.01 304.01"
+        class="shapes shapes--shape-5"
+        width="460.01"
+        height="304.01"
+        fill="currentColor"
+        preserveAspectRatio="none"
+       >
+        <path
+         fill-rule="evenodd"
+         fill="currentColor"
+         d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+        />
+       </svg>
       </div>
      </div>
-     <!--  -->
     </div>
    </section>
 
    <!-- prettier-ignore -->
-   <%- include(`shared/ui/view/s5.html`,          { s5, svg, svgSprite }); %>
-			<%- include(`shared/ui/view/s7.html`,          { s7, svg, svgSprite }); %>
-			<%- include(`shared/ui/view/s8.html`,          { s8, svg, svgSprite }); %>
-   <%- include(`shared/ui/view/main-footer.html`, { mainFooter,
-																																																				socPageLinks,
-																																																				svg,
-																																																				svgSprite }); %>
+   <%- include(`shared/ui/view/s7.html`, { s7, svg, svgSprite }); %>
+			<%- include(`shared/ui/view/s8.html`, { s8, svg, svgSprite }); %>
+			<%- include(`shared/ui/view/main-footer.html`, { mainFooter, socPageLinks, svg, svgSprite }); %>
   </div>
   <script type="module" defer src="scripts/main.js"></script>
  </body>
