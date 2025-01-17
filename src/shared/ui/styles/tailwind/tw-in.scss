@@ -17,6 +17,9 @@
 @import url("base/typography.scss");
 @import url("base/root.scss");
 @import url("base/main.scss");
+
+// @import url("base/show-media.scss");
+
 @import url("base/selection.scss");
 @import url("base/scroll.scss");
 @import url("base/text-gradient.scss");
@@ -1674,11 +1677,11 @@ body {
  @media (max-width: $lg) {
   .shaped-box__content-cell--1,
   .shaped-box__content-cell--2 {
-   width: 100%;
+   @apply w-full;
   }
 
   .shaped-box__content-cell--1 {
-   padding-bottom: 20px;
+   @apply pb-[2rem];
   }
 
   @apply h-[49.179rem]
@@ -1742,4 +1745,12 @@ body {
 
  @apply h-[24.4rem]
 								w-[18.5rem];
+}
+
+.running-link {
+ .swiper-slide {
+  width: auto;
+  display: flex;
+  padding-right: 20px;
+ }
 }

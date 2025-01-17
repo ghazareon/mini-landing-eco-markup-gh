@@ -17,7 +17,7 @@
     "email": "hayk.ghazaryanc@gmail.com"
   },
 		"scripts": {
-			"preview": "vite preview",
+			"preview":        "vite preview",
 			"============================ Dev ======================": "",
 			"dev":            "concurrently \"npm run kp:dev\" \"npm run postcss:w\" \"npm run dev:watch\"",
 			"dev:watch":      "nodemon --ext ts,tsx,js,jsx,cjs,mjs,json -w src/shared/config/designTokens -w vite.config.ts -w package.json -w tsconfig.json -w tsconfig.node.json -w tsconfig.app.json -w postcss.config.ts -w tailwind.config.ts -w src/shared/config/const/layoutGrid.ts --exec npm run dev:run",
@@ -87,7 +87,8 @@
     "redux": "^5.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^3.1.0",
-    "reset-css": "^5.0.2"
+    "reset-css": "^5.0.2",
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@csstools/postcss-bundler": "^2.0.6",
