@@ -1,0 +1,50 @@
+.arr {
+ @apply flex
+								h-[9.072rem]
+								w-[14.7rem]
+								cursor-pointer
+								items-center
+								justify-center
+								rounded-[2rem]
+						bg-slate-50
+						text-white;
+
+ @apply transition-[background,transform,border-radius]
+								duration-[0.16s,0.16s,0.16s,0.16s]
+								ease-[ease-out,ease-out,ease-out,ease-out]
+								will-change-[background,transform,border-radius];
+
+ &:hover {
+  @apply scale-[1.4]
+									rounded-[6rem]
+							bg-green-250
+							text-slate-50;
+ }
+
+ &:active {
+  @apply scale-[1.2];
+ }
+
+ path,
+ svg {
+  transition: linear all 0.16s;
+ }
+
+ &--prev {
+  &:hover {
+   svg {
+    @apply translate-x-[-1rem]
+											translate-y-0;
+   }
+  }
+ }
+
+ &--next {
+  &:hover {
+   svg {
+    @apply translate-x-[1.002rem]
+											translate-y-0;
+   }
+  }
+ }
+}

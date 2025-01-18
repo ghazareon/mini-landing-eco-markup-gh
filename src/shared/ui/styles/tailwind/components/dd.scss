@@ -1,0 +1,110 @@
+.dd {
+ @apply rel
+								z-50
+								inline-block
+								cursor-pointer
+								px-[2rem]
+								py-[1rem];
+
+ &__select {
+  @apply rel
+									z-10
+									flex
+									gap-x-[0.8rem]
+							text-black;
+
+  &-txt {
+   @apply link-v1;
+
+   @apply transition-[color]
+										duration-[0.18s]
+										ease-[linear]
+										will-change-[color];
+  }
+ }
+
+ .icons {
+  @apply inline-block;
+
+  use {
+   @apply transition-[fill,color]
+										duration-[0.16s,0.16s]
+										ease-[linear,linear]
+										will-change-[fill,color];
+  }
+ }
+
+ &__container {
+  @apply h-0
+									w-0
+									overflow-hidden
+									opacity-0;
+
+  @apply absolute
+									right-0
+									top-[100%]
+									w-[150%];
+
+  @apply transition-[opacity]
+									duration-[0.18s]
+									ease-[linear]
+									will-change-[opacity];
+
+  @media (max-width: $lg) {
+   @apply left-[0]
+										right-[inherit];
+
+   .dd__content {
+    @apply rounded-tl-none
+											rounded-tr-[2.1rem];
+
+    &:after {
+     @apply left-0
+												right-[inherit];
+    }
+   }
+  }
+ }
+
+ &__content {
+  @apply min-h-[15rem]
+									w-full
+							bg-black;
+
+  @apply rounded-bl-[2.1rem]
+									rounded-br-[2.1rem]
+									rounded-tl-[2.1rem];
+
+  &:after {
+   @apply absolute
+										right-0
+										top-[-4.4rem]
+										block
+										h-[4.4rem]
+										w-[67%]
+										bg-inherit
+										content-[""];
+
+   @apply rounded-tl-[2.1rem]
+										rounded-tr-[2.1rem];
+  }
+ }
+
+ &:focus-visible,
+ &:focus,
+ &:active,
+ &:hover {
+  .dd {
+   &__container {
+    @apply h-auto
+											w-[150%]
+											overflow-visible
+											opacity-100;
+   }
+
+   &__select {
+    @apply text-white;
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+.article-title-1 {
+ @apply block
+						text-white
+
+								~px-[1.975rem]/[3.95rem]
+								sm:px-[1.975rem];
+
+ @apply text-[2rem]
+								leading-[3rem];
+}

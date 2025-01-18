@@ -1,0 +1,11 @@
+.wrap {
+ &--btn-s-2 {
+  @apply block
+									text-center
+									~pt-[2.4rem]/[4.8rem]
+									~pb-[2.5rem]/[5.0rem]
+
+									sm:pb-[2.5rem]
+									sm:pt-[2.4rem];
+ }
+}

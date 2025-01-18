@@ -1,0 +1,15 @@
+.arr-group {
+ @apply flex
+								h-[1.6rem]
+								w-[1.6rem]
+								items-center
+								justify-center
+								rounded-[50%]
+								border
+								border-solid
+						border-black;
+
+ svg {
+  @apply fill-current;
+ }
+}

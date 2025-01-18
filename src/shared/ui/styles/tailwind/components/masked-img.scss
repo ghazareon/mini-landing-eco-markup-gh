@@ -1,0 +1,11 @@
+.masked-img {
+ &--1 {
+  mask-image: svg-load("../../../assets/svg/shapes/shape-2.svg");
+  mask-repeat: no-repeat;
+ }
+
+ &--2 {
+  mask-image: svg-load("../../../assets/svg/shapes/shape-1.svg");
+  mask-repeat: no-repeat;
+ }
+}

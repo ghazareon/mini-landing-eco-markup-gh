@@ -1,0 +1,19 @@
+.s-4 {
+ &__fix {
+  @apply block
+
+									~py-[3rem]/[12rem]
+									sm:py-[3rem];
+
+  .s-info {
+   @apply ~pb-[2rem]/[6rem]
+										sm:pb-[2rem];
+  }
+ }
+
+ &__row {
+  @apply flex
+									items-start
+									gap-x-[2.4rem];
+ }
+}

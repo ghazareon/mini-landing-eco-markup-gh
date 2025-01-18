@@ -1,0 +1,79 @@
+.grid-7 {
+ @apply gap
+								grid
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas: "it-1 it-1 it-1 it-2 it-2 it-2 it-3 it-3 it-3 it-4 it-4 it-4";
+
+ @media (max-width: $lg) {
+  grid-template-areas:
+   ". . it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 . ."
+   ". . it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 . .";
+ }
+
+ @media (max-width: $mdx) {
+  grid-template-areas:
+   ". it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 ."
+   ". it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4 .";
+ }
+
+ @media (max-width: $mdxxx) {
+  grid-template-areas:
+   ". it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 ."
+   ". it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 ."
+   ". it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 ."
+   ". it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 .";
+ }
+
+ @media (max-width: $mdxxxx) {
+  grid-template-areas:
+   ". it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 ."
+   ". it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 ."
+   ". it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 ."
+   ". it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 .";
+ }
+
+ &__it {
+  @apply rel
+									block
+									aspect-[267/358.02]
+									w-full
+									overflow-hidden
+									rounded-[1.6rem]
+							bg-green-250;
+
+  @apply transition-[transform]
+									duration-[0.2s]
+									ease-[linear]
+									will-change-[transform];
+
+  &:nth-child {
+   &(1) {
+    grid-area: it-1;
+   }
+
+   &(2) {
+    grid-area: it-2;
+   }
+
+   &(3) {
+    grid-area: it-3;
+   }
+
+   &(4) {
+    grid-area: it-4;
+   }
+  }
+
+  &:hover {
+   @apply translate-y-[-1.2rem]
+										scale-105;
+  }
+ }
+
+ .overlay-custom {
+  @apply flex-col
+									items-center
+									justify-between;
+ }
+}

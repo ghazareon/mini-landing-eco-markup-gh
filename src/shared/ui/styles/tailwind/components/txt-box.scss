@@ -1,0 +1,27 @@
+.txt-box {
+ @apply block
+								w-full
+								rounded-[1.6rem]
+						bg-grey-600
+								py-[3.2rem]
+								pl-[4.9rem]
+								pr-[2.9rem];
+
+ &__title {
+  @apply title-5-12-v1
+									pb-[0.4rem]
+							text-black;
+ }
+
+ &__descr {
+  @apply descr-5-12-v1
+									w-full
+									max-w-full
+									overflow-hidden
+							text-black;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+ }
+}

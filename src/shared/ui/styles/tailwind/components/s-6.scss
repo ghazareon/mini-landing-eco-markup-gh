@@ -1,0 +1,24 @@
+.s-6 {
+ @apply ~pb-[3rem]/[12rem]
+
+									sm:pb-[3rem];
+
+ &__fix {
+  @apply block
+									~pt-[3rem]/[12rem]
+									~pb-[3.1rem]/[6.1rem]
+
+									sm:pb-[3.1rem]
+									sm:pt-[3rem];
+ }
+
+ .s-t {
+  @apply ~pb-[1.3rem]/[2.3rem]
+
+										sm:pb-[1.3rem];
+ }
+
+ .s-d {
+  @apply max-w-[53.7rem];
+ }
+}

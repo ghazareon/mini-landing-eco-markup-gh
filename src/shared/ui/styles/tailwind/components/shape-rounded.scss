@@ -1,0 +1,14 @@
+.shape-rounded {
+ @apply h-auto
+								w-full;
+
+ &--1 {
+  @apply max-w-[37.6rem];
+ }
+
+ &--2 {
+  @apply max-w-[26.4rem];
+ }
+
+ @apply rounded-[1.6rem];
+}

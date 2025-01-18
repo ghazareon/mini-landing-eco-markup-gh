@@ -1,0 +1,70 @@
+.g-2-lvl {
+ @apply grid
+								grid-cols-[repeat(12,1fr)]
+								gap-[1.6rem];
+
+ grid-template-areas:
+  "it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+  "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
+  "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
+
+ @media (max-width: $lgx) {
+  grid-template-areas:
+   "it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
+   "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
+
+  .shape-rounded {
+   @apply h-full
+											w-full
+											max-w-full
+											object-cover;
+  }
+ }
+
+ @media (max-width: $mdx) {
+  grid-template-areas:
+   "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
+   "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
+
+  .g-2-lvl__it--1 {
+   @apply hidden;
+  }
+ }
+
+ @media (max-width: $mdx) {
+  grid-template-areas:
+   "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3"
+   "it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4"
+   "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
+ }
+
+ &__it {
+  &--1 {
+   grid-area: it-1;
+  }
+
+  &--2 {
+   grid-area: it-2;
+  }
+
+  &--2,
+  &--1 {
+   @apply self-center;
+  }
+
+  &--3 {
+   grid-area: it-3;
+  }
+
+  &--4 {
+   grid-area: it-4;
+  }
+
+  &--5 {
+   grid-area: it-5;
+  }
+ }
+}

@@ -1,0 +1,16 @@
+.nav {
+ &__ul {
+  @apply flex;
+ }
+
+ &__li {
+  @apply ~px-[0.4rem]/[1.4rem]
+									sm:px-[0.4rem];
+ }
+
+ &__a {
+  @apply link-v1
+									inline-block
+									whitespace-nowrap;
+ }
+}

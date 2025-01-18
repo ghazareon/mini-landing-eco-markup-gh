@@ -1,0 +1,18 @@
+.s-2 {
+ &__fix {
+  @apply block
+							text-white
+									~py-[2.6rem]/[7.6rem]
+									sm:py-[2.6rem];
+
+  .main-title {
+   @apply pb-[1.3rem];
+  }
+ }
+
+ .s-t {
+  @apply pb-[4.9rem]
+									text-center
+							text-black;
+ }
+}

@@ -1,0 +1,66 @@
+.overlay-custom {
+ @apply z-[1]
+								flex
+								overflow-hidden;
+
+ &,
+ &:after {
+  @apply absolute
+									inset-0;
+ }
+
+ &--fill {
+  &:after {
+   content: "";
+   @apply z-[-1]
+										block
+								bg-black/40;
+  }
+ }
+
+ .icons {
+  &--deco-6 {
+   @apply absolute
+										left-[50%]
+										top-[50%]
+										translate-x-[-50%]
+										translate-y-[-50%];
+
+   @apply text-white;
+  }
+ }
+
+ .ornament {
+  @apply absolute
+									left-[50%]
+									top-[50%]
+									h-[43.2rem]
+									w-[40.8rem]
+									translate-x-[-50%]
+									translate-y-[-50%];
+ }
+
+ &__content {
+  @apply rel
+									z-10
+							text-slate-100;
+
+  @apply ~px-[1.45rem]/[2.9rem]
+									~py-[0.5rem]/[5rem]
+
+									sm:px-[1.45rem]
+									sm:py-[0.5rem];
+
+  &-txt {
+   @apply ~text-[1.8rem]/[2.4rem]
+										~leading-[2.0rem]/[2.9rem]
+
+										sm:text-[1.8rem]
+										sm:leading-[2.0rem];
+  }
+
+  .icons {
+   @apply mb-[1.4rem];
+  }
+ }
+}

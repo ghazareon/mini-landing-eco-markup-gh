@@ -1,0 +1,47 @@
+.block-v1 {
+ @apply min-h-[35rem]
+								w-full
+								min-w-[60rem]
+								rounded-[1.7rem]
+						bg-grey-450
+								text-center
+
+								~p-[3.6rem]/[4.6rem]
+								sm:p-[3.6rem];
+
+ @apply transition-[background]
+								duration-[0.16s]
+								ease-[linear]
+								will-change-[background];
+
+ &:hover {
+  @apply bg-slate-50;
+
+  .block-v1 {
+   &__descr {
+    @apply text-white;
+   }
+  }
+
+  .img-info {
+   &__title {
+    @apply text-white;
+   }
+  }
+ }
+
+ &__descr {
+  @apply descr-1-2-v1
+									pb-[3.2rem]
+									text-grey-50;
+
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
+ }
+
+ .list-3 {
+  @apply pb-[3.2rem];
+ }
+}

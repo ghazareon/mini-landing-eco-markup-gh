@@ -1,0 +1,34 @@
+.list-2 {
+ @apply py-[2rem];
+
+ &__it {
+  @apply px-[1.2rem];
+
+  &:last-child {
+   a {
+    @apply border-b-0;
+   }
+  }
+ }
+
+ &__a {
+  @apply border-b
+							border-b-white/10
+									px-[1.501rem]
+									py-[1.01rem];
+
+  @apply link-v1
+									block
+									text-left
+							text-white;
+
+  @apply transition-[background]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[background];
+
+  &:hover {
+   @apply bg-white/10;
+  }
+ }
+}

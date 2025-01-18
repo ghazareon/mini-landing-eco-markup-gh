@@ -1,0 +1,23 @@
+.slide {
+ @apply flex;
+
+ &__arr-cell {
+  @apply flex
+									w-full
+									max-w-[18.6rem]
+									items-center;
+
+  &--prev {
+   @apply justify-start;
+  }
+
+  &--next {
+   @apply justify-end;
+  }
+ }
+
+ &__place {
+  @apply w-full
+									px-[3.9rem];
+ }
+}

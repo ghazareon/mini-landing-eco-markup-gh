@@ -1,0 +1,8 @@
+.wide-cell {
+ @apply flex
+								w-full
+								gap-x-[2.4rem]
+								overflow-hidden
+								~pb-[3rem]/[12rem]
+								sm:pb-[3rem];
+}
