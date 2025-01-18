@@ -52,10 +52,10 @@
 
 :root {
  @apply cursor-default
-										font-primary
-										text-62-5p
-										font-400
-										tracking-normal;
+								font-primary
+								text-62-5p
+								font-400
+								tracking-normal;
 }
 
 html,
@@ -65,23 +65,24 @@ body {
 
 body {
  @apply overflow-x-hidden
-										text-[0];
+								text-[0];
 }
 
 .s-7 {
  @apply bg-green-100/10;
+
  &__fix {
   @apply ~py-[3rem]/[12rem]
-											sm:py-[3rem];
+									sm:py-[3rem];
  }
 
  .s-t {
   @apply mx-auto
-										max-w-[71rem]
-										text-center
-								text-black
-										~pb-[3.4rem]/[6.8rem]
-										sm:pb-[3.4rem];
+									max-w-[71rem]
+									text-center
+							text-black
+									~pb-[3.4rem]/[6.8rem]
+									sm:pb-[3.4rem];
  }
 }
 
@@ -91,8 +92,8 @@ body {
 
 .grid-7 {
  @apply gap
-									grid
-									grid-cols-[repeat(12,1fr)];
+								grid
+								grid-cols-[repeat(12,1fr)];
 
  grid-template-areas: "it-1 it-1 it-1 it-2 it-2 it-2 it-3 it-3 it-3 it-4 it-4 it-4";
 
@@ -126,17 +127,17 @@ body {
 
  &__it {
   @apply rel
-										block
-										aspect-[267/358.02]
-										w-full
-										overflow-hidden
-										rounded-[1.6rem]
-								bg-green-250;
+									block
+									aspect-[267/358.02]
+									w-full
+									overflow-hidden
+									rounded-[1.6rem]
+							bg-green-250;
 
   @apply transition-[transform]
-										duration-[0.2s]
-										ease-[linear]
-										will-change-[transform];
+									duration-[0.2s]
+									ease-[linear]
+									will-change-[transform];
 
   &:nth-child {
    &(1) {
@@ -157,102 +158,103 @@ body {
   }
 
   &:hover {
-   @apply translate-y-[-1.2rem] scale-105;
+   @apply translate-y-[-1.2rem]
+										scale-105;
   }
  }
 
  .overlay-custom {
   @apply flex-col
-										items-center
-										justify-between;
+									items-center
+									justify-between;
  }
 }
 
 .img2-3 {
  @apply block
-									w-full;
+								w-full;
 }
 
 .deco-circle {
  @apply absolute
-									block
-									aspect-[1/1]
-									w-[65.54307116104869%]
-									rounded-[50%];
+								block
+								aspect-[1/1]
+								w-[65.54307116104869%]
+								rounded-[50%];
 
  &--1 {
   @apply left-0
-										top-0
-										z-[2]
-										translate-x-[-45%]
-										translate-y-[-40%]
-								bg-green-300;
+									top-0
+									z-[2]
+									translate-x-[-45%]
+									translate-y-[-40%]
+							bg-green-300;
  }
 
  &--2 {
   @apply bottom-0
-										right-0
-										z-[3]
-										translate-x-[28%]
-										translate-y-[34%]
-								bg-green-100;
+									right-0
+									z-[3]
+									translate-x-[28%]
+									translate-y-[34%]
+							bg-green-100;
  }
 }
 
 .icon-box-1 {
  @apply absolute
-										left-[50%]
-										top-[50%]
-										z-10
-										flex
-										h-[5.2rem]
-										w-[5.2rem]
-										translate-x-[-50%]
-										translate-y-[-50%]
-										items-center
-										justify-center
-										rounded-[0.801rem]
-								bg-slate-250;
+								left-[50%]
+								top-[50%]
+								z-10
+								flex
+								h-[5.2rem]
+								w-[5.2rem]
+								translate-x-[-50%]
+								translate-y-[-50%]
+								items-center
+								justify-center
+								rounded-[0.801rem]
+						bg-slate-250;
 }
 
 .article-title-1 {
  @apply block
-								text-white
+						text-white
 
-										~px-[1.975rem]/[3.95rem]
-										sm:px-[1.975rem];
+								~px-[1.975rem]/[3.95rem]
+								sm:px-[1.975rem];
 
  @apply text-[2rem]
-										leading-[3rem];
+								leading-[3rem];
 }
 
 .overlay-custom {
  @apply z-[1]
-										flex
-										overflow-hidden;
+								flex
+								overflow-hidden;
 
  &,
  &:after {
   @apply absolute
-											inset-0;
+									inset-0;
  }
 
  &--fill {
   &:after {
    content: "";
    @apply z-[-1]
-												block
-										bg-black/40;
+										block
+								bg-black/40;
   }
  }
 
  .icons {
   &--deco-6 {
    @apply absolute
-												left-[50%]
-												top-[50%]
-												translate-x-[-50%]
-												translate-y-[-50%];
+										left-[50%]
+										top-[50%]
+										translate-x-[-50%]
+										translate-y-[-50%];
 
    @apply text-white;
   }
@@ -260,50 +262,50 @@ body {
 
  .ornament {
   @apply absolute
-											left-[50%]
-											top-[50%]
-											h-[43.2rem]
-											w-[40.8rem]
-											translate-x-[-50%]
-											translate-y-[-50%];
+									left-[50%]
+									top-[50%]
+									h-[43.2rem]
+									w-[40.8rem]
+									translate-x-[-50%]
+									translate-y-[-50%];
  }
 }
 
 .equalizer {
  @apply flex
-										w-full
-										max-w-[11.1rem]
-										items-end
-										gap-x-[1.4rem]
+								w-full
+								max-w-[11.1rem]
+								items-end
+								gap-x-[1.4rem]
 
-										~mb-[1.9rem]/[3.8rem]
-										~h-[4.5rem]/[7.5rem]
+								~mb-[1.9rem]/[3.8rem]
+								~h-[4.5rem]/[7.5rem]
 
-										sm:mb-[1.9rem]
-										sm:h-[4.5rem];
+								sm:mb-[1.9rem]
+								sm:h-[4.5rem];
 
  i {
   @apply rel
-											block
-											w-[1.101rem]
-											shrink-0
-											grow-0
-											overflow-hidden
-											rounded-[1.501rem]
+									block
+									w-[1.101rem]
+									shrink-0
+									grow-0
+									overflow-hidden
+									rounded-[1.501rem]
 
-									bg-grey-350;
+							bg-grey-350;
 
   &:after {
    content: "";
    @apply absolute
-												bottom-0
-												left-0
-												z-10
-												block
-												h-[20.01%]
-												w-full
-												rounded-[inherit]
-										bg-white;
+										bottom-0
+										left-0
+										z-10
+										block
+										h-[20.01%]
+										w-full
+										rounded-[inherit]
+								bg-white;
   }
 
   &:nth-child {
@@ -353,21 +355,21 @@ body {
 .overlay-custom {
  &__content {
   @apply rel
-											z-10
-									text-slate-100;
+									z-10
+							text-slate-100;
 
   @apply ~px-[1.45rem]/[2.9rem]
-											~py-[0.5rem]/[5rem]
+									~py-[0.5rem]/[5rem]
 
-											sm:px-[1.45rem]
-											sm:py-[0.5rem];
+									sm:px-[1.45rem]
+									sm:py-[0.5rem];
 
   &-txt {
    @apply ~text-[1.8rem]/[2.4rem]
-												~leading-[2.0rem]/[2.9rem]
+										~leading-[2.0rem]/[2.9rem]
 
-												sm:text-[1.8rem]
-												sm:leading-[2.0rem];
+										sm:text-[1.8rem]
+										sm:leading-[2.0rem];
   }
 
   .icons {
@@ -379,25 +381,25 @@ body {
 .s-5 {
  @apply bg-grey-650
 
-											~py-[6rem]/[12rem]
-											sm:py-[6rem];
+								~py-[6rem]/[12rem]
+								sm:py-[6rem];
 
  .s-t {
   @apply pb-[2.2rem]
-											text-center;
+									text-center;
  }
 }
 
 .article-v1 {
  @apply flex
-										w-full
-										pb-[3.95rem]
-										pt-[3.9rem];
+								w-full
+								pb-[3.95rem]
+								pt-[3.9rem];
 
  @apply transition-[background]
-										duration-[0.16s]
-										ease-[linear]
-										will-change-[background];
+								duration-[0.16s]
+								ease-[linear]
+								will-change-[background];
 
  &:hover {
   @apply bg-slate-50;
@@ -419,15 +421,15 @@ body {
  &__d,
  &__t {
   @apply transition-[color]
-											duration-[0.16s]
-											ease-[linear]
-											will-change-[color];
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
  }
 
  &__fix {
   @apply rel
-											flex
-											w-full;
+									flex
+									w-full;
 
   @media (max-width: $md) {
    @apply flex-col;
@@ -436,7 +438,7 @@ body {
     &__c {
      &--1 {
       @apply w-auto
-															pb-[0.8rem];
+													pb-[0.8rem];
      }
     }
    }
@@ -453,25 +455,25 @@ body {
 
    .icon-box-2 {
     @apply rel
-													ml-auto
-													mt-[3.01rem]
-													hidden
-													translate-x-0
-													translate-y-0;
+											ml-auto
+											mt-[3.01rem]
+											hidden
+											translate-x-0
+											translate-y-0;
    }
   }
  }
 
  &__t {
   @apply title-1-3-v1
-											pt-[0.95rem]
-									text-black;
+									pt-[0.95rem]
+							text-black;
  }
 
  &__d {
   @apply descr-1-3-v1
-											max-w-[41.1rem]
-									text-black;
+									max-w-[41.1rem]
+							text-black;
  }
 
  &__c {
@@ -479,122 +481,122 @@ body {
 
   &--1 {
    @apply w-[26.7rem]
-												shrink-0
-												grow-0;
+										shrink-0
+										grow-0;
   }
 
   &--2 {
    @apply w-full
-												pr-[6rem];
+										pr-[6rem];
   }
  }
 }
 
 .icon-box-2 {
  @apply absolute
-										right-0
-										top-[50%]
-										flex
-										h-[5.2rem]
-										w-[5.2rem]
-										translate-y-[-50%]
-										items-center
-										justify-center
-										rounded-[50%]
-										border
-										border-solid
-								border-black;
+								right-0
+								top-[50%]
+								flex
+								h-[5.2rem]
+								w-[5.2rem]
+								translate-y-[-50%]
+								items-center
+								justify-center
+								rounded-[50%]
+								border
+								border-solid
+						border-black;
 
  svg,
  use {
   @apply transition-[fill]
-											duration-[0.16s]
-											ease-[linear]
-											will-change-[fill];
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[fill];
  }
 
  @apply transition-[border,background,color]
-										duration-[0.16s,0.16s,0.16s]
-										ease-[linear,linear,linear]
-										will-change-[border,background,color];
+								duration-[0.16s,0.16s,0.16s]
+								ease-[linear,linear,linear]
+								will-change-[border,background,color];
 
  @apply text-black;
 
  &--fill {
   @apply border-slate-50
-											bg-slate-50
-											text-white;
+									bg-slate-50
+									text-white;
  }
 
  &--hover {
   @apply border-green-250
-											bg-green-250
-											text-black;
+									bg-green-250
+									text-black;
  }
 }
 
 .btn {
  @apply inline-block
-										whitespace-nowrap;
+								whitespace-nowrap;
 
  @apply transition-[border,background,color]
-										duration-[0.16s,0.16s,0.16s]
-										ease-[linear,linear,linear]
-										will-change-[border,background,color];
+								duration-[0.16s,0.16s,0.16s]
+								ease-[linear,linear,linear]
+								will-change-[border,background,color];
 
  &--xxl {
   @apply btn-label-v2
-											rel
-											rounded-[2.6rem]
-											px-[4.0rem]
-											py-[1.4rem];
+									rel
+									rounded-[2.6rem]
+									px-[4.0rem]
+									py-[1.4rem];
 
   .icon-box-2 {
    @apply absolute
-												right-[-2.6rem]
-												top-[50%]
-												translate-y-[-50%];
+										right-[-2.6rem]
+										top-[50%]
+										translate-y-[-50%];
   }
  }
 
  &--xl {
   @apply btn-label-v2
-											rounded-[2.6rem]
-											px-[3.2rem]
-											py-[1.4rem];
+									rounded-[2.6rem]
+									px-[3.2rem]
+									py-[1.4rem];
  }
 
  &--lg {
   @apply btn-label-v1
-											rounded-[2.1rem]
-											px-[3.003rem]
-											py-[1.209rem];
+									rounded-[2.1rem]
+									px-[3.003rem]
+									py-[1.209rem];
  }
 
  &--fill {
   @apply bg-black
-											text-white;
+									text-white;
  }
 
  &--outline {
   @apply border
-											border-solid
-									border-black
-									bg-white
-									text-black;
+									border-solid
+							border-black
+							bg-white
+							text-black;
  }
 
  &--outline,
  &--fill {
   &:hover {
    @apply border-green-250
-												bg-green-250
-												text-black;
+										bg-green-250
+										text-black;
 
    .icon-box-2 {
     @apply border-green-250
-													bg-green-250
-													text-black;
+											bg-green-250
+											text-black;
    }
   }
  }
@@ -602,19 +604,19 @@ body {
 
 .s-3 {
  @apply flex
-										gap-x-[3.2rem]
-										overflow-hidden
-										whitespace-nowrap
-								bg-slate-50
-										py-[1.45rem];
+								gap-x-[3.2rem]
+								overflow-hidden
+								whitespace-nowrap
+						bg-slate-50
+								py-[1.45rem];
 
  &__it {
   @apply title-1-4-v1
-											flex
-											items-center
-											gap-x-[1rem]
-											font-secondary
-											text-green-250;
+									flex
+									items-center
+									gap-x-[1rem]
+									font-secondary
+									text-green-250;
  }
 
  &__it-label {
@@ -625,12 +627,13 @@ body {
 .main-header {
  &__fix {
   @apply flex
-											items-center
-											pb-[2.33rem]
-											pt-[2.02rem];
+									items-center
+									pb-[2.33rem]
+									pt-[2.02rem];
 
   .logo {
-   @apply shrink-0 grow-0;
+   @apply shrink-0
+										grow-0;
   }
  }
 }
@@ -638,26 +641,26 @@ body {
 .group {
  &--nav-btn {
   @apply flex
-										w-full
-										items-center
-										justify-between;
+									w-full
+									items-center
+									justify-between;
 
   @media (max-width: $lg) {
    display: none !important;
    @apply fixed
-											right-0
-											top-0
-											z-[10]
-											flex
-											h-screen
-											w-full
-											max-w-[30.01rem]
-											flex-col
-											items-start
-											justify-start
-									bg-white
-											px-[2.01rem]
-											shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
+										right-0
+										top-0
+										z-[10]
+										flex
+										h-screen
+										w-full
+										max-w-[30.01rem]
+										flex-col
+										items-start
+										justify-start
+								bg-white
+										px-[2.01rem]
+										shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
 
    .empty-flex-between {
     @apply order-1;
@@ -670,14 +673,14 @@ body {
    .group {
     &--btn-lang {
      @apply order-3
-													w-full
-													pt-[2.01rem];
+												w-full
+												pt-[2.01rem];
     }
    }
 
    .nav {
     @apply w-full
-												pt-[2.01rem];
+											pt-[2.01rem];
 
     &__ul {
      @apply block;
@@ -689,12 +692,12 @@ body {
 
     &__a {
      @apply block
-													overflow-hidden
-													border-b
-													border-solid
-											border-b-[rgba(66_68_90_/_0.1)]
-													px-[2.01rem]
-													py-[1.2rem];
+												overflow-hidden
+												border-b
+												border-solid
+										border-b-[rgba(66_68_90_/_0.1)]
+												px-[2.01rem]
+												py-[1.2rem];
 
      &:hover {
       @apply bg-[rgba(66_68_90_/_0.07)];
@@ -706,11 +709,11 @@ body {
 
  &--btn-lang {
   @apply flex
-										items-center
-										justify-between;
+									items-center
+									justify-between;
 
   @apply ~gap-x-[2rem]/[4rem]
-											sm:gap-x-[2rem];
+									sm:gap-x-[2rem];
  }
 }
 
@@ -721,93 +724,84 @@ body {
 
  &__li {
   @apply ~px-[0.4rem]/[1.4rem]
-											sm:px-[0.4rem];
+									sm:px-[0.4rem];
  }
 
  &__a {
   @apply link-v1
-										inline-block
-										whitespace-nowrap;
- }
-}
-
-.lang-tool {
- &__l {
-  @apply link-v1
-									text-black;
+									inline-block
+									whitespace-nowrap;
  }
 }
 
 .s-2 {
  &__fix {
   @apply block
-								text-white
-										~py-[2.6rem]/[7.6rem]
-										sm:py-[2.6rem];
+							text-white
+									~py-[2.6rem]/[7.6rem]
+									sm:py-[2.6rem];
 
   .main-title {
    @apply pb-[1.3rem];
   }
  }
+
+ .s-t {
+  @apply pb-[4.9rem]
+									text-center
+							text-black;
+ }
 }
 
 .main-title {
  @apply main-title-v1
-									mx-auto
-									block
-									max-w-[890px]
-									text-center
-									text-black;
+								mx-auto
+								block
+								max-w-[890px]
+								text-center
+								text-black;
 }
 
 .select-txt {
  @apply rel
-									z-[1]
-									inline-block
-									rounded-[6.8rem]
-									px-[1.01rem]
-									pl-[2.6rem]
-									pr-[2.6rem];
+								z-[1]
+								inline-block
+								rounded-[6.8rem]
+								px-[1.01rem]
+								pl-[2.6rem]
+								pr-[2.6rem];
 
  &:after {
   content: "";
   @apply absolute
-										-bottom-4
-										left-0
-										right-2
-										top-[0.2rem]
-										z-[-1]
-										block
-										rounded-[inherit]
-								bg-green-250;
+									-bottom-4
+									left-0
+									right-2
+									top-[0.2rem]
+									z-[-1]
+									block
+									rounded-[inherit]
+							bg-green-250;
  }
 }
 
 .main-descr {
  @apply main-descr-v1
-									mx-auto
-									max-w-[80rem]
-									text-center
-							text-black;
-}
-
-.s-2 {
- .s-t {
-  @apply pb-[4.9rem]
-										text-center
-								text-black;
- }
+								mx-auto
+								max-w-[80rem]
+								text-center
+						text-black;
 }
 
 .wrap {
  &--btn-s-2 {
   @apply block
-										text-center
-										~pt-[2.4rem]/[4.8rem]
-										~pb-[2.5rem]/[5.0rem]
+									text-center
+									~pt-[2.4rem]/[4.8rem]
+									~pb-[2.5rem]/[5.0rem]
 
-										sm:pb-[2.5rem]
-										sm:pt-[2.4rem];
+									sm:pb-[2.5rem]
+									sm:pt-[2.4rem];
  }
 }
 
@@ -816,9 +810,9 @@ body {
 
  &__arr-cell {
   @apply flex
-										w-full
-										max-w-[18.6rem]
-										items-center;
+									w-full
+									max-w-[18.6rem]
+									items-center;
 
   &--prev {
    @apply justify-start;
@@ -831,44 +825,44 @@ body {
 
  &__place {
   @apply w-full
-										px-[3.9rem];
+									px-[3.9rem];
  }
 }
 
 .slide-box {
  @apply mx-auto
-									flex
-									w-auto
-									max-w-[76.8rem]
-									items-center
-									gap-x-[1.8rem];
+								flex
+								w-auto
+								max-w-[76.8rem]
+								items-center
+								gap-x-[1.8rem];
 }
 
 .arr {
  @apply flex
-									h-[9.072rem]
-									w-[14.7rem]
-									cursor-pointer
-									items-center
-									justify-center
-									rounded-[2rem]
-							bg-slate-50
-							text-white;
+								h-[9.072rem]
+								w-[14.7rem]
+								cursor-pointer
+								items-center
+								justify-center
+								rounded-[2rem]
+						bg-slate-50
+						text-white;
 
  @apply transition-[background,transform,border-radius]
-									duration-[0.16s,0.16s,0.16s,0.16s]
-									ease-[ease-out,ease-out,ease-out,ease-out]
-									will-change-[background,transform,border-radius];
+								duration-[0.16s,0.16s,0.16s,0.16s]
+								ease-[ease-out,ease-out,ease-out,ease-out]
+								will-change-[background,transform,border-radius];
 
  &:hover {
-  transform: scale(1.4);
-  @apply rounded-[6rem]
-								bg-green-250
-								text-slate-50;
+  @apply scale-[1.4]
+									rounded-[6rem]
+							bg-green-250
+							text-slate-50;
  }
 
  &:active {
-  transform: scale(1.2);
+  @apply scale-[1.2];
  }
 
  path,
@@ -879,7 +873,8 @@ body {
  &--prev {
   &:hover {
    svg {
-    transform: translate(-10px, 0);
+    @apply translate-x-[-1rem]
+											translate-y-0;
    }
   }
  }
@@ -887,7 +882,8 @@ body {
  &--next {
   &:hover {
    svg {
-    transform: translate(10px, 0);
+    @apply translate-x-[1.002rem]
+											translate-y-0;
    }
   }
  }
@@ -905,26 +901,26 @@ body {
 
 .dd {
  @apply rel
-									z-50
-									inline-block
-									cursor-pointer
-									px-[2rem]
-									py-[1rem];
+								z-50
+								inline-block
+								cursor-pointer
+								px-[2rem]
+								py-[1rem];
 
  &__select {
   @apply rel
-										z-10
-										flex
-										gap-x-[0.8rem]
-								text-black;
+									z-10
+									flex
+									gap-x-[0.8rem]
+							text-black;
 
   &-txt {
    @apply link-v1;
 
    @apply transition-[color]
-											duration-[0.18s]
-											ease-[linear]
-											will-change-[color];
+										duration-[0.18s]
+										ease-[linear]
+										will-change-[color];
   }
  }
 
@@ -933,39 +929,39 @@ body {
 
   use {
    @apply transition-[fill,color]
-											duration-[0.16s,0.16s]
-											ease-[linear,linear]
-											will-change-[fill,color];
+										duration-[0.16s,0.16s]
+										ease-[linear,linear]
+										will-change-[fill,color];
   }
  }
 
  &__container {
   @apply h-0
-										w-0
-										overflow-hidden
-										opacity-0;
+									w-0
+									overflow-hidden
+									opacity-0;
 
   @apply absolute
-										right-0
-										top-[100%]
-										w-[150%];
+									right-0
+									top-[100%]
+									w-[150%];
 
   @apply transition-[opacity]
-										duration-[0.18s]
-										ease-[linear]
-										will-change-[opacity];
+									duration-[0.18s]
+									ease-[linear]
+									will-change-[opacity];
 
   @media (max-width: $lg) {
    @apply left-[0]
-											right-[inherit];
+										right-[inherit];
 
    .dd__content {
     @apply rounded-tl-none
-												rounded-tr-[2.1rem];
+											rounded-tr-[2.1rem];
 
     &:after {
      @apply left-0
-													right-[inherit];
+												right-[inherit];
     }
    }
   }
@@ -973,25 +969,25 @@ body {
 
  &__content {
   @apply min-h-[15rem]
-										w-full
-								bg-black;
+									w-full
+							bg-black;
 
   @apply rounded-bl-[2.1rem]
-										rounded-br-[2.1rem]
-										rounded-tl-[2.1rem];
+									rounded-br-[2.1rem]
+									rounded-tl-[2.1rem];
 
   &:after {
    @apply absolute
-											right-0
-											top-[-4.4rem]
-											block
-											h-[4.4rem]
-											w-[67%]
-											bg-inherit
-											content-[""];
+										right-0
+										top-[-4.4rem]
+										block
+										h-[4.4rem]
+										w-[67%]
+										bg-inherit
+										content-[""];
 
    @apply rounded-tl-[2.1rem]
-											rounded-tr-[2.1rem];
+										rounded-tr-[2.1rem];
   }
  }
 
@@ -1002,9 +998,9 @@ body {
   .dd {
    &__container {
     @apply h-auto
-												w-[150%]
-												overflow-visible
-												opacity-100;
+											w-[150%]
+											overflow-visible
+											opacity-100;
    }
 
    &__select {
@@ -1029,19 +1025,19 @@ body {
 
  &__a {
   @apply border-b
-								border-b-white/10
-										px-[1.501rem]
-										py-[1.01rem];
+							border-b-white/10
+									px-[1.501rem]
+									py-[1.01rem];
 
   @apply link-v1
-										block
-										text-left
-								text-white;
+									block
+									text-left
+							text-white;
 
   @apply transition-[background]
-										duration-[0.16s]
-										ease-[linear]
-										will-change-[background];
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[background];
 
   &:hover {
    @apply bg-white/10;
@@ -1052,42 +1048,42 @@ body {
 .s-8 {
  &__fix {
   @apply ~pt-[3rem]/[12rem]
-										sm:pt-[3rem];
+									sm:pt-[3rem];
 
   .s-t {
    @apply mx-auto
-											max-w-[53.7rem]
-											text-center
-											~pb-[3rem]/[8.01rem]
-											sm:pb-[3rem];
+										max-w-[53.7rem]
+										text-center
+										~pb-[3rem]/[8.01rem]
+										sm:pb-[3rem];
   }
  }
 }
 
 .wide-cell {
  @apply flex
-									w-full
-									gap-x-[2.4rem]
-									overflow-hidden
-									~pb-[3rem]/[12rem]
-									sm:pb-[3rem];
+								w-full
+								gap-x-[2.4rem]
+								overflow-hidden
+								~pb-[3rem]/[12rem]
+								sm:pb-[3rem];
 }
 
 .block-v1 {
  @apply min-h-[35rem]
-									w-full
-									min-w-[60rem]
-									rounded-[1.7rem]
-							bg-grey-450
-									text-center
+								w-full
+								min-w-[60rem]
+								rounded-[1.7rem]
+						bg-grey-450
+								text-center
 
-									~p-[3.6rem]/[4.6rem]
-									sm:p-[3.6rem];
+								~p-[3.6rem]/[4.6rem]
+								sm:p-[3.6rem];
 
  @apply transition-[background]
-									duration-[0.16s]
-									ease-[linear]
-									will-change-[background];
+								duration-[0.16s]
+								ease-[linear]
+								will-change-[background];
 
  &:hover {
   @apply bg-slate-50;
@@ -1107,13 +1103,13 @@ body {
 
  &__descr {
   @apply descr-1-2-v1
-										pb-[3.2rem]
-										text-grey-50;
+									pb-[3.2rem]
+									text-grey-50;
 
   @apply transition-[color]
-										duration-[0.16s]
-										ease-[linear]
-										will-change-[color];
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
  }
 
  .list-3 {
@@ -1123,8 +1119,8 @@ body {
 
 .list-3 {
  @apply inline-flex
-									gap-x-[1rem]
-							text-yellowOrange-100;
+								gap-x-[1rem]
+						text-yellowOrange-100;
 }
 
 .img-info {
@@ -1139,34 +1135,33 @@ body {
 
  &__descr {
   @apply descr-5-12-v1
-										block
-								text-grey-250;
+									block
+							text-grey-250;
  }
 
  &__descr,
  &__title {
   @apply transition-[color]
-										duration-[0.16s]
-										ease-[linear]
-										will-change-[color];
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
  }
 
  &__im {
   @apply block
-										h-[4.4rem]
-										w-[4.4rem]
-										flex-shrink-0
-										flex-grow-0
-										overflow-hidden
-										rounded-[50%];
-
-  @apply bg-grey-200;
+									h-[4.4rem]
+									w-[4.4rem]
+									flex-shrink-0
+									flex-grow-0
+									overflow-hidden
+									rounded-[50%]
+							bg-grey-200;
  }
 
  &__in {
   @apply w-full
-										max-w-[18.1rem]
-										text-left;
+									max-w-[18.1rem]
+									text-left;
  }
 }
 
@@ -1174,20 +1169,26 @@ body {
  &__fix {
   @apply block
 
-										~py-[3rem]/[12rem]
-										sm:py-[3rem];
+									~py-[3rem]/[12rem]
+									sm:py-[3rem];
 
   .s-info {
    @apply ~pb-[2rem]/[6rem]
-											sm:pb-[2rem];
+										sm:pb-[2rem];
   }
+ }
+
+ &__row {
+  @apply flex
+									items-start
+									gap-x-[2.4rem];
  }
 }
 
 .s-info {
  @apply flex
-									justify-between
-									gap-x-[2.4rem];
+								justify-between
+								gap-x-[2.4rem];
 
  @media (max-width: $lgx) {
   @apply flex-col;
@@ -1202,7 +1203,7 @@ body {
 
  .s-d {
   @apply max-w-[35.3rem]
-										pt-[0.5rem];
+									pt-[0.5rem];
  }
 }
 
@@ -1212,123 +1213,113 @@ body {
 
 .shapes {
  @apply gap-x
-									flex
-									gap-x-[2.4rem];
+								flex
+								gap-x-[2.4rem];
 
  @media (max-width: $lgx) {
   @apply flex-col;
   .shapes__c {
    @apply w-full
-											max-w-full;
+										max-w-full;
   }
  }
 
  &__c {
   @apply flex
-										flex-col
-										flex-wrap
-										items-start
-										gap-y-[2.4rem];
+									flex-col
+									flex-wrap
+									items-start
+									gap-y-[2.4rem];
 
   &--1 {
    @apply w-full
-											max-w-[40.35087719298246%];
+										max-w-[40.35087719298246%];
   }
 
   &--2 {
    @apply w-full
-											max-w-[59.64912280701754%];
+										max-w-[59.64912280701754%];
   }
  }
-}
 
-.shapes {
  &__i {
   &--1 {
    &-1 {
     @apply block
-												h-auto
-												w-full
-												max-w-[46rem];
+											h-auto
+											w-full
+											max-w-[46rem];
    }
 
    &-2 {
     @apply box-content
-												block
-												h-auto
-												w-full
-												max-w-[17.6rem]
-												flex-shrink-0
-												flex-grow-0
-												rounded-[50%]
-												border-[1.7rem];
+											block
+											h-auto
+											w-full
+											max-w-[17.6rem]
+											flex-shrink-0
+											flex-grow-0
+											rounded-[50%]
+											border-[1.7rem];
    }
 
    &-3 {
     @apply block
-												h-full
-												w-[55.57251908396947%];
+											h-full
+											w-[55.57251908396947%];
    }
 
    &-4 {
     @apply block
-												h-full
-												w-[44.42748091603053%];
+											h-full
+											w-[44.42748091603053%];
    }
 
    &-3,
    &-4 {
     img {
      @apply h-full
-													w-auto
-													rounded-[1.4rem]
-													object-cover;
+												w-auto
+												rounded-[1.4rem]
+												object-cover;
     }
    }
   }
  }
 }
 
-.s-4 {
- &__row {
-  @apply flex
-										items-start
-										gap-x-[2.4rem];
- }
-}
-
 .txt-box {
  @apply block
-									w-full
-									rounded-[1.6rem]
-							bg-grey-600
-									py-[3.2rem]
-									pl-[4.9rem]
-									pr-[2.9rem];
+								w-full
+								rounded-[1.6rem]
+						bg-grey-600
+								py-[3.2rem]
+								pl-[4.9rem]
+								pr-[2.9rem];
 
  &__title {
   @apply title-5-12-v1
-										pb-[0.4rem]
-								text-black;
+									pb-[0.4rem]
+							text-black;
  }
 
  &__descr {
   @apply descr-5-12-v1
-										w-full
-										max-w-full
-								text-black;
+									w-full
+									max-w-full
+									overflow-hidden
+							text-black;
 
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
  }
 }
 
 .shapes-grid {
  @apply gap
-									grid
-									grid-cols-[repeat(12,1fr)];
+								grid
+								grid-cols-[repeat(12,1fr)];
 
  grid-template-areas: "it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2 it-2";
 
@@ -1344,10 +1335,9 @@ body {
 
  &__subgrid {
   @apply grid
-										grid-cols-12
-										gap-[1.6rem];
-
-  grid-auto-flow: dense;
+									grid-flow-dense
+									grid-cols-12
+									gap-[1.6rem];
 
   &-it {
    &--1 {
@@ -1356,23 +1346,23 @@ body {
 
    &--2 {
     @apply col-span-7
-												col-start-6;
+											col-start-6;
    }
 
    &--3 {
     @apply col-span-7
-												row-start-2;
+											row-start-2;
    }
 
    &--4 {
     @apply col-span-5
-												col-start-8
-												row-start-2;
+											col-start-8
+											row-start-2;
    }
 
    &--5 {
     @apply col-span-12
-												row-start-3;
+											row-start-3;
    }
 
    &--6 {
@@ -1391,16 +1381,16 @@ body {
 
 .circle-border {
  @apply box-content
-									rounded-[50%]
-									border-[1.7rem]
-									border-solid
-									border-grey-600;
+								rounded-[50%]
+								border-[1.7rem]
+								border-solid
+								border-grey-600;
 }
 
 .g-1-lvl {
  @apply gap
-									grid
-									grid-cols-[repeat(12,1fr)];
+								grid
+								grid-cols-[repeat(12,1fr)];
 
  grid-template-areas: "it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2 it-2";
 
@@ -1428,9 +1418,9 @@ body {
 
 .shape-primary {
  @apply block
-									h-auto
-									w-full
-									max-w-[46.1rem];
+								h-auto
+								w-full
+								max-w-[46.1rem];
 
  mask-repeat: no-repeat;
  mask-image: svg-load(../../assets/svg/shapes/shape-3.svg);
@@ -1438,8 +1428,8 @@ body {
 
 .g-2-lvl {
  @apply grid
-									grid-cols-[repeat(12,1fr)]
-									gap-[1.6rem];
+								grid-cols-[repeat(12,1fr)]
+								gap-[1.6rem];
 
  grid-template-areas:
   "it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
@@ -1509,17 +1499,17 @@ body {
 
 .shape-circle {
  @apply h-auto
-									w-full
-									max-w-[20.7rem]
-									rounded-[50%]
-									border-[1.7rem]
-									border-solid
-							border-grey-600;
+								w-full
+								max-w-[20.7rem]
+								rounded-[50%]
+								border-[1.7rem]
+								border-solid
+						border-grey-600;
 }
 
 .shape-rounded {
  @apply h-auto
-									w-full;
+								w-full;
 
  &--1 {
   @apply max-w-[37.6rem];
@@ -1534,8 +1524,8 @@ body {
 
 .carousel {
  @apply mb-[2rem]
-									grid
-									grid-cols-[14.7rem_1fr_14.7rem];
+								grid
+								grid-cols-[14.7rem_1fr_14.7rem];
 
  &__list {
   @apply px-[2rem]
@@ -1645,28 +1635,28 @@ body {
    @apply flex flex-col;
 
    &--1 {
-    @apply w-[54.8780487804878%];
-    justify-content: center;
+    @apply w-[54.8780487804878%]
+											justify-center;
    }
 
    &--2 {
-    @apply w-[45.1219512195122%];
-    align-items: center;
+    @apply w-[45.1219512195122%]
+											items-center;
    }
   }
  }
 
  &__svg {
-  @apply transition-[color]
-									duration-[0.16s]
-									ease-[linear]
-									will-change-[color];
-
   @apply absolute
 									inset-0
 									block
 									h-full
 									w-full;
+
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
 
   &,
   path {
@@ -1675,20 +1665,24 @@ body {
  }
 
  @media (max-width: $lg) {
-  .shaped-box__content-cell--1,
-  .shaped-box__content-cell--2 {
-   @apply w-full;
-  }
-
-  .shaped-box__content-cell--1 {
-   @apply pb-[2rem];
-  }
-
   @apply h-[49.179rem]
 									w-[28.801rem];
 
-  .shaped-box__content {
-   @apply flex-col;
+  .shaped-box {
+   &__content {
+    @apply flex-col;
+
+    &-cell {
+     &--1,
+     &--2 {
+      @apply w-full;
+     }
+
+     &--1 {
+      @apply pb-[2rem];
+     }
+    }
+   }
   }
 
   path {
@@ -1697,9 +1691,7 @@ body {
    );
   }
  }
-}
 
-.shaped-box {
  &__t {
   @apply title-1-3-v1
 									pb-[1.6rem]
@@ -1747,10 +1739,10 @@ body {
 								w-[18.5rem];
 }
 
-.running-link {
+.running-line {
  .swiper-slide {
-  width: auto;
-  display: flex;
-  padding-right: 20px;
+  @apply flex
+									w-auto
+									pr-[2rem];
  }
 }

@@ -3,7 +3,7 @@ import $ from "jquery";
 
 // import "swiper/css";
 
-let SwiperTop = new Swiper(".js-running-link", {
+/* let SwiperTop = new Swiper(".js-running-line", {
  spaceBetween: 0,
  centeredSlides: true,
  speed: 6000,
@@ -14,7 +14,7 @@ let SwiperTop = new Swiper(".js-running-link", {
  slidesPerView: "auto",
  allowTouchMove: false,
  disableOnInteraction: true
-});
+}); */
 
 // $("a").on("click", function (e) {
 //  e.preventDefault();
