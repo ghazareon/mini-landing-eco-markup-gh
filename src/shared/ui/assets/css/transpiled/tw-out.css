@@ -3022,6 +3022,46 @@ body {
   font-size:0;
 }
 
+@keyframes rotation{
+ 0%{
+  transform:rotate(0deg) scale(0.8);
+ }
+
+ 50%{
+  transform:rotate(180deg) scale(1.21);
+ }
+
+ 100%{
+  transform:rotate(360deg) scale(0.8);
+ }
+}
+
+.icons--sun{
+  animation-name:rotation;
+  will-change:transform;
+  animation-timing-function:linear;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+ }
+
+.s-3:hover .icons--sun{
+   }
+
+@keyframes running-line{
+ 0%{
+  transform:translate(100%, 0);
+ }
+
+ 50%{
+  transform:translate(0, 0);
+ }
+
+ 100%{
+  transform:translate(-100%, 0);
+ }
+}
+
 @media (max-width: 75.25rem) {
 
 .s1{
