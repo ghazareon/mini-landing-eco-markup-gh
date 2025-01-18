@@ -1,0 +1,78 @@
+.group {
+ &--nav-btn {
+  @apply flex
+									w-full
+									items-center
+									justify-between;
+
+  @media (max-width: $lg) {
+   // display: none !important;
+   @apply fixed
+										right-0
+										top-0
+										z-[10]
+										flex
+										h-screen
+										w-full
+										max-w-[30.01rem]
+										flex-col
+										items-start
+										justify-start
+								bg-white
+										px-[2.01rem]
+										shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
+
+   .empty-flex-between {
+    @apply order-1;
+   }
+
+   .nav {
+    @apply order-2;
+   }
+
+   .group {
+    &--btn-lang {
+     @apply order-3
+												w-full
+												pt-[2.01rem];
+    }
+   }
+
+   .nav {
+    @apply w-full
+											pt-[2.01rem];
+
+    &__ul {
+     @apply block;
+    }
+
+    &__li {
+     @apply px-0;
+    }
+
+    &__a {
+     @apply block
+												overflow-hidden
+												border-b
+												border-solid
+										border-b-[rgba(66_68_90_/_0.1)]
+												px-[2.01rem]
+												py-[1.2rem];
+
+     &:hover {
+      @apply bg-[rgba(66_68_90_/_0.07)];
+     }
+    }
+   }
+  }
+ }
+
+ &--btn-lang {
+  @apply flex
+									items-center
+									justify-between;
+
+  @apply ~gap-x-[2rem]/[4rem]
+									sm:gap-x-[2rem];
+ }
+}

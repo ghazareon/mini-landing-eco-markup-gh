@@ -1,0 +1,76 @@
+.shapes {
+ @apply gap-x
+								flex
+								gap-x-[2.4rem];
+
+ @media (max-width: $lgx) {
+  @apply flex-col;
+  .shapes__c {
+   @apply w-full
+										max-w-full;
+  }
+ }
+
+ &__c {
+  @apply flex
+									flex-col
+									flex-wrap
+									items-start
+									gap-y-[2.4rem];
+
+  &--1 {
+   @apply w-full
+										max-w-[40.35087719298246%];
+  }
+
+  &--2 {
+   @apply w-full
+										max-w-[59.64912280701754%];
+  }
+ }
+
+ &__i {
+  &--1 {
+   &-1 {
+    @apply block
+											h-auto
+											w-full
+											max-w-[46rem];
+   }
+
+   &-2 {
+    @apply box-content
+											block
+											h-auto
+											w-full
+											max-w-[17.6rem]
+											flex-shrink-0
+											flex-grow-0
+											rounded-[50%]
+											border-[1.7rem];
+   }
+
+   &-3 {
+    @apply block
+											h-full
+											w-[55.57251908396947%];
+   }
+
+   &-4 {
+    @apply block
+											h-full
+											w-[44.42748091603053%];
+   }
+
+   &-3,
+   &-4 {
+    img {
+     @apply h-full
+												w-auto
+												rounded-[1.4rem]
+												object-cover;
+    }
+   }
+  }
+ }
+}

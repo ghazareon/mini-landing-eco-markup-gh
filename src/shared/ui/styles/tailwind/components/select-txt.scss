@@ -1,0 +1,22 @@
+.select-txt {
+ @apply rel
+								z-[1]
+								inline-block
+								rounded-[6.8rem]
+								px-[1.01rem]
+								pl-[2.6rem]
+								pr-[2.6rem];
+
+ &:after {
+  content: "";
+  @apply absolute
+									-bottom-4
+									left-0
+									right-2
+									top-[0.2rem]
+									z-[-1]
+									block
+									rounded-[inherit]
+							bg-green-250;
+ }
+}

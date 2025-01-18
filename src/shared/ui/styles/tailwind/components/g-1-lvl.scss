@@ -1,0 +1,28 @@
+.g-1-lvl {
+ @apply gap
+								grid
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas: "it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2 it-2";
+
+ @media (max-width: $lgx) {
+  .g-1-lvl__it--1 {
+   @apply hidden;
+  }
+
+  grid-template-areas: "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2";
+ }
+
+ &__it {
+  @apply min-h-[2rem]
+										w-full;
+
+  &--1 {
+   grid-area: it-1;
+  }
+
+  &--2 {
+   grid-area: it-2;
+  }
+ }
+}

@@ -1,0 +1,13 @@
+.main-header {
+ &__fix {
+  @apply flex
+									items-center
+									pb-[2.33rem]
+									pt-[2.02rem];
+
+  .logo {
+   @apply shrink-0
+										grow-0;
+  }
+ }
+}

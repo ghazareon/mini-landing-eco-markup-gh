@@ -1,0 +1,80 @@
+.equalizer {
+ @apply flex
+								w-full
+								max-w-[11.1rem]
+								items-end
+								gap-x-[1.4rem]
+
+								~mb-[1.9rem]/[3.8rem]
+								~h-[4.5rem]/[7.5rem]
+
+								sm:mb-[1.9rem]
+								sm:h-[4.5rem];
+
+ i {
+  @apply rel
+									block
+									w-[1.101rem]
+									shrink-0
+									grow-0
+									overflow-hidden
+									rounded-[1.501rem]
+
+							bg-grey-350;
+
+  &:after {
+   content: "";
+   @apply absolute
+										bottom-0
+										left-0
+										z-10
+										block
+										h-[20.01%]
+										w-full
+										rounded-[inherit]
+								bg-white;
+  }
+
+  &:nth-child {
+   &(1) {
+    @apply h-[80.13333333333333%];
+
+    &:after {
+     @apply h-[55%];
+    }
+   }
+
+   &(2) {
+    @apply h-[97.33333333333333%];
+
+    &:after {
+     @apply h-[71.23287671232877%];
+    }
+   }
+
+   &(3) {
+    @apply h-[78.66666666666667%];
+
+    &:after {
+     @apply h-[59.32203389830508%];
+    }
+   }
+
+   &(4) {
+    @apply h-full;
+
+    &:after {
+     @apply h-[46.66666666666667%];
+    }
+   }
+
+   &(5) {
+    @apply h-[97.33333333333333%];
+
+    &:after {
+     @apply h-[65.75342465753425%];
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+.s-7 {
+ @apply bg-green-100/10;
+
+ &__fix {
+  @apply ~py-[3rem]/[12rem]
+									sm:py-[3rem];
+ }
+
+ .s-t {
+  @apply mx-auto
+									max-w-[71rem]
+									text-center
+							text-black
+									~pb-[3.4rem]/[6.8rem]
+									sm:pb-[3.4rem];
+ }
+}

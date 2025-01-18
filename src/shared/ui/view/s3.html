@@ -1,7 +1,18 @@
 <section class="s-3">
- <div class="swiper-container js-running-link running-link">
+ <div class="running-line">
   <div class="swiper-wrapper">
    <% s3.list.forEach((it) => { %>
+   <div class="s-3__it swiper-slide">
+    <svg
+     class="icons icons--sun"
+     width="<%=it.icon.width %>"
+     height="<%=it.icon.height %>"
+    >
+     <use xlink:href="<%=svgSprite %>#<%=it.icon.name %>"></use>
+    </svg>
+    <span class="s-3__it-label"><%=it.label %></span>
+   </div>
+   <% }) %> <% s3.list.forEach((it) => { %>
    <div class="s-3__it swiper-slide">
     <svg
      class="icons icons--sun"

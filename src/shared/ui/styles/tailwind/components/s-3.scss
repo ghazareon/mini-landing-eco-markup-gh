@@ -1,0 +1,21 @@
+.s-3 {
+ @apply flex
+								gap-x-[3.2rem]
+								overflow-hidden
+								whitespace-nowrap
+						bg-slate-50
+								py-[1.45rem];
+
+ &__it {
+  @apply title-1-4-v1
+									flex
+									items-center
+									gap-x-[1rem]
+									font-secondary
+									text-green-250;
+ }
+
+ &__it-label {
+  @apply font-secondary;
+ }
+}

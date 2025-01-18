@@ -1,0 +1,9 @@
+.swiper-section {
+ @apply w-full;
+
+ &__content {
+  @apply flex
+									gap-x-[2.4rem]
+									overflow-hidden;
+ }
+}

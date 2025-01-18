@@ -1,0 +1,42 @@
+.icon-box-2 {
+ @apply absolute
+								right-0
+								top-[50%]
+								flex
+								h-[5.2rem]
+								w-[5.2rem]
+								translate-y-[-50%]
+								items-center
+								justify-center
+								rounded-[50%]
+								border
+								border-solid
+						border-black;
+
+ svg,
+ use {
+  @apply transition-[fill]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[fill];
+ }
+
+ @apply transition-[border,background,color]
+								duration-[0.16s,0.16s,0.16s]
+								ease-[linear,linear,linear]
+								will-change-[border,background,color];
+
+ @apply text-black;
+
+ &--fill {
+  @apply border-slate-50
+									bg-slate-50
+									text-white;
+ }
+
+ &--hover {
+  @apply border-green-250
+									bg-green-250
+									text-black;
+ }
+}

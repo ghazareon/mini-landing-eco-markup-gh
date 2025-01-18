@@ -1,0 +1,25 @@
+.deco-circle {
+ @apply absolute
+								block
+								aspect-[1/1]
+								w-[65.54307116104869%]
+								rounded-[50%];
+
+ &--1 {
+  @apply left-0
+									top-0
+									z-[2]
+									translate-x-[-45%]
+									translate-y-[-40%]
+							bg-green-300;
+ }
+
+ &--2 {
+  @apply bottom-0
+									right-0
+									z-[3]
+									translate-x-[28%]
+									translate-y-[34%]
+							bg-green-100;
+ }
+}
