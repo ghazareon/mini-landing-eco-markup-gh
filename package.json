@@ -16,8 +16,9 @@
     "url": "https://github.com/ghazareon/mini-landing-eco-markup-gh/issues/",
     "email": "hayk.ghazaryanc@gmail.com"
   },
+
 		"scripts": {
-			"preview":        "vite preview",
+			"preview": "vite preview",
 			"============================ Dev ======================": "",
 			"dev":            "concurrently \"npm run kp:dev\" \"npm run postcss:w\" \"npm run dev:watch\"",
 			"dev:watch":      "nodemon --ext ts,tsx,js,jsx,cjs,mjs,json -w src/shared/config/designTokens -w vite.config.ts -w package.json -w tsconfig.json -w tsconfig.node.json -w tsconfig.app.json -w postcss.config.ts -w tailwind.config.ts -w src/shared/config/const/layoutGrid.ts --exec npm run dev:run",
@@ -75,9 +76,11 @@
 			"color:w":        "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createTwColors.ts"
 		},
 
+
   "dependencies": {
     "@types/postcss-advanced-variables": "^3.0.0",
     "bootstrap": "^5.3.3",
+    "flickity": "^3.0.0",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "locomotive-scroll": "^4.1.4",

@@ -1,16 +1,16 @@
 body {
  &:before {
   @apply fixed
-										right-0
-										top-0
-										z-[1000]
-										block
-								bg-black
-										px-[20.01px]
-										py-[10.01px]
-										text-[20.01px]
-								text-white
-										content-[""];
+									right-0
+									top-0
+									z-[1000]
+									block
+							bg-black
+									px-[20.01px]
+									py-[10.01px]
+									text-[20.01px]
+							text-white
+									content-[""];
 
   @media (max-width: $xl) {
    content: "xl";

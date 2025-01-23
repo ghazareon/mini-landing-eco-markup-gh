@@ -55,13 +55,19 @@
 												overflow-hidden
 												border-b
 												border-solid
-										border-b-[rgba(66_68_90_/_0.1)]
+												border-b-[rgba(66_68_90_/_0.1)]
 												px-[2.01rem]
 												py-[1.2rem];
 
-     &:hover {
+     /*      &:hover {
       @apply bg-[rgba(66_68_90_/_0.07)];
-     }
+     } */
+    }
+   }
+
+   .btn {
+    &--lg {
+     @apply px-[1.9rem];
     }
    }
   }
