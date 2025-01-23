@@ -1,6 +1,14 @@
 .shapes {
+  &--shape-1-height {
+    @apply aspect-[256/318] w-[25.6rem] h-auto;
+  }
+
   &--shape-1 {
     @apply aspect-[256/193] w-[25.6rem] h-auto;
+  }
+
+  &--shape-2-2 {
+    @apply aspect-[256/318] w-[25.6rem] h-auto;
   }
 
   &--shape-2 {
@@ -25,5 +33,9 @@
 
   &--shape-6 {
     @apply aspect-[288.01/491.79] w-[28.801rem] h-auto;
+  }
+
+  &--shape-img {
+    @apply aspect-[256/193] w-[25.6rem] h-auto;
   }
 }

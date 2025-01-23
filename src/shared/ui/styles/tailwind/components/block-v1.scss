@@ -28,7 +28,9 @@
 
   // .block-v1:hover .img-info
   .img-info {
+   // .block-v1:hover .img-info__descr
    // .block-v1:hover .img-info__title
+   &__descr,
    &__title {
     @apply text-white;
    }

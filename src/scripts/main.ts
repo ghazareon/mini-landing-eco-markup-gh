@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 import Swiper from "swiper";
 import LocomotiveScroll from "locomotive-scroll";
 import { Navigation } from "swiper/modules";
