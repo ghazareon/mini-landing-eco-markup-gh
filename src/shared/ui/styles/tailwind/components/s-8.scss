@@ -1,8 +1,10 @@
 .s-8 {
+ // .s-8__fix
  &__fix {
   @apply ~pt-[3rem]/[12rem]
 									sm:pt-[3rem];
 
+  // .s-8__fix .s-t
   .s-t {
    @apply mx-auto
 										max-w-[53.7rem]

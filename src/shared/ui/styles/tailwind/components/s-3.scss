@@ -6,6 +6,7 @@
 						bg-slate-50
 								py-[1.45rem];
 
+ // .s-3__it
  &__it {
   @apply title-1-4-v1
 									flex
@@ -15,6 +16,7 @@
 									text-green-250;
  }
 
+ // .s-3__it-label
  &__it-label {
   @apply font-secondary;
  }

@@ -3,13 +3,17 @@
 								flex
 								overflow-hidden;
 
+ // .overlay-custom
+ // .overlay-custom:after
  &,
  &:after {
   @apply absolute
 									inset-0;
  }
 
+ // .overlay-custom--fill
  &--fill {
+  // .overlay-custom--fill:after
   &:after {
    content: "";
    @apply z-[-1]
@@ -18,7 +22,9 @@
   }
  }
 
+ // .overlay-custom .icons
  .icons {
+  // .overlay-custom .icons--deco-6
   &--deco-6 {
    @apply absolute
 										left-[50%]
@@ -30,6 +36,7 @@
   }
  }
 
+ // .overlay-custom .ornament
  .ornament {
   @apply absolute
 									left-[50%]
@@ -40,6 +47,7 @@
 									translate-y-[-50%];
  }
 
+ // .overlay-custom__content
  &__content {
   @apply rel
 									z-10
@@ -51,6 +59,7 @@
 									sm:px-[1.45rem]
 									sm:py-[0.5rem];
 
+  // .overlay-custom__content-txt
   &-txt {
    @apply ~text-[1.8rem]/[2.4rem]
 										~leading-[2.0rem]/[2.9rem]
@@ -59,6 +68,7 @@
 										sm:leading-[2.0rem];
   }
 
+  // .overlay-custom__content .icons
   .icons {
    @apply mb-[1.4rem];
   }

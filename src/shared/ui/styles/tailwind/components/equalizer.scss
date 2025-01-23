@@ -11,6 +11,7 @@
 								sm:mb-[1.9rem]
 								sm:h-[4.5rem];
 
+ // .equalizer i
  i {
   @apply rel
 									block
@@ -22,6 +23,7 @@
 
 							bg-grey-350;
 
+  // .equalizer i:after
   &:after {
    content: "";
    @apply absolute
@@ -35,42 +37,53 @@
 								bg-white;
   }
 
+  // .equalizer i:nth-child
   &:nth-child {
+   // .equalizer i:nth-child(1)
    &(1) {
     @apply h-[80.13333333333333%];
 
+    // .equalizer i:nth-child(1):after
     &:after {
      @apply h-[55%];
     }
    }
 
+   // .equalizer i:nth-child(2)
    &(2) {
     @apply h-[97.33333333333333%];
 
+    // .equalizer i:nth-child(2):after
     &:after {
      @apply h-[71.23287671232877%];
     }
    }
 
+   // .equalizer i:nth-child(3)
    &(3) {
     @apply h-[78.66666666666667%];
 
+    // .equalizer i:nth-child(3):after
     &:after {
      @apply h-[59.32203389830508%];
     }
    }
 
+   // .equalizer i:nth-child(4)
    &(4) {
     @apply h-full;
 
+    // .equalizer i:nth-child(4):after
     &:after {
      @apply h-[46.66666666666667%];
     }
    }
 
+   // .equalizer i:nth-child(5)
    &(5) {
     @apply h-[97.33333333333333%];
 
+    // .equalizer i:nth-child(5):after
     &:after {
      @apply h-[65.75342465753425%];
     }

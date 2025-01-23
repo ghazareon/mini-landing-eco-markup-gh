@@ -33,6 +33,7 @@
    ". it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 .";
  }
 
+ // .grid-7__it
  &__it {
   @apply rel
 									block
@@ -47,30 +48,37 @@
 									ease-[linear]
 									will-change-[transform];
 
+  // .grid-7__it:nth-child
   &:nth-child {
+   // .grid-7__it:nth-child(1)
    &(1) {
     grid-area: it-1;
    }
 
+   // .grid-7__it:nth-child(2)
    &(2) {
     grid-area: it-2;
    }
 
+   // .grid-7__it:nth-child(3)
    &(3) {
     grid-area: it-3;
    }
 
+   // .grid-7__it:nth-child(4)
    &(4) {
     grid-area: it-4;
    }
   }
 
+  // .grid-7__it:hover
   &:hover {
    @apply translate-y-[-1.2rem]
 										scale-105;
   }
  }
 
+ // .grid-7 .overlay-custom
  .overlay-custom {
   @apply flex-col
 									items-center

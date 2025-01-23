@@ -6,6 +6,7 @@
 								px-[2rem]
 								py-[1rem];
 
+ // .dd__select
  &__select {
   @apply rel
 									z-10
@@ -13,6 +14,7 @@
 									gap-x-[0.8rem]
 							text-black;
 
+  // .dd__select-txt
   &-txt {
    @apply link-v1;
 
@@ -23,9 +25,11 @@
   }
  }
 
+ // .dd .icons
  .icons {
   @apply inline-block;
 
+  // .dd .icons use
   use {
    @apply transition-[fill,color]
 										duration-[0.16s,0.16s]
@@ -34,6 +38,7 @@
   }
  }
 
+ // .dd__container
  &__container {
   @apply h-0
 									w-0
@@ -54,10 +59,12 @@
    @apply left-[0]
 										right-[inherit];
 
+   // .dd__container .dd__content
    .dd__content {
     @apply rounded-tl-none
 											rounded-tr-[2.1rem];
 
+    // .dd__container .dd__content:after
     &:after {
      @apply left-0
 												right-[inherit];
@@ -66,6 +73,7 @@
   }
  }
 
+ // .dd__content
  &__content {
   @apply min-h-[15rem]
 									w-full
@@ -75,6 +83,7 @@
 									rounded-br-[2.1rem]
 									rounded-tl-[2.1rem];
 
+  // .dd__content:after
   &:after {
    @apply absolute
 										right-0
@@ -90,11 +99,23 @@
   }
  }
 
+ // .dd:focus-visible
+ // .dd:focus
+ // .dd:active
+ // .dd:hover
  &:focus-visible,
  &:focus,
  &:active,
  &:hover {
+  // .dd:focus-visible .dd
+  // .dd:focus .dd
+  // .dd:active .dd
+  // .dd:hover .dd
   .dd {
+   // .dd:focus-visible .dd__container
+   // .dd:focus .dd__container
+   // .dd:active .dd__container
+   // .dd:hover .dd__container
    &__container {
     @apply h-auto
 											w-[150%]
@@ -102,6 +123,10 @@
 											opacity-100;
    }
 
+   // .dd:focus-visible .dd__select
+   // .dd:focus .dd__select
+   // .dd:active .dd__select
+   // .dd:hover .dd__select
    &__select {
     @apply text-white;
    }

@@ -1,16 +1,20 @@
 .list-2 {
  @apply py-[2rem];
 
+ // .list-2__it
  &__it {
   @apply px-[1.2rem];
 
+  // .list-2__it:last-child
   &:last-child {
+   // .list-2__it:last-child a
    a {
     @apply border-b-0;
    }
   }
  }
 
+ // .list-2__a
  &__a {
   @apply border-b
 							border-b-white/10
@@ -27,6 +31,7 @@
 									ease-[linear]
 									will-change-[background];
 
+  // .list-2__a:hover
   &:hover {
    @apply bg-white/10;
   }

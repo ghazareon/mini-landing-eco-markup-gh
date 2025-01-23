@@ -14,6 +14,7 @@
    "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
    "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
 
+  // .g-2-lvl .shape-rounded
   .shape-rounded {
    @apply h-full
 											w-full
@@ -28,6 +29,7 @@
    "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
    "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
 
+  // .g-2-lvl .g-2-lvl__it--1
   .g-2-lvl__it--1 {
    @apply hidden;
   }
@@ -41,28 +43,36 @@
    "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5";
  }
 
+ // .g-2-lvl__it
  &__it {
+  // .g-2-lvl__it--1
   &--1 {
    grid-area: it-1;
   }
 
+  // .g-2-lvl__it--2
   &--2 {
    grid-area: it-2;
   }
 
+  // .g-2-lvl__it--2
+  // .g-2-lvl__it--1
   &--2,
   &--1 {
    @apply self-center;
   }
 
+  // .g-2-lvl__it--3
   &--3 {
    grid-area: it-3;
   }
 
+  // .g-2-lvl__it--4
   &--4 {
    grid-area: it-4;
   }
 
+  // .g-2-lvl__it--5
   &--5 {
    grid-area: it-5;
   }

@@ -1,13 +1,16 @@
 .nav {
+ // .nav__ul
  &__ul {
   @apply flex;
  }
 
+ // .nav__li
  &__li {
   @apply ~px-[0.4rem]/[1.4rem]
 									sm:px-[0.4rem];
  }
 
+ // .nav__a
  &__a {
   @apply link-v1
 									block
@@ -18,6 +21,7 @@
 									ease-[ease-out,ease-out,ease-out]
 									will-change-[transform,color,background];
 
+  // .nav__a:hover
   &:hover {
    @apply text-slate-150;
   }

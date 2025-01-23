@@ -64,13 +64,15 @@
           style="clip-path: url(#clip-<%=i+1 %>)"
           class="sb__svg-img"
           decoding="async"
+          loading="lazy"
          />
         </foreignObject>
         <image
          class="sb__svg-image"
          style="clip-path: url(#clip-<%=i+1 %>)"
          xlink:href="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.jpg"
-         decoding="async"
+         width="256"
+         height="318"
         ></image>
        </switch>
       </svg>
