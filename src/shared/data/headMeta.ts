@@ -740,7 +740,8 @@ export const metaTagsMarkup: tagsNum[] = [
  {
   tagName: "meta",
   attrs: {
-   "http-equiv": "X-UA-Compatible"
+   "http-equiv": "X-UA-Compatible",
+   "content": "IE=edge"
   }
  },
  ...metaTagsCommon
