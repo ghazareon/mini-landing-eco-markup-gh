@@ -10,9 +10,11 @@
    ". it-2 it-2 it-2 it-3 it-3 it-4 it-4 it-4 it-5 it-5 ."
    ". . . it-1 it-1 it-1 it-1 it-1 it-1 . . .";
 
+  // .grid-9 .grid-9__it--1
   .grid-9__it--1 {
    @apply text-center;
 
+   // .grid-9 .grid-9__it--1 .short-txt
    .short-txt {
     @apply mx-auto
 											mb-[2.01rem];
@@ -52,34 +54,42 @@
    "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1";
  }
 
+ // .grid-9__it
  &__it {
   @apply pb-[1.9rem];
 
+  // .grid-9__it .logo
   .logo {
    @apply mb-[1.7rem];
   }
 
+  // .grid-9__it .short-txt
   .short-txt {
    @apply mb-[7.01rem]
 									max-w-[22rem];
   }
 
+  // .grid-9__it--1
   &--1 {
    grid-area: it-1;
   }
 
+  // .grid-9__it--2
   &--2 {
    grid-area: it-2;
   }
 
+  // .grid-9__it--3
   &--3 {
    grid-area: it-3;
   }
 
+  // .grid-9__it--4
   &--4 {
    grid-area: it-4;
   }
 
+  // .grid-9__it--5
   &--5 {
    grid-area: it-5;
   }

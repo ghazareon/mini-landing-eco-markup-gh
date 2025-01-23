@@ -1,16 +1,19 @@
 .s-4 {
+ // .s-4__fix
  &__fix {
   @apply block
 
 									~py-[3rem]/[12rem]
 									sm:py-[3rem];
 
+  // .s-4__fix .s-info
   .s-info {
    @apply ~pb-[2rem]/[6rem]
 										sm:pb-[2rem];
   }
  }
 
+ // .s-4__row
  &__row {
   @apply flex
 									items-start

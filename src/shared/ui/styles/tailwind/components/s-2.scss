@@ -1,15 +1,18 @@
 .s-2 {
+ // .s-2__fix
  &__fix {
   @apply block
 							text-white
 									~py-[2.6rem]/[7.6rem]
 									sm:py-[2.6rem];
 
+  // .s-2__fix .main-title
   .main-title {
    @apply pb-[1.3rem];
   }
  }
 
+ // .s-2 .s-t
  .s-t {
   @apply pb-[4.9rem]
 									text-center

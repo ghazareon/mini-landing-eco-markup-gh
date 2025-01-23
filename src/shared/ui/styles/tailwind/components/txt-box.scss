@@ -7,12 +7,14 @@
 								pl-[4.9rem]
 								pr-[2.9rem];
 
+ // .txt-box__title
  &__title {
   @apply title-5-12-v1
 									pb-[0.4rem]
 							text-black;
  }
 
+ // .txt-box__descr
  &__descr {
   @apply descr-5-12-v1
 									w-full

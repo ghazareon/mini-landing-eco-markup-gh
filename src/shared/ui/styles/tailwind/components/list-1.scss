@@ -1,9 +1,11 @@
 .list-1 {
+ // .list-1__li
  &__li {
   @apply ~pb-[1rem]/[1.85rem]
 									sm:pb-[1rem];
  }
 
+ // .list-1__a
  &__a {
   @apply link-v2
 									rel
@@ -15,15 +17,18 @@
 									ease-[linear]
 									will-change-[color];
 
+  // .list-1__a:hover
   &:hover {
    @apply text-white;
 
+   // .list-1__a:hover:after
    &:after {
     @apply origin-bottom-left
 											scale-x-100;
    }
   }
 
+  // .list-1__a:after
   &:after {
    content: "";
 

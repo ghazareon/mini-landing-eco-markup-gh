@@ -2,10 +2,12 @@
  @apply h-auto
 								w-full;
 
+ // .shape-rounded--1
  &--1 {
   @apply max-w-[37.6rem];
  }
 
+ // .shape-rounded--2
  &--2 {
   @apply max-w-[26.4rem];
  }

@@ -4,10 +4,12 @@
 								shrink-0
 						text-grey-450;
 
+ // .shaped-box:hover
  &:hover {
   @apply text-green-250;
  }
 
+ // .shaped-box__content
  &__content {
   @apply rel
 									z-[10]
@@ -16,14 +18,17 @@
 									px-[3rem]
 									py-[3.5rem];
 
+  // .shaped-box__content-cell
   &-cell {
    @apply flex flex-col;
 
+   // .shaped-box__content-cell--1
    &--1 {
     @apply w-[54.8780487804878%]
 											justify-center;
    }
 
+   // .shaped-box__content-cell--2
    &--2 {
     @apply w-[45.1219512195122%]
 											items-center;
@@ -31,6 +36,7 @@
   }
  }
 
+ // .shaped-box__svg
  &__svg {
   @apply absolute
 									inset-0
@@ -43,6 +49,8 @@
 									ease-[linear]
 									will-change-[color];
 
+  // .shaped-box__svg
+  // .shaped-box__svg path
   &,
   path {
    @apply fill-current;
@@ -53,16 +61,22 @@
   @apply h-[49.179rem]
 									w-[28.801rem];
 
+  // .shaped-box .shaped-box
   .shaped-box {
+   // .shaped-box .shaped-box__content
    &__content {
     @apply flex-col;
 
+    // .shaped-box .shaped-box__content-cell
     &-cell {
+     // .shaped-box .shaped-box__content-cell--1
+     // .shaped-box .shaped-box__content-cell--2
      &--1,
      &--2 {
       @apply w-full;
      }
 
+     // .shaped-box .shaped-box__content-cell--1
      &--1 {
       @apply pb-[2rem];
      }
@@ -70,6 +84,7 @@
    }
   }
 
+  // .shaped-box path
   path {
    d: path(
     "m272.84,491.78h-120.07c-.64,0-1.28-.04-1.9-.11H36.72c-14.65,0-26.53-11.88-26.53-26.53v-182c0-11.23-10.19-21.86-10.19-33.08V15.16C0,6.78,6.78,0,15.16,0h231.35c14.66,0,26.53,11.88,26.53,26.53v133.87c0,13.09,14.97,25.68,14.97,38.77v277.46c0,8.37-6.78,15.16-15.16,15.16h-.01Z"
@@ -77,18 +92,21 @@
   }
  }
 
+ // .shaped-box__t
  &__t {
   @apply title-1-3-v1
 									pb-[1.6rem]
 							text-black;
  }
 
+ // .shaped-box__d
  &__d {
   @apply title-1-6-v2
 									pb-[2.4rem]
 							text-black;
  }
 
+ // .shaped-box__a
  &__a {
   @apply link-v1
 									rel
@@ -110,7 +128,9 @@
 }
 /*
 .shape-box {
+  // .shape-box--1
  &--1 {
+    // .shape-box--1 *
   * {
    display: block;
   }
@@ -125,10 +145,12 @@
 
   will-change: width, height;
 
+    // .shape-box--1:hover
   &:hover {
    width: 22rem;
    height: 31.8rem;
 
+      // .shape-box--1:hover path
    path {
     d: path(
      "m220,107v-55c0-28.72-23.28-52-52-52H52C23.28,0,0,23.28,0,52v55c0,28.72,23.28,52,52,52-28.72,0-52,23.28-52,52v55c0,28.72,23.28,52,52,52h116c28.72,0,52-23.28,52-52v-55c0-28.72-23.28-52-52-52,28.72,0,52-23.28,52-52Z"
@@ -137,12 +159,14 @@
   }
  }
 
+  // .shape-box path
  path {
   display: block;
   transition: linear d 0.16s;
   will-change: d;
  }
 
+  // .shape-box__img
  &__img {
   width: 100%;
   height: calc(100% + 1px);

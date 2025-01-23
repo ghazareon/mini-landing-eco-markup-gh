@@ -1,4 +1,5 @@
 .group {
+ // .group--nav-btn
  &--nav-btn {
   @apply flex
 									w-full
@@ -22,15 +23,19 @@
 										px-[2.01rem]
 										shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
 
+   // .group--nav-btn .empty-flex-between
    .empty-flex-between {
     @apply order-1;
    }
 
+   // .group--nav-btn .nav
    .nav {
     @apply order-2;
    }
 
+   // .group--nav-btn .group
    .group {
+    // .group--nav-btn .group--btn-lang
     &--btn-lang {
      @apply order-3
 												w-full
@@ -38,18 +43,22 @@
     }
    }
 
+   // .group--nav-btn .nav
    .nav {
     @apply w-full
 											pt-[2.01rem];
 
+    // .group--nav-btn .nav__ul
     &__ul {
      @apply block;
     }
 
+    // .group--nav-btn .nav__li
     &__li {
      @apply px-0;
     }
 
+    // .group--nav-btn .nav__a
     &__a {
      @apply block
 												overflow-hidden
@@ -65,7 +74,9 @@
     }
    }
 
+   // .group--nav-btn .btn
    .btn {
+    // .group--nav-btn .btn--lg
     &--lg {
      @apply px-[1.9rem];
     }
@@ -73,6 +84,7 @@
   }
  }
 
+ // .group--btn-lang
  &--btn-lang {
   @apply flex
 									items-center

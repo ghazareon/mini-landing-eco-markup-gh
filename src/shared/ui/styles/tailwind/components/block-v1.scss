@@ -14,22 +14,28 @@
 								ease-[linear]
 								will-change-[background];
 
+ // .block-v1:hover
  &:hover {
   @apply bg-slate-50;
 
+  // .block-v1:hover .block-v1
   .block-v1 {
+   // .block-v1:hover .block-v1__descr
    &__descr {
     @apply text-white;
    }
   }
 
+  // .block-v1:hover .img-info
   .img-info {
+   // .block-v1:hover .img-info__title
    &__title {
     @apply text-white;
    }
   }
  }
 
+ // .block-v1__descr
  &__descr {
   @apply descr-1-2-v1
 									pb-[3.2rem]
@@ -41,6 +47,7 @@
 									will-change-[color];
  }
 
+ // .block-v1 .list-3
  .list-3 {
   @apply pb-[3.2rem];
  }

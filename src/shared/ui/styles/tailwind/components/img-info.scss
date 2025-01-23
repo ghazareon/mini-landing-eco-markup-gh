@@ -2,18 +2,22 @@
  @apply inline-flex
 									gap-x-[1.3rem];
 
+ // .img-info__title
  &__title {
   @apply title-1-6-v2
 										block
 								text-black;
  }
 
+ // .img-info__descr
  &__descr {
   @apply descr-5-12-v1
 									block
 							text-grey-250;
  }
 
+ // .img-info__descr
+ // .img-info__title
  &__descr,
  &__title {
   @apply transition-[color]
@@ -22,6 +26,7 @@
 									will-change-[color];
  }
 
+ // .img-info__im
  &__im {
   @apply block
 									h-[4.4rem]
@@ -33,6 +38,7 @@
 							bg-grey-200;
  }
 
+ // .img-info__in
  &__in {
   @apply w-full
 									max-w-[18.1rem]

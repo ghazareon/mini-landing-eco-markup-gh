@@ -1,21 +1,25 @@
 .slide {
  @apply flex;
 
+ // .slide__arr-cell
  &__arr-cell {
   @apply flex
 									w-full
 									max-w-[18.6rem]
 									items-center;
 
+  // .slide__arr-cell--prev
   &--prev {
    @apply justify-start;
   }
 
+  // .slide__arr-cell--next
   &--next {
    @apply justify-end;
   }
  }
 
+ // .slide__place
  &__place {
   @apply w-full
 									px-[3.9rem];

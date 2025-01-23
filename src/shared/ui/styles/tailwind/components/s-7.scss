@@ -1,11 +1,13 @@
 .s-7 {
  @apply bg-green-100/10;
 
+ // .s-7__fix
  &__fix {
   @apply ~py-[3rem]/[12rem]
 									sm:py-[3rem];
  }
 
+ // .s-7 .s-t
  .s-t {
   @apply mx-auto
 									max-w-[71rem]

@@ -3,6 +3,7 @@
 								grid
 								grid-cols-[14.7rem_1fr_14.7rem];
 
+ // .carousel__list
  &__list {
   @apply px-[2rem]
 									pb-[2rem];
@@ -15,19 +16,23 @@
    "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
    ". . it-1 it-1 it-1 . . it-3 it-3 it-3 . .";
 
+  // .carousel__list
   &__list {
    grid-area: it-2;
 
    @apply w-full;
   }
 
+  // .carousel__arr
   &__arr {
    @apply h-auto;
 
+   // .carousel__arr--1
    &--1 {
     grid-area: it-1;
    }
 
+   // .carousel__arr--2
    &--2 {
     grid-area: it-3;
    }
@@ -35,19 +40,23 @@
  }
 
  @media (max-width: $mdxxx) {
+  // .carousel__arr
   &__arr {
    @apply hidden
 										h-auto;
   }
  }
 
+ // .carousel__arr
  &__arr {
   @apply content-center;
 
+  // .carousel__arr--1
   &--1 {
    @apply justify-self-start;
   }
 
+  // .carousel__arr--2
   &--2 {
    @apply justify-self-end;
   }
