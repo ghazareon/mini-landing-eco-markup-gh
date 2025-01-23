@@ -10,7 +10,7 @@
 
 /* prettier-ignore */ import { svgPaths } from "@/src/shared/config/const";
 
-const svgDirName = "shapes";
+const svgDirName = "icons";
 // const svgDirName = "icons-brand";
 // const svgDirName = "shapes";
 const svgDirPath = `./${svgPaths.inDir}/${svgDirName}`;
@@ -18,6 +18,7 @@ const spriteFile = `./${svgPaths.inDir}/${svgDirName}/sprite-${svgDirName}.svg`;
 
 const svgSpriteOpen = `<svg display="none"
 																												aria-hidden="true"
+																												role="presentation"
 																												style="position: absolute; width: 0; height: 0; overflow: hidden"
 																												version="1.1"
 																												xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +52,7 @@ async function svgSprite() {
   let itPure = it.replace(".svg", "");
   const w = svgItemSizes[i][0];
   const h = svgItemSizes[i][1];
-  svgUse += `<svg class="${svgDirName} ${svgDirName}--${itPure}" width="${w}" height="${h}"><use xlink:href="<%=svgSprite %>#${itPure}"></use></svg>\n\n`;
+  svgUse += `<svg role="presentation" class="${svgDirName} ${svgDirName}--${itPure}" width="${w}" height="${h}"><use xlink:href="<%=svgSprite %>#${itPure}"></use></svg>\n\n`;
   svgTwBody += `&--${itPure}{@apply aspect-[${w}/${h}] w-[${+w / 10}rem] h-auto;}\n\n`;
  });
 

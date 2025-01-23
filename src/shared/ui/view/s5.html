@@ -10,8 +10,13 @@
    </div>
    <div class="article-v1__c article-v1__c--2">
     <p class="article-v1__d"><%=it.descr %></p>
-    <a href="<%=it.link.href %>" class="icon-box-2">
-     <svg class="icons icons--arrow-top-right" width="15.1" height="11.43">
+    <a href="<%=it.link.href %>" class="icon-box-2" role="button" aria-label="read more">
+     <svg
+      class="icons icons--arrow-top-right"
+      width="15.1"
+      height="11.43"
+      role="presentation"
+     >
       <use xlink:href="<%=svgSprite %>#arrow-top-right"></use>
      </svg>
     </a>
@@ -23,12 +28,27 @@
  </div>
  <% }) %>
  <div class="block pt-[4.8rem] text-center">
-  <a href="#" class="btn btn--xxl btn--outline"
-   ><%=s5.details.label%>
-   <span class="icon-box-2 icon-box-2--fill">
+  <a
+   href="#"
+   class="btn btn--xxl btn--outline"
+   role="button"
+   aria-label="<%=s5.details.label%>"
+  >
+   <span class="txt-animation">
+    <span
+     class="txt-animation__content"
+     data-hover-txt="<%=s5.details.label%>"
+     role="presentation"
+    >
+     <span class="txt-animation__content-style"><%=s5.details.label%></span>
+    </span>
+   </span>
+
+   <span class="icon-box-2 icon-box-2--fill" role="presentation">
     <svg class="icons icons--arrow-top-right" width="15.1" height="11.43">
      <use xlink:href="<%=svgSprite %>#arrow-top-right"></use>
-    </svg> </span
-  ></a>
+    </svg>
+   </span>
+  </a>
  </div>
 </section>

@@ -1,14 +1,25 @@
 <svg
   display="none"
   aria-hidden="true"
+  role="presentation"
   style="position: absolute; width: 0; height: 0; overflow: hidden"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
+  <symbol fill="currentColor" id="shape-1-height" viewBox="0 0 256 318">
+    <path
+      d="m256,131v-40.5c0-15.46-12.54-28-28-28H28c-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28h200c15.46,0,28-12.54,28-28v-40.5c0-15.46-12.54-28-28-28,15.46,0,28-12.54,28-28Z"
+    />
+  </symbol>
   <symbol fill="currentColor" id="shape-1" viewBox="0 0 256 193">
     <path
       d="m256,68.5V28c0-15.46-12.54-28-28-28H28C12.54,0,0,12.54,0,28v40.5c0,15.46,12.54,28,28,28-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28h200c15.46,0,28-12.54,28-28v-40.5c0-15.46-12.54-28-28-28,15.46,0,28-12.54,28-28Z"
+    />
+  </symbol>
+  <symbol fill="currentColor" id="shape-2-2" viewBox="0 0 256 318">
+    <path
+      d="m256,107v-55c0-28.72-23.28-52-52-52H52C23.28,0,0,23.28,0,52v55c0,28.72,23.28,52,52,52-28.72,0-52,23.28-52,52v55c0,28.72,23.28,52,52,52h152c28.72,0,52-23.28,52-52v-55c0-28.72-23.28-52-52-52,28.72,0,52-23.28,52-52Z"
     />
   </symbol>
   <symbol fill="currentColor" id="shape-2" viewBox="0 0 220 318">
@@ -40,6 +51,27 @@
   <symbol fill="currentColor" id="shape-6" viewBox="0 0 288.01 491.79">
     <path
       d="m272.84,491.78h-120.07c-.64,0-1.28-.04-1.9-.11H36.72c-14.65,0-26.53-11.88-26.53-26.53v-182c0-11.23-10.19-21.86-10.19-33.08V15.16C0,6.78,6.78,0,15.16,0h231.35c14.66,0,26.53,11.88,26.53,26.53v133.87c0,13.09,14.97,25.68,14.97,38.77v277.46c0,8.37-6.78,15.16-15.16,15.16h-.01Z"
+    />
+  </symbol>
+  <symbol
+    fill="currentColor"
+    id="shape-img"
+    viewBox="0 0 256 193"
+    width="256"
+    height="193"
+  >
+    <defs>
+      <clipPath id="clip-shape">
+        <path
+          d="m256,68.5V28c0-15.46-12.54-28-28-28H28C12.54,0,0,12.54,0,28v40.5c0,15.46,12.54,28,28,28-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28h200c15.46,0,28-12.54,28-28v-40.5c0-15.46-12.54-28-28-28,15.46,0,28-12.54,28-28Z"
+        />
+      </clipPath>
+    </defs>
+    <image
+      href="https://img.freepik.com/free-photo/beautiful-green-park_1417-1447.jpg?t=st=1737467994~exp=1737471594~hmac=59d793ef263ce7747f20d3ac4c2a8213b676fc84e9f3b66d7414b4f317416562&w=2000"
+      width="256"
+      height="193"
+      clip-path="url(#clip-shape)"
     />
   </symbol>
 </svg>

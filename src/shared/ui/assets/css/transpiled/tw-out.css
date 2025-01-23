@@ -426,8 +426,20 @@ body::-webkit-resizer{
   width:3.119rem;
 }
 
+.shapes--shape-1-height {
+  aspect-ratio:256/318;
+  height:auto;
+  width:25.6rem;
+}
+
 .shapes--shape-1 {
   aspect-ratio:256/193;
+  height:auto;
+  width:25.6rem;
+}
+
+.shapes--shape-2-2 {
+  aspect-ratio:256/318;
   height:auto;
   width:25.6rem;
 }
@@ -466,6 +478,12 @@ body::-webkit-resizer{
   aspect-ratio:288.01/491.79;
   height:auto;
   width:28.801rem;
+}
+
+.shapes--shape-img {
+  aspect-ratio:256/193;
+  height:auto;
+  width:25.6rem;
 }
 
 .fix-generate {

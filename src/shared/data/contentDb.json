@@ -8,7 +8,8 @@
      "name": "soc-tw",
      "width": "12.8",
      "height": "10.4"
-    }
+    },
+    "ariaLabel": "The official X (twitter) page for our company"
    },
    {
     "href": "#",
@@ -17,7 +18,8 @@
      "name": "soc-fb",
      "width": "6.89",
      "height": "12.8"
-    }
+    },
+    "ariaLabel": "The official facebook page for our company"
    },
    {
     "href": "#",
@@ -26,7 +28,8 @@
      "name": "soc-in",
      "width": "12.82",
      "height": "12.81"
-    }
+    },
+    "ariaLabel": "The official linkedin page for our company"
    }
   ],
 
