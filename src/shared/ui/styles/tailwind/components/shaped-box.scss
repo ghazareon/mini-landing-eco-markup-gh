@@ -96,6 +96,62 @@
 									items-center
 									gap-x-[0.7rem]
 									pr-[2.001rem]
-							text-black;
+									text-black;
  }
 }
+
+.list-4 {
+ @apply mb-[2.001rem]
+								h-[31.8rem];
+
+ @apply flex
+								items-center
+								gap-x-[1.8rem];
+}
+/*
+.shape-box {
+ &--1 {
+  * {
+   display: block;
+  }
+
+  width: 25.6rem;
+  height: 19.3rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition:
+   linear width 0.16s,
+   linear height 0.16s;
+
+  will-change: width, height;
+
+  &:hover {
+   width: 22rem;
+   height: 31.8rem;
+
+   path {
+    d: path(
+     "m220,107v-55c0-28.72-23.28-52-52-52H52C23.28,0,0,23.28,0,52v55c0,28.72,23.28,52,52,52-28.72,0-52,23.28-52,52v55c0,28.72,23.28,52,52,52h116c28.72,0,52-23.28,52-52v-55c0-28.72-23.28-52-52-52,28.72,0,52-23.28,52-52Z"
+    );
+   }
+  }
+ }
+
+ path {
+  display: block;
+  transition: linear d 0.16s;
+  will-change: d;
+ }
+
+ &__img {
+  width: 100%;
+  height: calc(100% + 1px);
+  object-fit: cover;
+  transition:
+   linear width 0.16s,
+   linear height 0.16s;
+
+  will-change: width, height;
+ }
+}
+ */

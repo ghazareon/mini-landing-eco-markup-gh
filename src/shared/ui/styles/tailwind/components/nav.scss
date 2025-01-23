@@ -10,7 +10,16 @@
 
  &__a {
   @apply link-v1
-									inline-block
+									block
 									whitespace-nowrap;
+
+  @apply transition-[transform,color,background]
+									duration-[0.08s,0.16s,0.16s]
+									ease-[ease-out,ease-out,ease-out]
+									will-change-[transform,color,background];
+
+  &:hover {
+   @apply text-slate-150;
+  }
  }
 }

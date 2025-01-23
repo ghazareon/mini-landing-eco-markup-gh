@@ -17,7 +17,13 @@
     <ul class="nav__ul">
      <% menu.forEach((item, index) => { %>
      <li class="nav__li">
-      <a href="#" class="nav__a"><%=item.label %></a>
+      <a href="#" class="nav__a">
+       <span class="txt-animation">
+        <span class="txt-animation__content" data-hover-txt="<%=item.label %>">
+         <span class="txt-animation__content-style"><%=item.label %></span>
+        </span>
+       </span>
+      </a>
      </li>
      <% }) %>
     </ul>
@@ -45,7 +51,11 @@
      </div>
     </div>
 
-    <a href="#" class="btn btn--lg btn--fill">Sign Up</a>
+    <a href="#" class="btn btn--lg btn--fill txt-animation">
+     <span class="txt-animation__content" data-hover-txt="Sign Up">
+      <span class="txt-animation__content-style">Sign Up</span>
+     </span>
+    </a>
    </div>
   </div>
  </div>

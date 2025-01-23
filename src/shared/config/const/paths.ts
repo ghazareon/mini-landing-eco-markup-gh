@@ -12,64 +12,64 @@
 /* prettier-ignore */ import { ext }   from "./ext";
 
 export const manifestPaths = {
-	outFile: `./${dir.in.public}/${files.manifest}`,
-	picDir: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`,
+ outFile: `./${dir.in.public}/${files.manifest}`,
+ picDir: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`
 };
 
 export const browserConfigPaths = {
-	outFile: `./${dir.in.public}/${files.browserConfig}`,
-	picInDir: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`,
+ outFile: `./${dir.in.public}/${files.browserConfig}`,
+ picInDir: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`
 };
 
 export const picPaths = {
-	inDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.img}/${dir.in.picSrc}`,
-	outDir: `${dir.in.public}/${dir.in.assets}/${dir.in.img}/${dir.in.pic}`,
-	outDir2: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`,
+ inDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.img}/${dir.in.picSrc}`,
+ outDir: `${dir.in.public}/${dir.in.assets}/${dir.in.img}/${dir.in.pic}`,
+ outDir2: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`
 };
 
 export const mediaQueryPaths = {
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.mq}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.mq}`
 };
 
 export const sidesPaths = {
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.sides}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.sides}`
 };
 
 export const gapPaths = {
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.gap}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.gap}`
 };
 
 export const tmpPaths = {
-	inDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.img}/${dir.in.tmp}/${dir.in.sections}`,
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.common}/${dir.in.dev}/${files.sections}`,
+ inDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.img}/${dir.in.tmp}/${dir.in.sections}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.common}/${dir.in.dev}/${files.sections}`
 };
 
 export const rootCssPaths = {
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.rootCss}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}/${files.rootCss}`
 };
 
 export const svgPaths = {
-	inDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.svg}`,
-	outDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.svg}`,
-	styleOutDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}`,
+ inDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.svg}`,
+ outDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.svg}`,
+ styleOutDir: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.base}`,
 
-	svgSpriteIn: `${dir.in.assets}/${dir.in.svg}`,
+ svgSpriteIn: `${dir.in.assets}/${dir.in.svg}`
 };
 
 export const twColorPath = {
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.config}/${dir.in.designTokens}/${files.coloursGenerate}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.config}/${dir.in.designTokens}/${files.coloursGenerate}`
 };
 
 export const nextPaths = {
-	outDir: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`,
+ outDir: `${dir.in.assets}/${dir.in.img}/${dir.in.pic}`
 };
 
 export const nextFonts = {
-	inDir: `${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.fonts}`,
+ inDir: `${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.fonts}`
 };
 
 export const fixGenerate = {
-	outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.components}/${dir.in.atoms}/${dir.in.fix}/${files.fixGenerate}`,
+ outFile: `${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.styles}/${dir.in.tailwind}/${dir.in.components}/${dir.in.atoms}/${dir.in.fix}/${files.fixGenerate}`
 };
 
 /* prettier-ignore */
@@ -127,7 +127,7 @@ export const vitePaths = {
 		},
 
 		fullReload: {
-			html:            [`${dir.in.src}/index.html`],
+			html:            [`${dir.in.src}/index.html`, `src/shared/ui/view/**/*.html`],
 			json:            [`${dir.in.src}/${dir.in.shared}/${dir.in.data}/**/*.${ext.json}`],
 			css:             [`${dir.in.src}/${dir.in.shared}/${dir.in.ui}/${dir.in.assets}/${dir.in.css}/${dir.in.transpiled}/**/*.${ext.css}`,],
 			svg:             [`${dir.in.public}/${dir.in.assets}/${dir.in.svg}/**/*.${ext.svg}`]

@@ -57,9 +57,10 @@
 										text-black;
 
    .icon-box-2 {
-    @apply border-green-250
-											bg-green-250
-											text-black;
+    @apply border-[3px]
+									border-white
+									bg-green-250
+									text-black;
    }
   }
  }
