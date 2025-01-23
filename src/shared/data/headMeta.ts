@@ -158,7 +158,7 @@ export const metaTagsCommon: ITag<s>[] = [
   tagName: "link",
   attrs: {
    rel: "apple-touch-icon-precomposed",
-   sizes: "",
+   sizes: "192x192",
    href: "apple-icon.pic.png",
    type: "image/png"
   }
@@ -302,7 +302,7 @@ export const metaTagsCommon: ITag<s>[] = [
   tagName: "link",
   attrs: {
    rel: "icon",
-   sizes: "",
+   sizes: "93x105",
    href: "favicon-without-bg.pic.png",
    type: "image/png"
   }
@@ -374,7 +374,7 @@ export const metaTagsCommon: ITag<s>[] = [
   tagName: "link",
   attrs: {
    rel: "icon",
-   sizes: "",
+   sizes: "300x300",
    href: "favicon-with-bg.pic.svg",
    type: "image/svg+xml"
   }
@@ -502,7 +502,7 @@ export const metaTagsCommon: ITag<s>[] = [
   tagName: "link",
   attrs: {
    rel: "author",
-   href: ""
+   href: "https://github.com/ghazareon"
   }
  },
  {
