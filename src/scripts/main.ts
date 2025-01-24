@@ -6,6 +6,8 @@ import { Navigation } from "swiper/modules";
 import "../../node_modules/swiper/swiper.min.css";
 import "../shared/ui/assets/css/locomotive-scroll.min.css";
 
+import "../shared/ui/styles/scss/index.scss";
+
 const scroll = new LocomotiveScroll({
  el: document.querySelector("[data-scroll-container]") as HTMLElement,
  smooth: true
