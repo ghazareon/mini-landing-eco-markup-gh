@@ -100,13 +100,15 @@ export const vitePaths = {
 		},
 
   build: {
-			entryFileNames:  `${dir.out.assets}/${dir.out.js}/[name]-[hash].[ext]`,
-			chunkFileNames:  `${dir.out.assets}/${dir.out.js}/[name]-[hash].[ext]`,
-			pic:             `${dir.out.assets}/${dir.out.img}/${dir.out.pic}/[name]-[hash].[ext]`,
-			img:             `${dir.out.assets}/${dir.out.img}/[name]-[hash].[ext]`,
-			fonts:           `${dir.out.assets}/${dir.out.fonts}/[name]-[hash].[ext]`,
-			css:             `${dir.out.assets}/${dir.out.css}/[name]-[hash].[ext]`,
-			remaining:       `${dir.out.assets}/[name]-[hash].[ext]`,
+			// [name]-[hash].[ext]
+			entryFileNames:  `${dir.out.assets}/${dir.out.js}/[name].[ext]`,
+			chunkFileNames:  `${dir.out.assets}/${dir.out.js}/[name].[ext]`,
+			pic:             `${dir.out.assets}/${dir.out.img}/${dir.out.pic}/[name].[ext]`,
+			img:             `${dir.out.assets}/${dir.out.img}/[name].[ext]`,
+			fonts:           `${dir.out.assets}/${dir.out.fonts}/[name].[ext]`,
+			css:             `${dir.out.assets}/${dir.out.css}/[name].[ext]`,
+			js:              `${dir.out.assets}/${dir.out.js}/[name].[ext]`,
+			remaining:       `${dir.out.assets}/[name].[ext]`,
 	},
 
 		copy: {
