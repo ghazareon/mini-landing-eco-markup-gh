@@ -10,3 +10,5 @@
  */
 
 ?>
+<script crossorigin src="<?php echo $assets ?>/js/main.js" type="module"></script>
+<?php wp_footer() ?>
