@@ -5,6 +5,7 @@
  * Date: January 2025
  */
 
+/* prettier-ignore */ import { fileURLToPath, URL } from 'node:url'
 /* prettier-ignore */ import { join }                 from "path";
 /* prettier-ignore */ import { defineConfig }         from "vite";
 /* prettier-ignore */ import react                    from "@vitejs/plugin-react-swc";
@@ -14,6 +15,7 @@
 /* prettier-ignore */ import { imagetools }           from "vite-imagetools";
 /* prettier-ignore */ import removeConsole            from "vite-plugin-remove-console";
 /* prettier-ignore */ import FullReload               from "vite-plugin-full-reload";
+/* prettier-ignore */ import viteCompression          from 'vite-plugin-compression';
 
 /* prettier-ignore */ import data                     from "./src/shared/data/contentDb.json";
 /* prettier-ignore */ import appData                  from "./src/shared/data/appDb.json";
@@ -32,27 +34,50 @@ const root = process.cwd();
 export default defineConfig({
 	root:                join(root, dir.in.src),
 	publicDir:           join(root, dir.in.public),
+
+
+ resolve: {
+		alias: {
+				'@': fileURLToPath(new URL('./src', import.meta.url))
+		}
+},
+
 	build: {
 		outDir:             join(root, dir.out.build),
 		emptyOutDir:        true,
 		sourcemap:          isDev,
-		minify:             isDev,
+		minify:             isDev ? false : 'terser',
+
 		cssMinify:          isDev,
 		assetsInlineLimit:  0,
 
+
+		terserOptions: {
+			compress: {
+				drop_console: true,
+				drop_debugger: true
+		},
+			// keep_classnames: true,
+			// keep_fnames: true,
+			sourceMap: false,
+			format: {
+				comments: false
+		}
+		},
+
 		rollupOptions: {
+
+			input: {
+				main: join(root, dir.in.src, "index.html"),
+			},
+
 			output: {
-					/*
-					entryFileNames: (data)=> {
-							return vitePaths.build.entryFileNames;
-					},
-					*/
-					/*
-					chunkFileNames: (data) => {
-						return vitePaths.build.chunkFileNames;
-					},
-					*/
+
+
+					entryFileNames: `assets/js/[name].js`,
+
 					assetFileNames: (item) => {
+
 						if (Array.isArray(item.names)) {
 							const file = item.names[0] ?? "";
 
@@ -82,6 +107,13 @@ export default defineConfig({
 							if (/\.(css)$/.test(file)) {
 								return vitePaths.build.css;
 							}
+
+								/* for .js */
+								// if (/\.(js)$/.test(file)) {
+								// 	return vitePaths.build.js;
+								// }
+
+
 						}
 						return vitePaths.build.remaining;
 					}
@@ -157,6 +189,16 @@ export default defineConfig({
 
 			}
 		}),
+
+
+		viteCompression({
+			verbose: true,
+			disable: false,
+			deleteOriginFile: false,
+			threshold: 10240,
+			algorithm: 'gzip',
+			ext: '.gz',
+	})
 
 	],
 

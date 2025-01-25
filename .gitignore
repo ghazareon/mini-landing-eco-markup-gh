@@ -17,6 +17,7 @@ dist-ssr
 
 # dependencies
 /node_modules
+.node_modules
 /.pnp
 .yarn/install-state.gz
 .yarn/*
