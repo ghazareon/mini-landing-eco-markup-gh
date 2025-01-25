@@ -57,8 +57,8 @@ export default defineConfig({
 				drop_console: true,
 				drop_debugger: true
 		},
-			// keep_classnames: true,
-			// keep_fnames: true,
+			keep_classnames: true,
+			keep_fnames: true,
 			sourceMap: false,
 			format: {
 				comments: false
@@ -107,12 +107,6 @@ export default defineConfig({
 							if (/\.(css)$/.test(file)) {
 								return vitePaths.build.css;
 							}
-
-								/* for .js */
-								// if (/\.(js)$/.test(file)) {
-								// 	return vitePaths.build.js;
-								// }
-
 
 						}
 						return vitePaths.build.remaining;
