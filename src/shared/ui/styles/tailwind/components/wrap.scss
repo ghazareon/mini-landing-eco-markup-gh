@@ -1,7 +1,8 @@
 .wrap {
  // .wrap--btn-s-2
  &--btn-s-2 {
-  @apply block
+  @apply rel
+									block
 									text-center
 									~pt-[2.4rem]/[4.8rem]
 									~pb-[2.5rem]/[5.0rem]
@@ -9,4 +10,10 @@
 									sm:pb-[2.5rem]
 									sm:pt-[2.4rem];
  }
+}
+
+.deco-2 {
+ @apply absolute
+								right-[26.501rem]
+								top-[3.5001rem];
 }

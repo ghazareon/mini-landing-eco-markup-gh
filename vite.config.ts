@@ -5,8 +5,8 @@
  * Date: January 2025
  */
 
-/* prettier-ignore */ import { fileURLToPath, URL } from 'node:url'
-/* prettier-ignore */ import { join }                 from "path";
+/* prettier-ignore */ import { fileURLToPath, URL }   from 'node:url'
+/* prettier-ignore */ import { join }                 from "node:path";
 /* prettier-ignore */ import { defineConfig }         from "vite";
 /* prettier-ignore */ import react                    from "@vitejs/plugin-react-swc";
 

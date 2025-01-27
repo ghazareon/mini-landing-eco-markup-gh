@@ -1,52 +1,81 @@
 // import $ from "jquery";
+import gsap from "gsap";
 import Swiper from "swiper";
 import LocomotiveScroll from "locomotive-scroll";
 import { Navigation } from "swiper/modules";
 
 import "../../node_modules/swiper/swiper.min.css";
-import "../shared/ui/assets/css/locomotive-scroll.min.css";
+import "@/shared/ui/assets/css/locomotive-scroll.min.css";
 
-import "../shared/ui/styles/scss/index.scss";
+import "@/shared/ui/styles/scss/index.scss";
 
-const scroll = new LocomotiveScroll({
- el: document.querySelector("[data-scroll-container]") as HTMLElement,
- smooth: true
-});
+document.addEventListener("DOMContentLoaded", function (event) {
+ const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]") as HTMLElement,
+  smooth: true
+ });
 
-var swiper = new Swiper(".js-sb-swiper", {
- slidesPerView: 3,
- centeredSlides: false,
- spaceBetween: 18,
- loop: true,
- modules: [Navigation],
- pagination: {
-  el: ".swiper-pagination",
-  clickable: true
- },
-
- navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev"
- },
-
- breakpoints: {
-  600: {
-   slidesPerView: 3
+ var swiper = new Swiper(".js-sb-swiper", {
+  slidesPerView: 3,
+  centeredSlides: false,
+  spaceBetween: 18,
+  loop: true,
+  modules: [Navigation],
+  pagination: {
+   el: ".swiper-pagination",
+   clickable: true
   },
-  500: {
-   slidesPerView: 1
+
+  navigation: {
+   nextEl: ".swiper-button-next",
+   prevEl: ".swiper-button-prev"
+  },
+
+  breakpoints: {
+   600: {
+    slidesPerView: 3
+   },
+   500: {
+    slidesPerView: 1
+   },
+   100: {
+    slidesPerView: 1
+   }
   }
- }
-});
+ });
 
-/* const prev = document.querySelector(".js-arr--prev") as HTMLElement;
-const next = document.querySelector(".js-arr--next") as HTMLElement;
+ document.querySelectorAll("a").forEach((it: HTMLElement) =>
+  it.addEventListener("click", function (e) {
+   e.preventDefault();
+  })
+ );
 
-prev.addEventListener("click", (e) => {
- console.log("e- ", e);
-});
+ const burger = document.querySelector(".burger") as HTMLElement;
+ const menuMob = document.querySelector(".js-mob-menu") as HTMLElement;
+ const menuItMob = document.querySelectorAll(".nav__li");
 
-next.addEventListener("click", (e) => {
- console.log("e- ", e);
+ const menuMobTimeline = gsap.timeline({
+  repeat: 0,
+  repeatDelay: 0,
+  delay: 0,
+  onComplete: () => {}
+ });
+
+ // https://codepen.io/akapowl/pen/ExydwWX/33e6a0fe190774293edcdd1533f776ad
+
+ /* burger toggle */
+ burger.addEventListener("click", function (e) {
+  const $this = this;
+  const isOpen = !$this.classList.contains("opened");
+  /* prettier-ignore */
+  if (isOpen === true) {
+   // menuMobTimeline
+   //  .to(menuMob,     { x: 0, duration: 0.5, ease: "expo.out" })
+   //  .from(menuItMob, { x: 13, opacity: 0, duration: 0.2,   stagger: 0.1 });
+  } else if (isOpen === false) {
+   // menuMobTimeline.reverse()
+  }
+  $this.classList.toggle("opened");
+  $this.setAttribute("aria-expanded", String(!isOpen));
+ });
 });
- */

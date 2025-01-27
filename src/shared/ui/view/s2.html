@@ -29,93 +29,113 @@
      </svg>
     </span>
    </a>
-  </div>
-  <h2 class="s-t">6 Educational Programs</h2>
 
-  <div class="swiper swiper--sb js-sb-swiper">
-   <div class="swiper-wrapper">
-    <% s2.list.forEach((it,i) => { %>
-    <div class="swiper-slide">
-     <div class="sb">
-      <svg
-       class="sb__svg"
-       viewBox="0 0 256 318"
-       width="256"
-       height="318"
-       xmlns="http://www.w3.org/2000/svg"
-      >
-       <clipPath class="sb__svg-clip" id="clip-<%=i+1 %>">
-        <path
-         class="sb__svg-path"
-         d="m256,131v-40.5c0-15.46-12.54-28-28-28H28c-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28h200c15.46,0,28-12.54,28-28v-40.5c0-15.46-12.54-28-28-28,15.46,0,28-12.54,28-28Z"
-        ></path>
-       </clipPath>
-       <switch class="sb__svg-switch">
-        <foreignObject
-         class="sb__svg-foreign-obj"
-         x="0"
-         y="0"
+   <img class="deco-2" src="shared/ui/assets/svg/deco-2.svg" alt="" width="152" />
+  </div>
+
+  <div class="swiper-bar">
+   <div class="swiper-bar__cell swiper-bar__cell--1">
+    <div
+     class="arr arr--prev js-arr--prev swiper-button-prev"
+     role="button"
+     aria-label="swipe to prev item"
+    >
+     <svg
+      class="icons icons--arrow-long-prev"
+      width="75"
+      height="14.72"
+      role="presentation"
+     >
+      <use xlink:href="shared/ui/assets/svg/sprite-icons.svg#arrow-long-prev"></use>
+     </svg>
+    </div>
+   </div>
+   <div class="swiper-bar__cell swiper-bar__cell--2">
+    <div class="swiper swiper--sb js-sb-swiper">
+     <div class="swiper-wrapper">
+      <% s2.list.forEach((it,i) => { %>
+      <div class="swiper-slide">
+       <div class="sb">
+        <svg
+         class="sb__svg"
+         viewBox="0 0 256 318"
          width="256"
          height="318"
-         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+         xmlns="http://www.w3.org/2000/svg"
         >
-         <img
-          srcset="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.webp 1x,
-																		shared/ui/assets/img/shape-img/<%=it.img.src %>-2x.webp 2x,
-																		shared/ui/assets/img/shape-img/<%=it.img.src %>-3x.webp 3x,
-																		shared/ui/assets/img/shape-img/<%=it.img.src %>-4x.webp 4x"
-          src="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.jpg"
-          alt=""
-          style="clip-path: url(#clip-<%=i+1 %>)"
-          class="sb__svg-img"
-          decoding="async"
-          loading="lazy"
-          width="256"
-          height="318"
-         />
-        </foreignObject>
-        <image
-         class="sb__svg-image"
-         style="clip-path: url(#clip-<%=i+1 %>)"
-         xlink:href="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.jpg"
-         width="256"
-         height="318"
-        ></image>
-       </switch>
-      </svg>
+         <clipPath class="sb__svg-clip" id="clip-<%=i+1 %>">
+          <path
+           class="sb__svg-path"
+           d="m256,131v-40.5c0-15.46-12.54-28-28-28H28c-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28h200c15.46,0,28-12.54,28-28v-40.5c0-15.46-12.54-28-28-28,15.46,0,28-12.54,28-28Z"
+          ></path>
+         </clipPath>
+         <switch class="sb__svg-switch">
+          <foreignObject
+           class="sb__svg-foreign-obj"
+           x="0"
+           y="0"
+           width="256"
+           height="318"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+          >
+           <img
+            srcset="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.webp 1x,
+																				shared/ui/assets/img/shape-img/<%=it.img.src %>-2x.webp 2x,
+																				shared/ui/assets/img/shape-img/<%=it.img.src %>-3x.webp 3x,
+																				shared/ui/assets/img/shape-img/<%=it.img.src %>-4x.webp 4x"
+            src="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.jpg"
+            alt=""
+            style="clip-path: url(#clip-<%=i+1 %>)"
+            class="sb__svg-img"
+            decoding="async"
+            loading="lazy"
+            width="256"
+            height="318"
+           />
+          </foreignObject>
+          <image
+           class="sb__svg-image"
+           style="clip-path: url(#clip-<%=i+1 %>)"
+           xlink:href="shared/ui/assets/img/shape-img/<%=it.img.src %>-1x.jpg"
+           width="256"
+           height="318"
+          ></image>
+         </switch>
+        </svg>
+       </div>
+      </div>
+      <% }) %>
      </div>
     </div>
-    <% }) %>
    </div>
-
-   <div
-    class="arr arr--prev js-arr--prev swiper-button-prev"
-    role="button"
-    aria-label="swipe to prev item"
-   >
-    <svg
-     class="icons icons--arrow-long-prev"
-     width="75"
-     height="14.72"
-     role="presentation"
+   <div class="swiper-bar__cell swiper-bar__cell--3">
+    <div
+     class="arr arr--next js-arr--next swiper-button-next"
+     role="button"
+     aria-label="swipe to next item"
     >
-     <use xlink:href="shared/ui/assets/svg/sprite-icons.svg#arrow-long-prev"></use>
-    </svg>
+     <svg
+      class="icons icons--arrow-long-next"
+      width="75"
+      height="14.72"
+      role="presentation"
+     >
+      <use xlink:href="shared/ui/assets/svg/sprite-icons.svg#arrow-long-next"></use>
+     </svg>
+    </div>
    </div>
-
-   <div
-    class="arr arr--next js-arr--next swiper-button-next"
-    role="button"
-    aria-label="swipe to next item"
-   >
-    <svg
-     class="icons icons--arrow-long-next"
-     width="75"
-     height="14.72"
-     role="presentation"
-    >
-     <use xlink:href="shared/ui/assets/svg/sprite-icons.svg#arrow-long-next"></use>
-    </svg>
+   <div class="swiper-bar__cell swiper-bar__cell--4">
+    <div
+     style="
+      height: 20px;
+      width: 200px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: block;
+      background: red;
+      margin-top: 30px;
+     "
+    ></div>
    </div>
   </div>
  </div>
