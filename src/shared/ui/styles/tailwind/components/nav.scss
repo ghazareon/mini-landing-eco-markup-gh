@@ -13,6 +13,7 @@
  // .nav__a
  &__a {
   @apply link-v1
+									rel
 									block
 									whitespace-nowrap;
 
@@ -24,6 +25,30 @@
   // .nav__a:hover
   &:hover {
    @apply text-slate-150;
+
+   &:after {
+    @apply opacity-100;
+   }
+  }
+
+  &:after {
+   content: "";
+
+   @apply absolute
+										bottom-[-0.7rem]
+										left-[-2rem]
+										right-[-2rem]
+										top-[-0.7rem]
+										z-[-1]
+										block
+										rounded-[2.2rem]
+								bg-green-250/80
+										opacity-0;
+
+   @apply transition-[opacity]
+										duration-[0.16s]
+										ease-[ease-out]
+										will-change-[opacity];
   }
  }
 }

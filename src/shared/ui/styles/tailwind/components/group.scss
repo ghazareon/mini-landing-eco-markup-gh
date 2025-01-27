@@ -7,21 +7,25 @@
 									justify-between;
 
   @media (max-width: $lg) {
-   // display: none !important;
    @apply fixed
 										right-0
 										top-0
 										z-[10]
 										flex
 										h-screen
+										max-h-[55.2rem]
 										w-full
 										max-w-[30.01rem]
 										flex-col
 										items-start
 										justify-start
-								bg-white
+										overflow-y-auto
+										overflow-x-hidden
+										bg-white
 										px-[2.01rem]
 										shadow-[-9px_2px_22px_-17px_rgba(66_68_90_/_0.35)];
+
+   transform: translateX(110%);
 
    // .group--nav-btn .empty-flex-between
    .empty-flex-between {
@@ -30,7 +34,10 @@
 
    // .group--nav-btn .nav
    .nav {
-    @apply order-2;
+    @apply order-2
+											max-h-[32.6rem]
+											overflow-y-auto
+											overflow-x-hidden;
    }
 
    // .group--nav-btn .group
@@ -67,10 +74,6 @@
 												border-b-[rgba(66_68_90_/_0.1)]
 												px-[2.01rem]
 												py-[1.2rem];
-
-     /*      &:hover {
-      @apply bg-[rgba(66_68_90_/_0.07)];
-     } */
     }
    }
 
@@ -86,11 +89,98 @@
 
  // .group--btn-lang
  &--btn-lang {
-  @apply flex
+  @apply rel
+									flex
 									items-center
 									justify-between;
 
   @apply ~gap-x-[2rem]/[4rem]
 									sm:gap-x-[2rem];
+
+  @media (max-width: $sm) {
+   @apply flex-col;
+
+   .btn {
+    @apply order-1
+											my-[1.001rem];
+   }
+
+   .dd {
+    @apply order-2;
+   }
+  }
+ }
+}
+
+.burger {
+ @apply rel
+								mx-auto
+								hidden
+								h-[3.9rem]
+								w-[3.9rem]
+								shrink-0
+								grow-0
+								bg-white
+								fill-none;
+
+ @media (max-width: $lg) {
+  @apply fixed
+									left-[initial]
+									right-[30.01px]
+									top-[20.01px]
+									z-[100]
+									m-0
+									block;
+ }
+
+ svg {
+  @apply absolute
+									inset-0
+									m-0
+									h-full
+									w-full
+									p-0;
+ }
+
+ &__line {
+  @apply stroke-black
+											stroke-[6];
+
+  transition:
+   stroke-dasharray 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+   stroke-dashoffset 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--1 {
+   stroke-dasharray: 60 207;
+  }
+
+  &--2 {
+   stroke-dasharray: 60 60;
+  }
+
+  &--3 {
+   stroke-dasharray: 60 207;
+  }
+ }
+
+ &.opened {
+  .burger {
+   &__line {
+    &--1 {
+     stroke-dasharray: 90 207;
+     stroke-dashoffset: -134;
+    }
+
+    &--2 {
+     stroke-dasharray: 1 60;
+     stroke-dashoffset: -30;
+    }
+
+    &--3 {
+     stroke-dasharray: 90 207;
+     stroke-dashoffset: -134;
+    }
+   }
+  }
  }
 }

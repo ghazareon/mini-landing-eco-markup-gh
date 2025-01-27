@@ -8,4 +8,8 @@
   @apply block
 									w-full;
  }
+
+ @media (max-width: $lg) {
+  @apply mx-auto;
+ }
 }

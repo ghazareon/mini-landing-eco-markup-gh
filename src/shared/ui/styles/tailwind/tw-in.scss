@@ -53,6 +53,9 @@
 @import url("components/main-header.scss");
 @import url("components/group.scss");
 @import url("components/nav.scss");
+@import url("components/dd.scss");
+@import url("components/list-2.scss");
+
 @import url("components/s-2.scss");
 @import url("components/main-title.scss");
 @import url("components/main-descr.scss");
@@ -61,9 +64,6 @@
 @import url("components/wrap.scss");
 @import url("components/slide-box.scss");
 @import url("components/arr.scss");
-
-@import url("components/dd.scss");
-@import url("components/list-2.scss");
 @import url("components/wide-cell.scss");
 @import url("components/block-v1.scss");
 @import url("components/list-3.scss");
@@ -116,113 +116,6 @@ body {
  @apply overflow-x-hidden
 								text-[0];
 }
-
-@keyframes rotation {
- 0% {
-  transform: rotate(0deg) scale(0.8);
- }
-
- 50% {
-  transform: rotate(180deg) scale(1.21);
- }
-
- 100% {
-  transform: rotate(360deg) scale(0.8);
- }
-}
-
-.icons {
- &--sun {
-  animation-name: rotation;
-  will-change: transform;
-  animation-timing-function: linear;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
- }
-}
-
-.s-3 {
- &:hover {
-  .icons {
-   &--sun {
-    // animation-play-state: paused;
-   }
-  }
- }
-}
-
-/* @keyframes running-line {
- 0% {
-  transform: translate(100%, 0);
- }
-
- 50% {
-  transform: translate(0, 0);
- }
-100% {
-  transform: translate(-100%, 0);
- }
-}
-
-.running-line {
- will-change: transform;
-
- animation-name: running-line;
- animation-timing-function: linear;
- animation-duration: 10s;
-
- animation-iteration-count: infinite;
- animation-fill-mode: backwards;
-}
- */
-
-/* .mySwiper {
- max-width: 76.8rem;
-
- .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
- .swiper-wrapper {
-  align-items: center;
- }
-}
-
-.masked-img {
- clip-path: url(#carousel-img-mask);
- width: 100%;
- height: 100%;
- object-fit: cover;
-}
-
-.carousel-img-mask {
-}
- */
-
-/* .txt-animation {
- display: block;
- padding: 10px 0;
-
- &__crop {
-  overflow: hidden;
-  display: block;
- }
-
- &__top {
-  @apply rel;
-  display: block;
-  overflow: hidden;
-  &::before {
-   content: attr(data-hover-txt);
-   position: absolute;
-   top: 80%;
-   left: 0;
-  }
- }
-}
-*/
 
 .nav__a,
 .btn {
@@ -335,27 +228,92 @@ body {
  }
 }
 
-.arr {
- &--prev {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  margin-top: 15%;
-  // transform: translate(0, 100%);
+.swiper-bar {
+ display: grid;
+ grid-template-columns: min-content 1fr min-content;
+ grid-template-rows: repeat(2, min-content);
+
+ grid-template-areas:
+  "it-1 it-2 it-3"
+  "it-4 it-4 it-4";
+
+ @media (max-width: calc($xl - 24px)) {
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-areas:
+   "it-2 it-2 it-2"
+   "it-1 it-4 it-3";
+
+  &__cell {
+   @apply rel;
+
+   &--1 {
+    justify-self: flex-end;
+   }
+
+   &--4 {
+    justify-self: center;
+   }
+
+   &--3 {
+    justify-self: flex-start;
+   }
+  }
  }
 
- &--next {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  margin-top: 15%;
-  // transform: translate(0, 100%);
+ @media (max-width: 599px) {
+  .swiper-slide-active {
+   .sb__svg-path {
+    d: path(
+     "m256,107v-55c0-28.72-23.28-52-52-52H52C23.28,0,0,23.28,0,52v55c0,28.72,23.28,52,52,52-28.72,0-52,23.28-52,52v55c0,28.72,23.28,52,52,52h152c28.72,0,52-23.28,52-52v-55c0-28.72-23.28-52-52-52,28.72,0,52-23.28,52-52Z"
+    );
+   }
+  }
+
+  .swiper-slide-next {
+   .sb__svg-path {
+    d: path(
+     "m256,131v-40.5c0-15.46-12.54-28-28-28H28c-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28-15.46,0-28,12.54-28,28v40.5c0,15.46,12.54,28,28,28h200c15.46,0,28-12.54,28-28v-40.5c0-15.46-12.54-28-28-28,15.46,0,28-12.54,28-28Z"
+    );
+   }
+  }
+
+  grid-template-columns: repeat(3, 1fr);
+
+  &__cell {
+   @apply rel;
+
+   &--3,
+   &--1 {
+    display: none;
+   }
+
+   &--4 {
+    justify-self: center;
+   }
+  }
+ }
+
+ &__cell {
+  @apply rel;
+  &--1 {
+   grid-area: it-1;
+   align-self: center;
+  }
+
+  &--2 {
+   grid-area: it-2;
+  }
+
+  &--3 {
+   grid-area: it-3;
+   align-self: center;
+  }
+
+  &--4 {
+   grid-row-start: 2;
+   grid-area: it-4;
+   justify-self: center;
+  }
  }
 }
-
-/* body {
- border: solid blanchedalmond 30px !important;
-}
- */
