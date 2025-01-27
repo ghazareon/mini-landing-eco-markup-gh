@@ -1,4 +1,4 @@
-# Mini Landing Eco Markup 🌿
+# Eco Scraping Subject. Mini Landing. 🌿
 
 Markup/UI development & WordPress theming a mini landing page.
 
