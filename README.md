@@ -1,6 +1,6 @@
 # Mini Landing Eco Markup 🌿
 
-A minimal and responsive landing page designed for eco-friendly themes.
+Markup/UI development & WordPress theming a mini landing page.
 
 ## 🔗 Links
 
