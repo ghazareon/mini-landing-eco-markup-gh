@@ -7,6 +7,11 @@
 								pl-[4.9rem]
 								pr-[2.9rem];
 
+ @apply transition-[background]
+								duration-[0.16s]
+								ease-[linear]
+								will-change-[background];
+
  // .txt-box__title
  &__title {
   @apply title-5-12-v1
@@ -25,5 +30,9 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+ }
+
+ &:hover {
+  @apply bg-green-200/50;
  }
 }

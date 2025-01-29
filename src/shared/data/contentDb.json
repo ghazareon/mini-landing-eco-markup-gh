@@ -69,6 +69,9 @@
 
  "sections": {
   "s2": {
+   "title": "Efficient <span class='select-txt'>Scrap</span> Recycling Services Near You",
+   "descr": "Discover efficient scrap recycling services right in your neighborhood! We're dedicated to providing convenient and reliable scrap recycling solutions to businesses and individuals alike. Whether you have metal, paper, plastic, or electronics to recycle, our experienced team is here to help.",
+
    "list": [
     {
      "img": {
@@ -224,6 +227,21 @@
    ]
   },
 
+  "s4": {
+   "title": "Transforming Scrap into Value",
+   "descr": "Discover efficient scrap recycling neighborhood! We're dedicated to providing convenient reliable.",
+
+   "block1": {
+    "title": "Our Initiatives for 2024",
+    "descr": "UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains"
+   },
+
+   "block2": {
+    "title": "80% Energy Efficiency",
+    "descr": "UrbanGreen tech’s LED lighting solutions have demonstred energy efficiency gains of up to 80% compared to traditional lighting system."
+   }
+  },
+
   "s5": {
    "title": "Our Initiatives for 2024",
    "details": {
@@ -261,13 +279,99 @@
    ]
   },
 
-  "s7": {
-   "title": "Reducing Plastic Waste Through Eco-Friendly Packaging"
+  "s6": {
+   "title": "Make Our World Cleaner & Greener!",
+   "descr": "Discover efficient scrap recycling services right in your neighborhood! We're dedicated to providing convenient and reliable scrap recycling.",
+   "list": [
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "1"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "2"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "3"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "1"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "2"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "3"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "1"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "2"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "3"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "1"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "2"
+     }
+    },
+    {
+     "title": "Protect Our Animal",
+     "descr": "Energy efficiency gains to 80% compared traditional lighting system.",
+     "img": {
+      "srcName": "3"
+     }
+    }
+   ]
   },
 
-  "s4": {
-   "title": "Transforming Scrap into Value",
-   "descr": "Discover efficient scrap recycling neighborhood! We're dedicated to providing convenient reliable."
+  "s7": {
+   "title": "Reducing Plastic Waste Through Eco-Friendly Packaging"
   },
 
   "s8": {

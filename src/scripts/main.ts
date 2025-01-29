@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   spaceBetween: 18,
   loop: true,
   modules: [Navigation],
+
   pagination: {
-   el: ".swiper-pagination",
-   clickable: true
+   el: ".js-shape-swipe-pagination"
   },
 
   navigation: {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   })
  );
 
- const burger = document.querySelector(".burger") as HTMLElement;
+ const burger = document.querySelector(".js-burger") as HTMLElement;
  const menuMob = document.querySelector(".js-mob-menu") as HTMLElement;
  const menuItMob = document.querySelectorAll(".nav__li");
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
  // https://codepen.io/akapowl/pen/ExydwWX/33e6a0fe190774293edcdd1533f776ad
 
  /* burger toggle */
- burger.addEventListener("click", function (e) {
+ burger?.addEventListener("click", function (e) {
   const $this = this;
   const isOpen = !$this.classList.contains("opened");
   /* prettier-ignore */

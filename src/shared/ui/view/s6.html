@@ -1,0 +1,62 @@
+<section class="s-6">
+ <div class="fix s-6__fix">
+  <h2 class="s-t"><%=s6.title %></h2>
+  <p class="s-d"><%=s6.descr %></p>
+ </div>
+
+ <!--  -->
+ <div class="swiper-section swiper-section--shaped js-s6-swiper">
+  <div class="swiper-section__content">
+   <% s6.list.forEach((item, index) => { %>
+   <div class="shaped-box">
+    <!--  -->
+    <div class="shaped-box__content">
+     <div class="shaped-box__content-cell shaped-box__content-cell--1">
+      <h3 class="shaped-box__t"><%=item.title %></h3>
+      <p class="shaped-box__d"><%=item.descr %></p>
+      <a href="#" class="shaped-box__a">
+       Read More
+       <span class="arr-group" role="presentation">
+        <svg
+         class="icons icons--arrow-small-top-right"
+         width="6.51"
+         height="5.17"
+         role="presentation"
+        >
+         <use xlink:href="<%=svgSprite %>#arrow-small-top-right"></use>
+        </svg>
+       </span>
+      </a>
+     </div>
+     <div class="shaped-box__content-cell shaped-box__content-cell--2">
+      <img
+       srcset="
+        shared/ui/assets/img/slider-2/<%=item.img.srcName %>-1x.webp 1x,
+        shared/ui/assets/img/slider-2/<%=item.img.srcName %>-2x.webp 2x,
+        shared/ui/assets/img/slider-2/<%=item.img.srcName %>-3x.webp 3x,
+        shared/ui/assets/img/slider-2/<%=item.img.srcName %>-4x.webp 4x
+       "
+       src="shared/ui/assets/img/slider-2/<?=item.img.srcName ?>-1x.jpg"
+       alt=""
+       width="185"
+       height="244"
+       class="shaped-img"
+       decoding="async"
+       loading="lazy"
+      />
+     </div>
+    </div>
+    <!-- / -->
+
+    <svg class="shaped-box__svg" role="presentation">
+     <path
+      fill-rule="evenodd"
+      d="m460,16v126.74c0,.68-.04,1.35-.12,2.01v120.5c0,15.46-12.54,28-28,28h-157.28c-11.85,0-23.07,10.76-34.92,10.76H16c-8.84,0-16-7.16-16-16V43.8C0,28.33,12.54,15.8,28,15.8h117.03c13.82,0,27.11-15.8,40.93-15.8h258.05c8.84,0,16,7.16,16,16h0Z"
+     />
+    </svg>
+   </div>
+   <% }) %>
+  </div>
+ </div>
+ <!--  -->
+</section>

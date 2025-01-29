@@ -115,13 +115,15 @@
 .burger {
  @apply rel
 								mx-auto
-								hidden
+								block
 								h-[3.9rem]
 								w-[3.9rem]
 								shrink-0
 								grow-0
-								bg-white
-								fill-none;
+								rounded-[0.5rem]
+						bg-white/70
+								fill-none
+								opacity-0;
 
  @media (max-width: $lg) {
   @apply fixed
