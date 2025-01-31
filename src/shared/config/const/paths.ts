@@ -1,15 +1,13 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
-/* prettier-ignore */ import { join }  from "path";
+import { join } from "node:path";
 
-/* prettier-ignore */ import { dir }   from "./dir";
-/* prettier-ignore */ import { files } from "./files";
-/* prettier-ignore */ import { ext }   from "./ext";
+import { dir } from "./dir";
+import { files } from "./files";
+import { ext } from "./ext";
 
 export const manifestPaths = {
  outFile: `./${dir.in.public}/${files.manifest}`,

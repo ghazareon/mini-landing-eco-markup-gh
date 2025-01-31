@@ -1,10 +1,8 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
 export const gridTemplateColumns = {
-	about: "1fr 1fr",
+ about: "1fr 1fr"
 };

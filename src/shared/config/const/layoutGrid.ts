@@ -1,11 +1,9 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
-/* prettier-ignore */ import type { IObjNest, n } from "../../types";
+import type { IObjNest, n } from "../../types";
 
 /* prettier-ignore */
 export const layoutGridBase = {

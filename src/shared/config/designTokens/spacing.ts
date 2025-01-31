@@ -1,13 +1,10 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
-/* prettier-ignore */ import { layoutGrid }        from "../../config/const";
-/* prettier-ignore */ import { valPropsByAdaptive,
-																															addPrefixToKey }    from "../../utils";
+import { layoutGrid } from "../../config/const";
+import { valPropsByAdaptive, addPrefixToKey } from "../../utils";
 
 /* prettier-ignore */
 export const spacing = Object.assign(

@@ -1,124 +1,110 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
-/* prettier-ignore */ import { fileURLToPath, URL }   from 'node:url'
-/* prettier-ignore */ import { join }                 from "node:path";
-/* prettier-ignore */ import { defineConfig }         from "vite";
-/* prettier-ignore */ import react                    from "@vitejs/plugin-react-swc";
+import { fileURLToPath, URL } from "node:url";
+import { join } from "node:path";
 
-/* prettier-ignore */ import { ViteEjsPlugin }        from "vite-plugin-ejs";
-/* prettier-ignore */ import { ViteMinifyPlugin }     from "vite-plugin-minify";
-/* prettier-ignore */ import { imagetools }           from "vite-imagetools";
-/* prettier-ignore */ import removeConsole            from "vite-plugin-remove-console";
-/* prettier-ignore */ import FullReload               from "vite-plugin-full-reload";
-/* prettier-ignore */ import viteCompression          from 'vite-plugin-compression';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
-/* prettier-ignore */ import data                     from "./src/shared/data/contentDb.json";
-/* prettier-ignore */ import appData                  from "./src/shared/data/appDb.json";
+import { ViteEjsPlugin } from "vite-plugin-ejs";
+import { ViteMinifyPlugin } from "vite-plugin-minify";
+import { imagetools } from "vite-imagetools";
+import removeConsole from "vite-plugin-remove-console";
+import FullReload from "vite-plugin-full-reload";
+import viteCompression from "vite-plugin-compression";
 
-/* prettier-ignore */ import { dir, files,
-																															ext, vitePaths }       from "./src/shared/config/const";
+import data from "./src/shared/data/contentDb.json";
+import appData from "./src/shared/data/appDb.json";
 
-/* prettier-ignore */ import { tags }                 from "./src/shared/data/headMeta";
+import { dir, files, ext, vitePaths } from "./src/shared/config/const";
+
+import { tags } from "./src/shared/data/headMeta";
 
 const NODE_ENV = process.env.NODE_ENV || "development";
 const isDev = NODE_ENV === "development";
 const root = process.cwd();
 
 // https://vite.dev/config/
-/* prettier-ignore */
-export default defineConfig({
-	root:                join(root, dir.in.src),
-	publicDir:           join(root, dir.in.public),
 
+export default defineConfig({
+ root: join(root, dir.in.src),
+ publicDir: join(root, dir.in.public),
 
  resolve: {
-		alias: {
-				'@': fileURLToPath(new URL('./src', import.meta.url))
-		}
-},
+  alias: {
+   "@": fileURLToPath(new URL("./src", import.meta.url))
+  }
+ },
 
-	build: {
-		outDir:             join(root, dir.out.build),
-		emptyOutDir:        true,
-		sourcemap:          isDev,
-		minify:             isDev ? false : 'terser',
+ build: {
+  outDir: join(root, dir.out.build),
+  emptyOutDir: true,
+  sourcemap: isDev,
+  minify: isDev ? false : "terser",
 
-		cssMinify:          isDev,
-		assetsInlineLimit:  0,
+  cssMinify: isDev,
+  assetsInlineLimit: 0,
 
+  terserOptions: {
+   compress: {
+    drop_console: true,
+    drop_debugger: true
+   },
+   keep_classnames: true,
+   keep_fnames: true,
+   sourceMap: false,
+   format: {
+    comments: false
+   }
+  },
 
-		terserOptions: {
-			compress: {
-				drop_console: true,
-				drop_debugger: true
-		},
-			keep_classnames: true,
-			keep_fnames: true,
-			sourceMap: false,
-			format: {
-				comments: false
-		}
-		},
+  rollupOptions: {
+   input: {
+    main: join(root, dir.in.src, "index.html")
+   },
 
-		rollupOptions: {
+   output: {
+    entryFileNames: `assets/js/[name].js`,
 
-			input: {
-				main: join(root, dir.in.src, "index.html"),
-			},
+    assetFileNames: (item) => {
+     if (Array.isArray(item.names)) {
+      const file = item.names[0] ?? "";
 
-			output: {
+      if (/\.(gif|jpe?g|png|webp|avif|ico|svg)$/.test(file)) {
+       /* for .pic */
+       if (file.includes(`.${ext.pic}`)) {
+        return vitePaths.build.pic;
+       }
 
+       /* for img */
+       if (!file.includes(`.${ext.pic}`) && !file.includes(`.${ext.fontSvg}`)) {
+        return vitePaths.build.img;
+       }
+      }
 
-					entryFileNames: `assets/js/[name].js`,
+      /* for font */
+      if (/\.(woff2|woff|eot|ttf|otf|f.svg)$/.test(file)) {
+       return `${vitePaths.build.fonts}`;
+      }
 
-					assetFileNames: (item) => {
+      /* for css */
+      if (/\.(css)$/.test(file)) {
+       return vitePaths.build.css;
+      }
+     }
+     return vitePaths.build.remaining;
+    }
+   }
+  }
+ },
 
-						if (Array.isArray(item.names)) {
-							const file = item.names[0] ?? "";
-
-							if (/\.(gif|jpe?g|png|webp|avif|ico|svg)$/.test(file)) {
-
-								/* for .pic */
-								if (file.includes(`.${ext.pic}`)) {
-									return vitePaths.build.pic
-								};
-
-								/* for img */
-								if (
-									!file.includes(`.${ext.pic}`) &&
-									!file.includes(`.${ext.fontSvg}`)
-								) {
-									return vitePaths.build.img
-								};
-							}
-
-							/* for font */
-							if (/\.(woff2|woff|eot|ttf|otf|f.svg)$/.test(file)) {
-
-								return `${vitePaths.build.fonts}`
-							}
-
-							/* for css */
-							if (/\.(css)$/.test(file)) {
-								return vitePaths.build.css;
-							}
-
-						}
-						return vitePaths.build.remaining;
-					}
-				}
-			}
-	},
-
-	server: {
-		// open: "/"
-	},
-
+ server: {
+  // open: "/"
+ },
+ /* prettier-ignore */
  plugins: [
 		react(),
 		removeConsole(),
@@ -194,6 +180,5 @@ export default defineConfig({
 			ext: '.gz',
 	})
 
-	],
-
+	]
 });

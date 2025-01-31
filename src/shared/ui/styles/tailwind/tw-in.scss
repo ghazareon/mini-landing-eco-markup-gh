@@ -1,8 +1,6 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
 @import url("base/media-query.scss");
@@ -86,6 +84,8 @@
 @import url("components/arr-group.scss");
 @import url("components/shaped-img.scss");
 @import url("components/running-line.scss");
+
+@import url("components/s-8.scss");
 
 @tailwind utilities;
 @tailwind base;

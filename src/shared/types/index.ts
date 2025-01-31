@@ -1,8 +1,6 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
 export type s = string;
@@ -22,9 +20,9 @@ export type f3o2<T1, T2, T3, R> = (p1: T1, p2?: T2, p?: T3) => R;
 export type f3o3<T1, T2, T3, R> = (p1?: T1, p2?: T2, p?: T3) => R;
 
 export interface IObj<T1> {
-	[k: s]: T1;
+ [k: s]: T1;
 }
 
 export interface IObjNest<T1> {
-	[k: s]: IObj<T1>;
+ [k: s]: IObj<T1>;
 }
