@@ -1,8 +1,6 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
 /* prettier-ignore  */
@@ -101,5 +99,6 @@ export const additive = `
 /* #000000 */ "black":        "rgba( 0 0 0         / <alpha-value>)",
 /* #ffffff */ "white":        "rgba( 255 255 255   / <alpha-value>)",
 /* #daeac5 */ "green-add-1":  "rgba( 218 234 197   / <alpha-value>)",
+/* #b8cd5d */ "green-add-2":  "rgba( 184 205 93    / <alpha-value>)",
 /* #003f2e */ "slate-add-1":  "rgba( 0 63 46       / <alpha-value>)",
 `;

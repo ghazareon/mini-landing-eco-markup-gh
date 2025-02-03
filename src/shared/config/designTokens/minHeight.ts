@@ -1,10 +1,8 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
 export const minHeight = {
-	"591": "59.1rem",
+ "591": "59.1rem"
 };

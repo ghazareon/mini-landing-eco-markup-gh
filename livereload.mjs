@@ -1,4 +1,5 @@
-import path from "path";
+import { join } from "node:path";
+
 import { fileURLToPath } from "url";
 import livereload from "livereload";
 

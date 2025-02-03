@@ -3,51 +3,57 @@
   <h2 class="s-t"><%=s8.title %></h2>
  </div>
  <div class="wide-cell">
-  <% s8.list.forEach((item) => { %>
-  <div class="block-v1">
-   <div class="list-3">
-    <svg class="icons icons--star" width="22.48" height="21.49">
-     <use xlink:href="<%=svgSprite %>#star"></use>
-    </svg>
-    <svg class="icons icons--star" width="22.48" height="21.49">
-     <use xlink:href="<%=svgSprite %>#star"></use>
-    </svg>
-    <svg class="icons icons--star" width="22.48" height="21.49">
-     <use xlink:href="<%=svgSprite %>#star"></use>
-    </svg>
-    <svg class="icons icons--star" width="22.48" height="21.49">
-     <use xlink:href="<%=svgSprite %>#star"></use>
-    </svg>
-    <svg class="icons icons--star" width="22.48" height="21.49">
-     <use xlink:href="<%=svgSprite %>#star"></use>
-    </svg>
-   </div>
-   <p class="block-v1__descr"><%=item.descr %></p>
-   <div class="img-info">
-    <div class="img-info__im">
-     <img
-      srcset="
-											shared/ui/assets/img/persons/<%=item.person.img.name %>-1x.<%=item.person.img.ext[0] %> 1x,
-											shared/ui/assets/img/persons/<%=item.person.img.name %>-2x.<%=item.person.img.ext[0] %> 2x,
-											shared/ui/assets/img/persons/<%=item.person.img.name %>-3x.<%=item.person.img.ext[0] %> 3x,
-											shared/ui/assets/img/persons/<%=item.person.img.name %>-4x.<%=item.person.img.ext[0] %> 4x
-										"
-      src="shared/ui/assets/img/persons/<%=item.person.img.name %>-1x.<%=item.person.img.ext[1] %>"
-      alt=""
-      width="44"
-      height="44"
-      class="img-1-1"
-      decoding="async"
-      loading="lazy"
-     />
+  <div class="js-s-8-swiper">
+   <div class="swiper-wrapper">
+    <% s8.list.forEach((item) => { %>
+    <div class="swiper-slide">
+     <div class="block-v1">
+      <div class="list-3">
+       <svg class="icons icons--star" width="22.48" height="21.49">
+        <use xlink:href="<%=svgSprite %>#star"></use>
+       </svg>
+       <svg class="icons icons--star" width="22.48" height="21.49">
+        <use xlink:href="<%=svgSprite %>#star"></use>
+       </svg>
+       <svg class="icons icons--star" width="22.48" height="21.49">
+        <use xlink:href="<%=svgSprite %>#star"></use>
+       </svg>
+       <svg class="icons icons--star" width="22.48" height="21.49">
+        <use xlink:href="<%=svgSprite %>#star"></use>
+       </svg>
+       <svg class="icons icons--star" width="22.48" height="21.49">
+        <use xlink:href="<%=svgSprite %>#star"></use>
+       </svg>
+      </div>
+      <p class="block-v1__descr"><%=item.descr %></p>
+      <div class="img-info">
+       <div class="img-info__im">
+        <img
+         srcset="
+								shared/ui/assets/img/persons/<%=item.person.img.name %>-1x.<%=item.person.img.ext[0] %> 1x,
+								shared/ui/assets/img/persons/<%=item.person.img.name %>-2x.<%=item.person.img.ext[0] %> 2x,
+								shared/ui/assets/img/persons/<%=item.person.img.name %>-3x.<%=item.person.img.ext[0] %> 3x,
+								shared/ui/assets/img/persons/<%=item.person.img.name %>-4x.<%=item.person.img.ext[0] %> 4x
+							"
+         src="shared/ui/assets/img/persons/<%=item.person.img.name %>-1x.<%=item.person.img.ext[1] %>"
+         alt=""
+         width="44"
+         height="44"
+         class="img-1-1"
+         decoding="async"
+         loading="lazy"
+        />
+       </div>
+       <div class="img-info__in">
+        <span class="img-info__title"><%=item.person.fullName %></span>
+        <span class="img-info__descr"><%=item.person.position %></span>
+       </div>
+      </div>
+     </div>
     </div>
-    <div class="img-info__in">
-     <span class="img-info__title"><%=item.person.fullName %></span>
-     <span class="img-info__descr"><%=item.person.position %></span>
-    </div>
+    <% }) %>
    </div>
+   <div class="swiper-pagination"></div>
   </div>
-
-  <% }) %>
  </div>
 </section>

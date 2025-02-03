@@ -2,7 +2,7 @@
 import gsap from "gsap";
 import Swiper from "swiper";
 import LocomotiveScroll from "locomotive-scroll";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import "../../node_modules/swiper/swiper.min.css";
 import "@/shared/ui/assets/css/locomotive-scroll.min.css";
@@ -10,20 +10,21 @@ import "@/shared/ui/assets/css/locomotive-scroll.min.css";
 import "@/shared/ui/styles/scss/index.scss";
 
 document.addEventListener("DOMContentLoaded", function (event) {
+
  const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]") as HTMLElement,
   smooth: true
  });
 
- var swiper = new Swiper(".js-sb-swiper", {
+ const swiper = new Swiper(".js-sb-swiper", {
   slidesPerView: 3,
   centeredSlides: false,
   spaceBetween: 18,
   loop: true,
-  modules: [Navigation],
+  modules: [Navigation, Pagination],
+
   pagination: {
-   el: ".swiper-pagination",
-   clickable: true
+   el: ".js-shape-swipe-pagination"
   },
 
   navigation: {
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   })
  );
 
- const burger = document.querySelector(".burger") as HTMLElement;
+ const burger = document.querySelector(".js-burger") as HTMLElement;
  const menuMob = document.querySelector(".js-mob-menu") as HTMLElement;
  const menuItMob = document.querySelectorAll(".nav__li");
 
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
  // https://codepen.io/akapowl/pen/ExydwWX/33e6a0fe190774293edcdd1533f776ad
 
  /* burger toggle */
- burger.addEventListener("click", function (e) {
+ burger?.addEventListener("click", function (e) {
   const $this = this;
   const isOpen = !$this.classList.contains("opened");
   /* prettier-ignore */
@@ -78,4 +79,54 @@ document.addEventListener("DOMContentLoaded", function (event) {
   $this.classList.toggle("opened");
   $this.setAttribute("aria-expanded", String(!isOpen));
  });
+});
+
+console.log("object");
+
+const swiper = new Swiper(".js-s-8-swiper", {
+ slidesPerView: 1,
+ centeredSlides: false,
+ spaceBetween: 18,
+ loop: true,
+ modules: [Pagination],
+ pagination: {
+  el: ".swiper-pagination"
+ },
+
+ breakpoints: {
+  320: {
+   slidesPerView: 1
+  },
+
+  480: {
+   slidesPerView: 2
+  },
+
+  640: {
+   slidesPerView: 3
+  }
+ }
+
+ // modules: [Navigation],
+
+ // pagination: {
+ //  el: ".js-shape-swipe-pagination"
+ // },
+
+ // navigation: {
+ //  nextEl: ".swiper-button-next",
+ //  prevEl: ".swiper-button-prev"
+ // },
+
+ // breakpoints: {
+ //  600: {
+ //   slidesPerView: 3
+ //  },
+ //  500: {
+ //   slidesPerView: 1
+ //  },
+ //  100: {
+ //   slidesPerView: 1
+ //  }
+ // }
 });

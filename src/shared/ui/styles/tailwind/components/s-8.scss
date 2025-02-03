@@ -14,3 +14,40 @@
   }
  }
 }
+
+.js-s-8-swiper {
+ display: block;
+ overflow: hidden;
+}
+
+.some-block {
+ display: block;
+ min-height: 200px;
+}
+
+.swiper-pagination {
+ min-height: 20px;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ column-gap: 5px;
+
+ .swiper-pagination-bullet {
+  @apply bg-green-200/50;
+  width: 20px;
+  height: 10px;
+
+  border-radius: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+ }
+
+ .swiper-pagination-bullet-active {
+  @apply bg-green-950/50;
+ }
+}
+
+.swiper-pagination {
+ padding-top: 20px;
+ padding-bottom: 30px;
+}

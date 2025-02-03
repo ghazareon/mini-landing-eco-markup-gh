@@ -1,19 +1,17 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-eco-markup-gh
- * Date: January 2025
  */
 
-/* prettier-ignore */ import fs                           from "node:fs/promises";
-/* prettier-ignore */ import prettier                     from "prettier";
-/* prettier-ignore */ import { toCustomPropertiesString } from "object-to-css-variables";
+import fs from "node:fs/promises";
+import prettier from "prettier";
+import { toCustomPropertiesString } from "object-to-css-variables";
 
-/* prettier-ignore */ import * as dt                      from "@/src/shared/config/designTokens";
-/* prettier-ignore */ import { removeSubStrObj }          from "@/src/shared/utils";
-/* prettier-ignore */ import { rootCssPaths }             from "@/src/shared/config/const/paths";
+import * as dt from "@/src/shared/config/designTokens";
+import { removeSubStrObj } from "@/src/shared/utils";
+import { rootCssPaths } from "@/src/shared/config/const/paths";
 
-/* prettier-ignore */ import type { s }                   from "@/src/shared/types";
+import type { s } from "@/src/shared/types";
 
 /* prettier-ignore */
 export const createRootCss = () =>
@@ -47,10 +45,7 @@ export const createRootCss = () =>
 });
 
 const writeToFile = async (result: s, pathToFile: s) => {
-	fs.writeFile(
-		pathToFile,
-		await prettier.format(`:root{${result}}`, { parser: "scss" }),
-	);
+ fs.writeFile(pathToFile, await prettier.format(`:root{${result}}`, { parser: "scss" }));
 };
 
 writeToFile(createRootCss(), rootCssPaths.outFile);
