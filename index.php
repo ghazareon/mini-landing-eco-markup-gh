@@ -20,7 +20,7 @@ $assets = $TEMPLATE_PATH . '/build/assets';
 
 <!doctype html>
 <html class="notranslate" lang="en" translate="no">
-<?php include_once 'php/header.php'; ?>
+<?php include_once 'src/php/header.php'; ?>
 
 <body>
  <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -1104,6 +1104,6 @@ $assets = $TEMPLATE_PATH . '/build/assets';
   </footer>
  </div>
 </body>
-<?php include_once 'php/footer.php'; ?>
+<?php include_once 'src/php/footer.php'; ?>
 
 </html>

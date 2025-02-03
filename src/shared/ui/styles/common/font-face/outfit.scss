@@ -1,12 +1,14 @@
+// ../../../assets/fonts/Outfit-Regular.woff2
+
 /* prettier-ignore */
 @font-face {
 	font-family: "Outfit";
-	src:  url("../../../assets/fonts/Outfit-Regular.woff2")                       format("woff2")
-			  , url("../../../assets/fonts/Outfit-Regular.woff")                        format("woff")
-			  , url("../../../assets/fonts/Outfit-Regular.eot?#iefix" )                 format("embedded-opentype")
-			  , url("../../../assets/fonts/Outfit-Regular.ttf")                         format("truetype")
-			  , url("../../../assets/fonts/Outfit-Regular.otf")                         format("opentype")
-			  , url("../../../assets/fonts/Outfit-Regular.f.svg#Outfit-Regular")        format("svg")
+	src:  url(@/shared/ui/assets/fonts/Outfit-Regular.woff2)                       format("woff2")
+			  , url(@/shared/ui/assets/fonts/Outfit-Regular.woff)                        format("woff")
+			  , url(@/shared/ui/assets/fonts/Outfit-Regular.eot?#iefix)                 format("embedded-opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Regular.ttf)                         format("truetype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Regular.otf)                         format("opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Regular.f.svg#Outfit-Regular)        format("svg")
 			  ;
 
 	font-weight: 400;
@@ -17,12 +19,12 @@
 /* prettier-ignore */
 @font-face {
 	font-family: "Outfit";
-	src:  url("../../../assets/fonts/Outfit-Medium.woff2")                       format("woff2")
-			  , url("../../../assets/fonts/Outfit-Medium.woff")                        format("woff")
-			  , url("../../../assets/fonts/Outfit-Medium.eot?#iefix" )                 format("embedded-opentype")
-			  , url("../../../assets/fonts/Outfit-Medium.ttf")                         format("truetype")
-			  , url("../../../assets/fonts/Outfit-Medium.otf")                         format("opentype")
-			  , url("../../../assets/fonts/Outfit-Medium.f.svg#Outfit-Medium")         format("svg")
+	src:  url(@/shared/ui/assets/fonts/Outfit-Medium.woff2)                       format("woff2")
+			  , url(@/shared/ui/assets/fonts/Outfit-Medium.woff)                        format("woff")
+			  , url(@/shared/ui/assets/fonts/Outfit-Medium.eot?#iefix)                 format("embedded-opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Medium.ttf)                         format("truetype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Medium.otf)                         format("opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Medium.f.svg#Outfit-Medium)         format("svg")
 			  ;
 
 	font-weight: 500;
@@ -33,12 +35,12 @@
 /* prettier-ignore */
 @font-face {
 	font-family: "Outfit";
-	src:  url("../../../assets/fonts/Outfit-SemiBold.woff2")                       format("woff2")
-			  , url("../../../assets/fonts/Outfit-SemiBold.woff")                        format("woff")
-			  , url("../../../assets/fonts/Outfit-SemiBold.eot?#iefix" )                 format("embedded-opentype")
-			  , url("../../../assets/fonts/Outfit-SemiBold.ttf")                         format("truetype")
-			  , url("../../../assets/fonts/Outfit-SemiBold.otf")                         format("opentype")
-			  , url("../../../assets/fonts/Outfit-SemiBold.f.svg#Outfit-SemiBold")       format("svg")
+	src:  url(@/shared/ui/assets/fonts/Outfit-SemiBold.woff2)                       format("woff2")
+			  , url(@/shared/ui/assets/fonts/Outfit-SemiBold.woff)                        format("woff")
+			  , url(@/shared/ui/assets/fonts/Outfit-SemiBold.eot?#iefix)                 format("embedded-opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-SemiBold.ttf)                         format("truetype")
+			  , url(@/shared/ui/assets/fonts/Outfit-SemiBold.otf)                         format("opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-SemiBold.f.svg#Outfit-SemiBold)       format("svg")
 			  ;
 
 	font-weight: 600;
@@ -49,12 +51,12 @@
 /* prettier-ignore */
 @font-face {
 	font-family: "Outfit";
-	src:  url("../../../assets/fonts/Outfit-Bold.woff2")                       format("woff2")
-			  , url("../../../assets/fonts/Outfit-Bold.woff")                        format("woff")
-			  , url("../../../assets/fonts/Outfit-Bold.eot?#iefix" )                 format("embedded-opentype")
-			  , url("../../../assets/fonts/Outfit-Bold.ttf")                         format("truetype")
-			  , url("../../../assets/fonts/Outfit-Bold.otf")                         format("opentype")
-			  , url("../../../assets/fonts/Outfit-Bold.f.svg#Outfit-Bold")           format("svg")
+	src:  url(@/shared/ui/assets/fonts/Outfit-Bold.woff2)                       format("woff2")
+			  , url(@/shared/ui/assets/fonts/Outfit-Bold.woff)                        format("woff")
+			  , url(@/shared/ui/assets/fonts/Outfit-Bold.eot?#iefix)                 format("embedded-opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Bold.ttf)                         format("truetype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Bold.otf)                         format("opentype")
+			  , url(@/shared/ui/assets/fonts/Outfit-Bold.f.svg#Outfit-Bold)           format("svg")
 			  ;
 
 	font-weight: 700;
