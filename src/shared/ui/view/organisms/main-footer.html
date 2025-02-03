@@ -14,12 +14,12 @@
      />
     </a>
     <p class="short-txt"><%=mainFooter.shortTxt %></p>
-    <%- include(`shared/ui/view/soc.html`, { socPageLinks, svgSprite }); %>
+    <%- include(`shared/ui/view/molecules/soc.html`, { socPageLinks, svgSprite }); %>
    </div>
    <% mainFooter.list.forEach((it, index) => { %>
    <div class="grid-9__it grid-9__it--<%=index+2%>">
     <h4 class="s9__t"><%=it.title %></h4>
-    <%- include(`shared/ui/view/list-1.html`, { data: it.list}); %>
+    <%- include(`shared/ui/view/molecules/list-1.html`, { data: it.list}); %>
    </div>
    <% }) %>
   </div>
