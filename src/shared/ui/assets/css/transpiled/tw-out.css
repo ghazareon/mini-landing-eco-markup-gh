@@ -604,6 +604,23 @@ body::-webkit-resizer{
   }
 }
 
+.main-footer {
+  min-height:40rem;
+  width:100%;
+  --tw-bg-opacity:1;
+  background-color:rgba( 3 25 19 / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.main-footer {
+    background-color:rgba( 3 25 19 / var(--tw-bg-opacity, 1));
+  }
+}
+
+.main-footer__fix {
+  padding-top:clamp(4rem,4rem + 3.32vw,8rem);
+}
+
 .list-1__li {
   padding-bottom:clamp(1rem,1rem + 0.71vw,1.85rem);
 }
@@ -669,23 +686,6 @@ body::-webkit-resizer{
    will-change:transform,color;
   }
 
-.main-footer {
-  min-height:40rem;
-  width:100%;
-  --tw-bg-opacity:1;
-  background-color:rgba( 3 25 19 / 1);
-}
-
-@supports (color: rgba(0 0 0 / 0)) {
-.main-footer {
-    background-color:rgba( 3 25 19 / var(--tw-bg-opacity, 1));
-  }
-}
-
-.main-footer__fix {
-  padding-top:clamp(4rem,4rem + 3.32vw,8rem);
-}
-
 .logo {
   display:inline-block;
   width:100%;
@@ -695,20 +695,6 @@ body::-webkit-resizer{
 .logo__img {
   display:block;
   width:100%;
-}
-
-.s9__t {
-  --tw-text-opacity:1;
-  color:rgba( 255 255 255   / 1);
-  padding-bottom:clamp(2.7rem,2.7rem + 1.08vw,4rem);
-  font-size:1.6rem;
-  line-height:2.2rem;
-}
-
-@supports (color: rgba(0 0 0 / 0)) {
-.s9__t {
-    color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
-  }
 }
 
 .grid-9 {
@@ -763,6 +749,20 @@ body::-webkit-resizer{
 .grid-9__it--5{
    grid-area:it-5;
   }
+
+.s9__t {
+  --tw-text-opacity:1;
+  color:rgba( 255 255 255   / 1);
+  padding-bottom:clamp(2.7rem,2.7rem + 1.08vw,4rem);
+  font-size:1.6rem;
+  line-height:2.2rem;
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.s9__t {
+    color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
+  }
+}
 
 .s-7 {
   background-color:rgba( 147 225 74 / 0.1);
@@ -2279,11 +2279,6 @@ body::-webkit-resizer{
   align-items:flex-start;
   -moz-column-gap:2.4rem;
        column-gap:2.4rem;
-}
-
-.s-d {
-  font-size:1.6rem;
-  line-height:2.4rem;
 }
 
 .shapes {
@@ -4530,21 +4525,21 @@ body {
     line-height:2.6rem;
   }
 
-  .list-1__li {
-    padding-bottom:1rem;
-  }
-
   .main-footer__fix {
     padding-top:4rem;
   }
 
-  .s9__t {
-    padding-bottom:2.7rem;
+  .list-1__li {
+    padding-bottom:1rem;
   }
 
 .grid-9{
   grid-template-areas:". it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2" ". it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3" ". it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4" ". it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5" "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1"
 }
+
+.s9__t {
+    padding-bottom:2.7rem;
+  }
 
 .s-7__fix {
     padding-top:3rem;
